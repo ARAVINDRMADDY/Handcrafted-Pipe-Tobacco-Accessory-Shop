@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Master Artisans - WeaveNest Atelier</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Crect%20width%3D%22100%22%20height%3D%22100%22%20rx%3D%2220%22%20fill%3D%22%23111827%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2265%22%20fill%3D%22%23D4AF37%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22central%22%3EE%3C%2Ftext%3E%3C%2Fsvg%3E">
+  <meta name="description" content="Meet the master weavers and textile artisans behind WeaveNest. Discover the craftsmanship that goes into every bespoke rug.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <script>
+    tailwind.config = { 
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            'soft-gold': '#D4AF37',
+            'charcoal': '#111827',
+            'off-white': '#FFFFFF',
+            'muted-grey': '#6B7280'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    [dir="rtl"] { direction: rtl; }
+    
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in { animation: fadeInUp 0.8s ease-out; }
+  </style>
+</head>
+<body class="font-sans antialiased transition-colors duration-300 bg-off-white dark:bg-charcoal flex flex-col min-h-screen">
+
+  <nav class="bg-off-white dark:bg-charcoal fixed w-full top-0 z-50 border-b border-gray-200 dark:border-white/10 transition-colors duration-300">
+    <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-[90px]">
+
+        <div class="flex-shrink-0">
+          <a href="index.html" class="flex items-center space-x-3">
+            <div class="flex flex-col">
+              <span class="text-2xl font-black tracking-tight text-charcoal dark:text-off-white uppercase">Weave<span class="text-soft-gold">Nest.</span></span>
+            </div>
+          </a>
+        </div>
+
+        <div class="hidden xl:flex items-center justify-center flex-1 mx-8">
+          <div class="flex items-center space-x-8">
+
+            <div class="relative group h-[90px] flex items-center">
+              <button class="text-xs uppercase tracking-[0.15em] font-semibold text-gray-900 dark:text-gray-100 hover:text-soft-gold transition-colors flex items-center relative py-2">
+                <span>Home</span>
+                <i class="fas fa-chevron-down text-[10px] ml-2 transition-transform duration-300 group-hover:rotate-180"></i>
+                <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-soft-gold transition-all duration-300 group-hover:w-full"></span>
+              </button>
+              
+              <div class="absolute top-[90px] left-0 w-56 bg-off-white dark:bg-[#262626] border border-t-0 border-gray-200 dark:border-white/10 shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform -translate-y-2 group-hover:translate-y-0 z-50">
+                <div class="py-4 px-6 flex flex-col space-y-4">
+                  <a href="index.html" class="text-sm font-medium text-gray-500 hover:text-soft-gold dark:text-gray-400 dark:hover:text-soft-gold transition-colors">HOME PAGE 01</a>
+                  <a href="home-2.html" class="text-sm font-medium text-gray-500 hover:text-soft-gold dark:text-gray-400 dark:hover:text-soft-gold transition-colors">HOME PAGE 02</a>
+                </div>
+              </div>
+            </div>
+
+            <a href="about.html" class="relative group text-xs uppercase tracking-[0.15em] font-semibold text-gray-900 dark:text-gray-100 hover:text-soft-gold transition-colors py-2">
+              About
+              <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-soft-gold transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            
+            <a href="collections.html" class="relative group text-xs uppercase tracking-[0.15em] font-semibold text-gray-900 dark:text-gray-100 hover:text-soft-gold transition-colors py-2">
+              Collections
+              <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-soft-gold transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            
+            <a href="artisans.html" class="relative group text-xs uppercase tracking-[0.15em] font-semibold text-soft-gold transition-colors py-2">
+              Artisans
+              <span class="absolute bottom-0 left-0 w-full h-[2px] bg-soft-gold transition-all duration-300"></span>
+            </a>
+            
+            <a href="pricing.html" class="relative group text-xs uppercase tracking-[0.15em] font-semibold text-gray-900 dark:text-gray-100 hover:text-soft-gold transition-colors py-2">
+              Pricing
+              <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-soft-gold transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            
+            <a href="journal.html" class="relative group text-xs uppercase tracking-[0.15em] font-semibold text-gray-900 dark:text-gray-100 hover:text-soft-gold transition-colors py-2">
+              Journal
+              <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-soft-gold transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            
+            <a href="contact.html" class="relative group text-xs uppercase tracking-[0.15em] font-semibold text-gray-900 dark:text-gray-100 hover:text-soft-gold transition-colors py-2">
+              Contact
+              <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-soft-gold transition-all duration-300 group-hover:w-full"></span>
+            </a>
+
+            
+
+          </div>
+        </div>
+
+        <div class="hidden xl:flex items-center space-x-4">
+          
+          <button type="button" onclick="window.location.href='login.html'" class="bg-soft-gold border-2 border-soft-gold text-charcoal hover:bg-transparent hover:text-soft-gold px-6 py-2.5 text-xs uppercase tracking-wider font-black transition-all duration-300 flex items-center space-x-2">
+            <span>Login</span>
+            <i class="fas fa-arrow-right text-[10px]"></i>
+          </button>
+          
+          <a href="register.html" class="bg-transparent border-2 border-gray-300 dark:border-gray-700 text-charcoal dark:text-off-white hover:border-soft-gold dark:hover:border-soft-gold hover:text-soft-gold dark:hover:text-soft-gold px-6 py-2.5 text-xs uppercase tracking-wider font-bold transition-all duration-300 flex items-center space-x-2">
+            <span>Register</span>
+            <i class="fas fa-arrow-right text-[10px]"></i>
+          </a>
+
+          <div class="h-8 w-px bg-gray-200 dark:bg-gray-800 mx-2"></div>
+
+          <button id="theme-toggle" class="relative w-[72px] h-[34px] flex items-center bg-gray-200 dark:bg-[#1a1a1a] rounded-full p-1 transition-colors duration-300 focus:outline-none border border-gray-300 dark:border-gray-700 overflow-hidden" title="Toggle Theme">
+            <span class="text-[9px] font-black text-gray-500 absolute right-2.5 dark:opacity-0 transition-opacity duration-300 tracking-wider">LIGHT</span>
+            <span class="text-[9px] font-black text-soft-gold absolute left-2.5 opacity-0 dark:opacity-100 transition-opacity duration-300 tracking-wider">DARK</span>
+            
+            <div class="w-[24px] h-[24px] bg-white dark:bg-charcoal border border-gray-200 dark:border-gray-600 rounded-full shadow-sm transform transition-transform duration-300 flex items-center justify-center dark:translate-x-[38px] z-10">
+              <i class="fas fa-sun text-[11px] text-soft-gold dark:hidden block"></i>
+              <i class="fas fa-moon text-[11px] text-soft-gold hidden dark:block"></i>
+            </div>
+          </button>
+          
+          <button id="rtl-toggle" class="text-xs font-bold text-gray-400 hover:text-soft-gold transition-colors duration-300 ml-2" title="Toggle RTL">
+            RTL
+          </button>
+        </div>
+
+        <div class="xl:hidden flex items-center">
+          <button id="mobile-menu-button" class="text-gray-900 dark:text-off-white hover:text-soft-gold focus:outline-none transition duration-300">
+            <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path id="menu-icon" stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              <path id="close-icon" class="hidden" stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden xl:hidden bg-off-white dark:bg-[#262626] border-b border-gray-200 dark:border-gray-800 shadow-2xl">
+      <div class="px-6 pt-4 pb-8 space-y-0 max-h-[calc(100vh-90px)] overflow-y-auto">
+
+        <div class="border-b border-gray-100 dark:border-white/5">
+          <button id="mobile-home-dropdown" class="w-full flex items-center justify-between py-4 text-gray-900 dark:text-off-white hover:text-soft-gold transition duration-300">
+            <span class="text-xs uppercase tracking-widest font-bold">Home</span>
+            <i class="fas fa-plus text-xs transition-transform duration-300" id="mobile-home-icon"></i>
+          </button>
+          <div id="mobile-home-menu" class="hidden pb-4 space-y-3 pl-4 border-l-2 border-soft-gold/20 ml-2">
+            <a href="index.html" class="block text-sm font-medium text-gray-500 hover:text-soft-gold dark:text-gray-400 transition duration-300 uppercase tracking-wider">01. Home Page</a>
+            <a href="home-2.html" class="block text-sm font-medium text-gray-500 hover:text-soft-gold dark:text-gray-400 transition duration-300 uppercase tracking-wider">02. Home Page</a>
+          </div>
+        </div>
+
+        <a href="about.html" class="block py-4 border-b border-gray-100 dark:border-white/5 text-gray-900 dark:text-off-white hover:text-soft-gold transition duration-300 text-xs uppercase tracking-widest font-bold">About</a>
+        <a href="collections.html" class="block py-4 border-b border-gray-100 dark:border-white/5 text-gray-900 dark:text-off-white hover:text-soft-gold transition duration-300 text-xs uppercase tracking-widest font-bold">Collections</a>
+        <a href="artisans.html" class="block py-4 border-b border-gray-100 dark:border-white/5 text-soft-gold transition duration-300 text-xs uppercase tracking-widest font-bold">Artisans</a>
+        <a href="pricing.html" class="block py-4 border-b border-gray-100 dark:border-white/5 text-gray-900 dark:text-off-white hover:text-soft-gold transition duration-300 text-xs uppercase tracking-widest font-bold">Pricing</a>
+        <a href="journal.html" class="block py-4 border-b border-gray-100 dark:border-white/5 text-gray-900 dark:text-off-white hover:text-soft-gold transition duration-300 text-xs uppercase tracking-widest font-bold">Journal</a>
+        <a href="contact.html" class="block py-4 border-b border-gray-100 dark:border-white/5 text-gray-900 dark:text-off-white hover:text-soft-gold transition duration-300 text-xs uppercase tracking-widest font-bold">Contact</a>
+
+        <div class="border-b border-gray-100 dark:border-white/5">
+          
+          
+        </div>
+
+        <div class="pt-8 space-y-4">
+          <button type="button" onclick="window.location.href='login.html'" class="flex items-center justify-center w-full bg-soft-gold border-2 border-soft-gold text-charcoal hover:bg-transparent hover:text-soft-gold px-4 py-3.5 font-black uppercase tracking-widest text-center transition duration-300 text-xs space-x-2">
+            <span>Login</span>
+            <i class="fas fa-arrow-right text-[10px]"></i>
+          </button>
+          
+          <a href="register.html" class="flex items-center justify-center w-full bg-transparent border-2 border-gray-300 dark:border-gray-700 text-charcoal dark:text-off-white hover:border-soft-gold dark:hover:border-soft-gold hover:text-soft-gold dark:hover:text-soft-gold px-4 py-3.5 font-bold uppercase tracking-widest text-center transition duration-300 text-xs space-x-2">
+            <span>Register</span>
+            <i class="fas fa-arrow-right text-[10px]"></i>
+          </a>
+          
+          <div class="flex justify-between items-center pt-6 pb-2 border-t border-gray-100 dark:border-white/5 mt-4">
+            <button id="mobile-theme-toggle" class="bg-gray-100 dark:bg-[#1a1a1a] border border-gray-200 dark:border-gray-700 rounded-full px-4 py-2 transition-colors flex items-center text-xs font-bold uppercase tracking-widest">
+              <span class="dark:hidden flex items-center text-soft-gold"><i class="fas fa-sun mr-2"></i> Light Active</span>
+              <span class="hidden dark:flex items-center text-soft-gold"><i class="fas fa-moon mr-2"></i> Dark Active</span>
+            </button>
+            <button id="mobile-rtl-toggle" class="text-gray-400 hover:text-soft-gold transition-colors flex items-center text-xs font-bold uppercase tracking-widest">
+              <i class="fas fa-language mr-2 text-lg"></i> RTL
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="flex-grow flex flex-col pt-[90px]">
+    
+    <section class="py-16 lg:py-24 bg-charcoal text-off-white relative overflow-hidden">
+      <div class="absolute top-0 right-0 w-64 h-64 bg-soft-gold/10 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-0 left-0 w-80 h-80 bg-muted-grey/10 rounded-full blur-3xl"></div>
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center animate-fade-in">
+        <span class="text-soft-gold font-bold tracking-wider uppercase text-sm mb-4 block">The Hands Behind The Loom</span>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight">
+          Meet Our <span class="text-soft-gold">Master Artisans</span>
+        </h1>
+        <p class="text-lg md:text-xl text-muted-grey max-w-2xl mx-auto font-light leading-relaxed">
+          Every WeaveNest rug is a labor of love, requiring hundreds of hours of precision, skill, and dedication. Get to know the craftspeople who turn raw fibers into heirloom masterpieces.
+        </p>
+      </div>
+    </section>
+
+    <section class="py-20 bg-white dark:bg-[#222222] transition-colors duration-300">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+          
+          <div class="bg-off-white dark:bg-charcoal rounded-none overflow-hidden shadow-lg border border-gray-200 dark:border-gray-800 animate-fade-in group">
+            <div class="overflow-hidden h-[400px] relative">
+              <img src="https://images.unsplash.com/photo-1540955931751-24835eebccfb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Sarah Jenkins" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 group-hover:grayscale-0 grayscale-[30%]">
+            </div>
+            <div class="p-8 text-center relative">
+              <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-soft-gold rounded-full flex items-center justify-center text-charcoal border-4 border-off-white dark:border-charcoal">
+                <i class="fas fa-star text-sm"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-charcoal dark:text-off-white mt-4 mb-1">Amir Hassan</h3>
+              <p class="text-soft-gold text-xs font-bold uppercase tracking-widest mb-4">Master Weaver</p>
+              <p class="text-gray-600 dark:text-gray-400 font-light text-sm leading-relaxed">
+                With over 40 years at the loom, Amir specializes in the complex Persian knot. His intricate detailing ensures that every geometric and floral pattern is perfectly rendered with mathematical precision.
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-off-white dark:bg-charcoal rounded-none overflow-hidden shadow-lg border border-gray-200 dark:border-gray-800 animate-fade-in group" style="animation-delay: 0.1s;">
+            <div class="overflow-hidden h-[400px] relative">
+              <img src="https://images.unsplash.com/photo-1473621038790-b778b47501ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Dye Master" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 group-hover:grayscale-0 grayscale-[30%]">
+            </div>
+            <div class="p-8 text-center relative">
+              <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-soft-gold rounded-full flex items-center justify-center text-charcoal border-4 border-off-white dark:border-charcoal">
+                <i class="fas fa-palette text-sm"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-charcoal dark:text-off-white mt-4 mb-1">Leyla Tariq</h3>
+              <p class="text-soft-gold text-xs font-bold uppercase tracking-widest mb-4">Head Dye Master</p>
+              <p class="text-gray-600 dark:text-gray-400 font-light text-sm leading-relaxed">
+                Leyla is a visionary in botanical and vegetable dyes. She sources indigo, madder root, and pomegranate husks to create the rich, fade-resistant color palettes that define our heritage collections.
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-off-white dark:bg-charcoal rounded-none overflow-hidden shadow-lg border border-gray-200 dark:border-gray-800 animate-fade-in group" style="animation-delay: 0.2s;">
+            <div class="overflow-hidden h-[400px] relative">
+              <img src="https://images.unsplash.com/photo-1596700755913-9092490df111?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Material Sourcing" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 group-hover:grayscale-0 grayscale-[30%]">
+            </div>
+            <div class="p-8 text-center relative">
+              <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-soft-gold rounded-full flex items-center justify-center text-charcoal border-4 border-off-white dark:border-charcoal">
+                <i class="fas fa-leaf text-sm"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-charcoal dark:text-off-white mt-4 mb-1">David Mercer</h3>
+              <p class="text-soft-gold text-xs font-bold uppercase tracking-widest mb-4">Fiber & Sourcing Specialist</p>
+              <p class="text-gray-600 dark:text-gray-400 font-light text-sm leading-relaxed">
+                David travels globally to ethically source the finest raw materials. From pure New Zealand wool to authentic mulberry silk, he ensures the foundational elements of our rugs are unparalleled in quality.
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-off-white dark:bg-charcoal rounded-none overflow-hidden shadow-lg border border-gray-200 dark:border-gray-800 animate-fade-in group" style="animation-delay: 0.3s;">
+            <div class="overflow-hidden h-[400px] relative">
+              <img src="https://images.unsplash.com/photo-1455390582262-044cdead27d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Design Director" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 group-hover:grayscale-0 grayscale-[30%]">
+            </div>
+            <div class="p-8 text-center relative">
+              <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-soft-gold rounded-full flex items-center justify-center text-charcoal border-4 border-off-white dark:border-charcoal">
+                <i class="fas fa-pen-nib text-sm"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-charcoal dark:text-off-white mt-4 mb-1">Elena Rodriguez</h3>
+              <p class="text-soft-gold text-xs font-bold uppercase tracking-widest mb-4">Creative Director</p>
+              <p class="text-gray-600 dark:text-gray-400 font-light text-sm leading-relaxed">
+                Elena translates contemporary interior design trends into actionable weaving drafts (talim). She acts as the bridge between the client's vision and the artisan's traditional technique.
+              </p>
+            </div>
+          </div>
+          
+          <div class="bg-off-white dark:bg-charcoal rounded-none overflow-hidden shadow-lg border border-gray-200 dark:border-gray-800 animate-fade-in group" style="animation-delay: 0.4s;">
+            <div class="overflow-hidden h-[400px] relative">
+              <img src="https://images.unsplash.com/photo-1599839619722-39751411ea63?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Loom Technician" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 group-hover:grayscale-0 grayscale-[30%]">
+            </div>
+            <div class="p-8 text-center relative">
+              <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-soft-gold rounded-full flex items-center justify-center text-charcoal border-4 border-off-white dark:border-charcoal">
+                <i class="fas fa-tools text-sm"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-charcoal dark:text-off-white mt-4 mb-1">Nadia Rostami</h3>
+              <p class="text-soft-gold text-xs font-bold uppercase tracking-widest mb-4">Finishing & Washing Expert</p>
+              <p class="text-gray-600 dark:text-gray-400 font-light text-sm leading-relaxed">
+                The finishing touch is crucial. Nadia oversees the antique washing and shearing processes, ensuring the pile height is perfect and the rug achieves its luxurious, soft luster before it reaches your home.
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-charcoal rounded-none overflow-hidden shadow-lg border border-gray-800 flex flex-col items-center justify-center p-12 text-center animate-fade-in" style="animation-delay: 0.5s;">
+            <i class="fas fa-hands-helping text-5xl text-soft-gold mb-6"></i>
+            <h3 class="text-2xl font-bold text-off-white mb-4">The Wider Guild</h3>
+            <p class="text-gray-400 font-light text-sm leading-relaxed mb-8">
+              WeaveNest supports a guild of over 50 independent weavers, spinners, and dyers. We are committed to fair trade, ethical wages, and preserving this ancient art form for future generations.
+            </p>
+            <a href="about.html" class="inline-flex items-center justify-center px-6 py-3 border border-soft-gold text-soft-gold hover:bg-soft-gold hover:text-charcoal font-bold uppercase tracking-widest text-xs transition-all duration-300">
+              Read Our Story
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-off-white dark:bg-[#1a1a1a] border-t border-gray-200 dark:border-gray-800 transition-colors duration-300">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <span class="text-soft-gold font-bold tracking-wider uppercase text-sm">The Process</span>
+          <h2 class="text-3xl md:text-4xl font-extrabold text-charcoal dark:text-off-white mt-2">How It's Made</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div class="text-center">
+            <div class="text-6xl text-soft-gold opacity-30 font-black mb-4">01</div>
+            <h4 class="text-lg font-bold text-charcoal dark:text-off-white mb-2 uppercase tracking-widest">Sourcing</h4>
+            <p class="text-gray-600 dark:text-gray-400 text-sm font-light">Hand-selecting premium, long-staple wool and pure silk for maximum durability and softness.</p>
+          </div>
+          <div class="text-center">
+            <div class="text-6xl text-soft-gold opacity-30 font-black mb-4">02</div>
+            <h4 class="text-lg font-bold text-charcoal dark:text-off-white mb-2 uppercase tracking-widest">Dyeing</h4>
+            <p class="text-gray-600 dark:text-gray-400 text-sm font-light">Using botanical extracts and traditional vat methods to achieve rich, vibrant, and natural hues.</p>
+          </div>
+          <div class="text-center">
+            <div class="text-6xl text-soft-gold opacity-30 font-black mb-4">03</div>
+            <h4 class="text-lg font-bold text-charcoal dark:text-off-white mb-2 uppercase tracking-widest">Knotting</h4>
+            <p class="text-gray-600 dark:text-gray-400 text-sm font-light">Months of meticulous hand-tying on the loom, with up to 400 knots per square inch for complex motifs.</p>
+          </div>
+          <div class="text-center">
+            <div class="text-6xl text-soft-gold opacity-30 font-black mb-4">04</div>
+            <h4 class="text-lg font-bold text-charcoal dark:text-off-white mb-2 uppercase tracking-widest">Finishing</h4>
+            <p class="text-gray-600 dark:text-gray-400 text-sm font-light">Washing, stretching, and shearing the pile to bring out the rug's ultimate luster and precise texture.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-charcoal text-off-white pt-24 pb-12 mt-auto border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+        
+        <div>
+          <h3 class="text-3xl font-black tracking-tight uppercase mb-6 text-off-white">Weave<span class="text-soft-gold">Nest.</span></h3>
+          <p class="text-muted-grey mb-8 font-normal leading-relaxed text-base">
+            Crafting timeless floor art through traditional weaving techniques, premium materials, and custom designs tailored to your living space.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="w-12 h-12 border border-white/20 text-off-white hover:border-soft-gold hover:text-soft-gold flex items-center justify-center transition-all duration-300 rounded-sm">
+              <i class="fab fa-facebook-f text-base"></i>
+            </a>
+            <a href="#" class="w-12 h-12 border border-white/20 text-off-white hover:border-soft-gold hover:text-soft-gold flex items-center justify-center transition-all duration-300 rounded-sm">
+              <i class="fab fa-instagram text-base"></i>
+            </a>
+            <a href="#" class="w-12 h-12 border border-white/20 text-off-white hover:border-soft-gold hover:text-soft-gold flex items-center justify-center transition-all duration-300 rounded-sm">
+              <i class="fab fa-pinterest-p text-base"></i>
+            </a>
+            <a href="#" class="w-12 h-12 border border-white/20 text-off-white hover:border-soft-gold hover:text-soft-gold flex items-center justify-center transition-all duration-300 rounded-sm">
+              <i class="fab fa-linkedin-in text-base"></i>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-sm uppercase tracking-[0.2em] font-bold mb-8 text-off-white">Quick Links</h4>
+          <ul class="space-y-5">
+            <li><a href="index.html" class="text-base text-muted-grey hover:text-soft-gold transition-colors duration-300">Home</a></li>
+            <li><a href="about.html" class="text-base text-muted-grey hover:text-soft-gold transition-colors duration-300">Our Heritage</a></li>
+            <li><a href="artisans.html" class="text-base text-muted-grey hover:text-soft-gold transition-colors duration-300">Master Artisans</a></li>
+            <li><a href="pricing.html" class="text-base text-muted-grey hover:text-soft-gold transition-colors duration-300">Commission Info</a></li>
+            <li><a href="journal.html" class="text-base text-muted-grey hover:text-soft-gold transition-colors duration-300">Atelier Journal</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-sm uppercase tracking-[0.2em] font-bold mb-8 text-off-white">Our Services</h4>
+          <ul class="space-y-5">
+            <li><a href="services.html" class="text-base text-muted-grey hover:text-soft-gold transition-colors duration-300">Custom Rug Weaving</a></li>
+            <li><a href="services.html" class="text-base text-muted-grey hover:text-soft-gold transition-colors duration-300">Material Sourcing</a></li>
+            <li><a href="services.html" class="text-base text-muted-grey hover:text-soft-gold transition-colors duration-300">Bespoke Dyeing</a></li>
+            <li><a href="services.html" class="text-base text-muted-grey hover:text-soft-gold transition-colors duration-300">Antique Restoration</a></li>
+            <li><a href="services.html" class="text-base text-muted-grey hover:text-soft-gold transition-colors duration-300">Space Consultation</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-sm uppercase tracking-[0.2em] font-bold mb-8 text-off-white">Visit The Studio</h4>
+          <ul class="space-y-6">
+            <li class="flex items-start">
+              <i class="fas fa-map-marker-alt text-soft-gold mt-1 mr-4 text-base"></i>
+              <span class="text-base text-muted-grey font-normal">123 Artisan Lane, Textile District, Jaipur, India</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-phone text-soft-gold mr-4 text-base"></i>
+              <a href="tel:+919876543210" class="text-base text-muted-grey hover:text-soft-gold transition-colors font-normal">+91 98765 43210</a>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-envelope text-soft-gold mr-4 text-base"></i>
+              <a href="mailto:hello@weavenest.com" class="text-base text-muted-grey hover:text-soft-gold transition-colors font-normal">hello@weavenest.com</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <p class="text-muted-grey text-sm tracking-wider uppercase mb-4 md:mb-0 font-medium">
+          © 2026 WeaveNest. All rights reserved.
+        </p>
+        <div class="flex space-x-6">
+          <a href="login.html" class="text-muted-grey hover:text-soft-gold text-sm tracking-wider uppercase font-medium transition-colors duration-300">Client Login</a>
+          <a href="#" class="text-muted-grey hover:text-soft-gold text-sm tracking-wider uppercase font-medium transition-colors duration-300">Privacy</a>
+          <a href="#" class="text-muted-grey hover:text-soft-gold text-sm tracking-wider uppercase font-medium transition-colors duration-300">Terms</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    // Theme Toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    const mobileThemeToggle = document.getElementById('mobile-theme-toggle');
+    const html = document.documentElement;
+
+    function toggleTheme() {
+      if (html.classList.contains('dark')) {
+        html.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+      } else {
+        html.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+      }
+    }
+
+    if (themeToggle) themeToggle.addEventListener('click', toggleTheme);
+    if (mobileThemeToggle) mobileThemeToggle.addEventListener('click', toggleTheme);
+    if (localStorage.getItem('theme') === 'dark') html.classList.add('dark');
+
+    // RTL Toggle
+    const rtlToggle = document.getElementById('rtl-toggle');
+    const mobileRtlToggle = document.getElementById('mobile-rtl-toggle');
+
+    function toggleRTL() {
+      if (html.getAttribute('dir') === 'rtl') {
+        html.removeAttribute('dir');
+        localStorage.setItem('direction', 'ltr');
+      } else {
+        html.setAttribute('dir', 'rtl');
+        localStorage.setItem('direction', 'rtl');
+      }
+    }
+
+    if (rtlToggle) rtlToggle.addEventListener('click', toggleRTL);
+    if (mobileRtlToggle) mobileRtlToggle.addEventListener('click', toggleRTL);
+    if (localStorage.getItem('direction') === 'rtl') html.setAttribute('dir', 'rtl');
+
+    // Mobile Menu Toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+    const closeIcon = document.getElementById('close-icon');
+
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      menuIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+    });
+
+    // Mobile Dropdowns Toggle Function
+    function setupMobileDropdown(dropdownId, menuId, iconId) {
+      const dropdown = document.getElementById(dropdownId);
+      const menu = document.getElementById(menuId);
+      const icon = document.getElementById(iconId);
+      
+      if(dropdown && menu && icon) {
+        dropdown.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+          if(menu.classList.contains('hidden')) {
+            icon.classList.remove('fa-minus');
+            icon.classList.add('fa-plus');
+          } else {
+            icon.classList.remove('fa-plus');
+            icon.classList.add('fa-minus');
+          }
+        });
+      }
+    }
+
+    // Initialize dropdowns
+    setupMobileDropdown('mobile-home-dropdown', 'mobile-home-menu', 'mobile-home-icon');
+    setupMobileDropdown('mobile-dashboard-dropdown', 'mobile-dashboard-menu', 'mobile-dashboard-icon');
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Handcrafted Pipe & Tobacco Accessory Shop</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Crect%20width%3D%22100%22%20height%3D%22100%22%20rx%3D%2220%22%20fill%3D%22%23111827%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2265%22%20fill%3D%22%23D4AF37%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22central%22%3EE%3C%2Ftext%3E%3C%2Fsvg%3E">
+  <meta name="description" content="Learn more about Elias Thorne Pipes, our heritage, and our passion for crafting world-class smoking pipes from premium Mediterranean briar.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <script>
+    tailwind.config = { 
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            'accent': '#D4AF37', /* Beautiful Emerald Green */
+            'brand-dark': '#111827', /* Deep Midnight Blue/Black */
+            'brand-light': '#FFFFFF', /* Clean Slate White */
+            'brand-muted': '#6B7280' /* Cool Gray */
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    [dir="rtl"] { direction: rtl; }
+    
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in { animation: fadeInUp 0.8s ease-out; }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+    .animate-float { animation: float 3s ease-in-out infinite; }
+  </style>
+</head>
+<body class="font-sans antialiased transition-colors duration-300 bg-brand-light dark:bg-brand-dark flex flex-col min-h-screen">
+
+  <nav class="bg-brand-light dark:bg-brand-dark fixed w-full top-0 z-50 border-b border-gray-200 dark:border-white/10 transition-colors duration-300">
+    <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-[90px]">
+
+        <div class="flex-shrink-0">
+          <a href="index.html" class="flex items-center gap-3">
+            <div class="flex flex-col">
+              <span class="text-2xl font-semibold tracking-tight text-brand-dark dark:text-brand-light uppercase">Pipe<span class="text-accent">Craft</span></span>
+            </div>
+          </a>
+        </div>
+
+        <div class="hidden xl:flex items-center justify-center flex-1 mx-8">
+          <div class="flex items-center gap-8">
+
+            <div class="relative group h-[90px] flex items-center">
+              <button class="text-xs uppercase tracking-[0.15em] font-medium text-gray-900 dark:text-gray-100 hover:text-accent transition-colors flex items-center relative py-2">
+                <span>Home</span>
+                <i class="fas fa-chevron-down text-[10px] ms-2 transition-transform duration-300 group-hover:rotate-180"></i>
+                <span class="absolute bottom-0 start-0 w-0 h-[2px] bg-accent transition-all duration-300 group-hover:w-full"></span>
+              </button>
+              
+              <div class="absolute top-[90px] start-0 w-56 bg-brand-light dark:bg-[#1E293B] border border-t-0 border-gray-200 dark:border-white/10 shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform -translate-y-2 group-hover:translate-y-0 z-50">
+                <div class="py-4 px-6 flex flex-col gap-4">
+                  <a href="index.html" class="text-sm font-medium text-gray-500 hover:text-accent dark:text-gray-400 dark:hover:text-accent transition-colors">HOME PAGE 01</a>
+                  <a href="home-2.html" class="text-sm font-medium text-gray-500 hover:text-accent dark:text-gray-400 dark:hover:text-accent transition-colors">HOME PAGE 02</a>
+                </div>
+              </div>
+            </div>
+
+            <a href="about.html" class="relative group text-xs uppercase tracking-[0.15em] font-medium text-accent transition-colors py-2">
+              About
+              <span class="absolute bottom-0 start-0 w-full h-[2px] bg-accent transition-all duration-300"></span>
+            </a>
+            
+            <a href="services.html" class="relative group text-xs uppercase tracking-[0.15em] font-medium text-gray-900 dark:text-gray-100 hover:text-accent transition-colors py-2">
+              Services
+              <span class="absolute bottom-0 start-0 w-0 h-[2px] bg-accent transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            
+            <a href="tobacco-accessories.html" class="relative group text-xs uppercase tracking-[0.15em] font-medium text-gray-900 dark:text-gray-100 hover:text-accent transition-colors py-2">Tobacco Accessories<span class="absolute bottom-0 start-0 w-0 h-[2px] bg-accent transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            
+            <a href="pricing.html" class="relative group text-xs uppercase tracking-[0.15em] font-medium text-gray-900 dark:text-gray-100 hover:text-accent transition-colors py-2">
+              Pricing
+              <span class="absolute bottom-0 start-0 w-0 h-[2px] bg-accent transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            
+            <a href="blog.html" class="relative group text-xs uppercase tracking-[0.15em] font-medium text-gray-900 dark:text-gray-100 hover:text-accent transition-colors py-2">
+              Blog
+              <span class="absolute bottom-0 start-0 w-0 h-[2px] bg-accent transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            
+            <a href="contact.html" class="relative group text-xs uppercase tracking-[0.15em] font-medium text-gray-900 dark:text-gray-100 hover:text-accent transition-colors py-2">
+              Contact
+              <span class="absolute bottom-0 start-0 w-0 h-[2px] bg-accent transition-all duration-300 group-hover:w-full"></span>
+            </a>
+
+            
+
+          </div>
+        </div>
+
+        <div class="hidden xl:flex items-center gap-4">
+          
+          <button type="button" onclick="window.location.href='login.html'" class="bg-accent border-2 border-accent text-white hover:bg-transparent hover:text-accent px-6 py-2.5 text-xs uppercase tracking-wider font-semibold transition-all duration-300 flex items-center gap-2">
+            <span>Login</span>
+            <i class="fas fa-arrow-right text-[10px] rtl:rotate-180"></i>
+          </button>
+          
+          <a href="register.html" class="bg-transparent border-2 border-gray-300 dark:border-gray-700 text-brand-dark dark:text-brand-light hover:border-accent dark:hover:border-accent hover:text-accent dark:hover:text-accent px-6 py-2.5 text-xs uppercase tracking-wider font-medium transition-all duration-300 flex items-center gap-2">
+            <span>Register</span>
+            <i class="fas fa-arrow-right text-[10px] rtl:rotate-180"></i>
+          </a>
+
+          <div class="h-8 w-px bg-gray-200 dark:bg-gray-800 mx-2"></div>
+
+          <button id="theme-toggle" class="relative w-[72px] h-[34px] flex items-center bg-gray-200 dark:bg-[#1E293B] rounded-full p-1 transition-colors duration-300 focus:outline-none border border-gray-300 dark:border-gray-700 overflow-hidden" title="Toggle Theme">
+            <span class="text-[9px] font-medium text-gray-500 absolute end-2.5 dark:opacity-0 transition-opacity duration-300 tracking-wider">LIGHT</span>
+            <span class="text-[9px] font-medium text-accent absolute start-2.5 opacity-0 dark:opacity-100 transition-opacity duration-300 tracking-wider">DARK</span>
+            
+            <div class="w-[24px] h-[24px] bg-white dark:bg-brand-dark border border-gray-200 dark:border-gray-600 rounded-full shadow-sm transform transition-transform duration-300 flex items-center justify-center rtl:dark:-translate-x-[38px] ltr:dark:translate-x-[38px] dark:translate-x-[38px] z-10">
+              <i class="fas fa-sun text-[11px] text-accent dark:hidden block"></i>
+              <i class="fas fa-moon text-[11px] text-accent hidden dark:block"></i>
+            </div>
+          </button>
+          
+          <button id="rtl-toggle" class="text-xs font-medium text-gray-400 hover:text-accent transition-colors duration-300 ms-2" title="Toggle RTL">
+            RTL
+          </button>
+        </div>
+
+        <div class="xl:hidden flex items-center">
+          <button id="mobile-menu-button" class="text-gray-900 dark:text-brand-light hover:text-accent focus:outline-none transition duration-300">
+            <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path id="menu-icon" stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              <path id="close-icon" class="hidden" stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden xl:hidden bg-brand-light dark:bg-[#1E293B] border-b border-gray-200 dark:border-gray-800 shadow-2xl">
+      <div class="px-6 pt-4 pb-8 flex flex-col gap-0 max-h-[calc(100vh-90px)] overflow-y-auto">
+
+        <div class="border-b border-gray-100 dark:border-white/5">
+          <button id="mobile-home-dropdown" class="w-full flex items-center justify-between py-4 text-gray-900 dark:text-brand-light hover:text-accent transition duration-300">
+            <span class="text-xs uppercase tracking-widest font-medium">Home</span>
+            <i class="fas fa-plus text-xs transition-transform duration-300" id="mobile-home-icon"></i>
+          </button>
+          <div id="mobile-home-menu" class="hidden pb-4 flex flex-col gap-3 ps-4 border-s-2 border-accent/20 ms-2">
+            <a href="index.html" class="block text-sm font-medium text-gray-500 hover:text-accent dark:text-gray-400 transition duration-300 uppercase tracking-wider">01. Home Page</a>
+            <a href="home-2.html" class="block text-sm font-medium text-gray-500 hover:text-accent dark:text-gray-400 transition duration-300 uppercase tracking-wider">02. Home Page</a>
+          </div>
+        </div>
+
+        <a href="about.html" class="block py-4 border-b border-gray-100 dark:border-white/5 text-accent transition duration-300 text-xs uppercase tracking-widest font-medium">About</a>
+        <a href="services.html" class="block py-4 border-b border-gray-100 dark:border-white/5 text-gray-900 dark:text-brand-light hover:text-accent transition duration-300 text-xs uppercase tracking-widest font-medium">Services</a>
+        <a href="tobacco-accessories.html" class="block py-4 border-b border-gray-100 dark:border-white/5 text-gray-900 dark:text-brand-light hover:text-accent transition duration-300 text-xs uppercase tracking-widest font-medium">Tobacco Accessories</a>
+        <a href="pricing.html" class="block py-4 border-b border-gray-100 dark:border-white/5 text-gray-900 dark:text-brand-light hover:text-accent transition duration-300 text-xs uppercase tracking-widest font-medium">Pricing</a>
+        <a href="blog.html" class="block py-4 border-b border-gray-100 dark:border-white/5 text-gray-900 dark:text-brand-light hover:text-accent transition duration-300 text-xs uppercase tracking-widest font-medium">Blog</a>
+        <a href="contact.html" class="block py-4 border-b border-gray-100 dark:border-white/5 text-gray-900 dark:text-brand-light hover:text-accent transition duration-300 text-xs uppercase tracking-widest font-medium">Contact</a>
+
+        <div class="border-b border-gray-100 dark:border-white/5">
+          
+          
+        </div>
+
+        <div class="pt-8 flex flex-col gap-4">
+          <button type="button" onclick="window.location.href='login.html'" class="flex items-center justify-center w-full bg-accent border-2 border-accent text-white hover:bg-transparent hover:text-accent px-4 py-3.5 font-semibold uppercase tracking-widest text-center transition duration-300 text-xs gap-2">
+            <span>Login</span>
+            <i class="fas fa-arrow-right text-[10px] rtl:rotate-180"></i>
+          </button>
+          
+          <a href="register.html" class="flex items-center justify-center w-full bg-transparent border-2 border-gray-300 dark:border-gray-700 text-brand-dark dark:text-brand-light hover:border-accent dark:hover:border-accent hover:text-accent dark:hover:text-accent px-4 py-3.5 font-medium uppercase tracking-widest text-center transition duration-300 text-xs gap-2">
+            <span>Register</span>
+            <i class="fas fa-arrow-right text-[10px] rtl:rotate-180"></i>
+          </a>
+          
+          <div class="flex justify-between items-center pt-6 pb-2 border-t border-gray-100 dark:border-white/5 mt-4">
+            <button id="mobile-theme-toggle" class="bg-gray-100 dark:bg-[#1a1a1a] border border-gray-200 dark:border-gray-700 rounded-full px-4 py-2 transition-colors flex items-center text-xs font-medium uppercase tracking-widest">
+              <span class="dark:hidden flex items-center text-accent"><i class="fas fa-sun me-2"></i> Light Active</span>
+              <span class="hidden dark:flex items-center text-accent"><i class="fas fa-moon me-2"></i> Dark Active</span>
+            </button>
+            <button id="mobile-rtl-toggle" class="text-gray-400 hover:text-accent transition-colors flex items-center text-xs font-medium uppercase tracking-widest">
+              <i class="fas fa-language me-2 text-lg"></i> RTL
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="flex-grow flex flex-col pt-[90px]">
+
+    <!-- About Page Hero Section -->
+    <section class="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-brand-dark">
+      <!-- Background Image -->
+      <div class="absolute inset-0 z-0">
+        <img src="img/about_hero.png" alt="Master pipe carver at work" class="w-full h-full object-cover opacity-40 grayscale">
+        <div class="absolute inset-0 bg-gradient-to-b from-brand-dark/80 via-brand-dark/50 to-brand-dark"></div>
+      </div>
+      
+      <!-- Content -->
+      <div class="relative z-10 w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-fade-in pt-12">
+        <div class="inline-flex items-center gap-3 px-4 py-2 border border-accent/30 bg-white/5 backdrop-blur-sm rounded-full mb-6">
+          <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
+          <span class="text-[10px] uppercase tracking-[0.2em] font-medium text-brand-light">Est. 1985</span>
+        </div>
+        
+        <h1 class="text-5xl md:text-7xl font-serif font-bold text-white mb-6 leading-tight">
+          Crafting <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-[#eab308]">Timeless</span> <br class="hidden md:block"/> Traditions.
+        </h1>
+        
+        <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed">
+          More than a shop, we are custodians of the leaf and the wood. Discover the passion, precision, and history behind every handcrafted pipe and custom tobacco blend we produce.
+        </p>
+        
+        <!-- Scroll Indicator -->
+        <div class="mt-16 animate-bounce flex justify-center">
+          <div class="w-8 h-12 rounded-full border-2 border-white/20 flex justify-center pt-2">
+            <div class="w-1 h-3 bg-accent rounded-full"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Commitment to Sourcing Section (70+ lines) -->
+    <section class="py-24 bg-brand-light dark:bg-brand-dark border-t border-gray-200 dark:border-white/5 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-5 order-2 lg:order-1">
+            <span class="text-accent uppercase tracking-[0.2em] text-xs font-bold mb-4 block">Sustainable Quality</span>
+            <h2 class="text-3xl md:text-5xl font-serif font-bold text-brand-dark dark:text-brand-light mb-6 leading-tight">We Never Compromise on Materials.</h2>
+            <p class="text-brand-muted dark:text-gray-400 text-base mb-6 leading-relaxed">
+              The quality of the final product is entirely dependent on the raw materials. That's why we maintain direct relationships with briar cutters in Italy, Greece, and Algeria, and tobacco farmers in Virginia and the Middle East.
+            </p>
+            <p class="text-brand-muted dark:text-gray-400 text-base mb-8 leading-relaxed">
+              We pay a premium to select our wood blocks by hand, ensuring tight, flawless grain patterns and avoiding internal sandpits that could ruin a pipe's longevity.
+            </p>
+            
+            <ul class="space-y-4 mb-10">
+              <li class="flex items-center text-brand-dark dark:text-brand-light font-medium">
+                <div class="w-8 h-8 rounded-full bg-accent/10 flex items-center justify-center text-accent mr-4 border border-accent/20">
+                  <i class="fas fa-check"></i>
+                </div>
+                Ethically harvested Mediterranean Briar
+              </li>
+              <li class="flex items-center text-brand-dark dark:text-brand-light font-medium">
+                <div class="w-8 h-8 rounded-full bg-accent/10 flex items-center justify-center text-accent mr-4 border border-accent/20">
+                  <i class="fas fa-check"></i>
+                </div>
+                Pesticide-free, organic tobacco leaves
+              </li>
+              <li class="flex items-center text-brand-dark dark:text-brand-light font-medium">
+                <div class="w-8 h-8 rounded-full bg-accent/10 flex items-center justify-center text-accent mr-4 border border-accent/20">
+                  <i class="fas fa-check"></i>
+                </div>
+                German ebonite and Cumberland stems
+              </li>
+            </ul>
+
+            <a href="contact.html" class="inline-flex items-center justify-center px-8 py-4 bg-brand-dark dark:bg-brand-light text-brand-light dark:text-brand-dark hover:bg-accent dark:hover:bg-accent hover:text-white dark:hover:text-white font-medium uppercase tracking-widest text-xs transition-all duration-300 gap-2">
+              Ask About Our Sourcing
+            </a>
+          </div>
+          
+          <div class="lg:col-span-7 order-1 lg:order-2 grid grid-cols-2 gap-4 h-[600px]">
+            <div class="col-span-1 grid grid-rows-2 gap-4">
+              <div class="relative overflow-hidden rounded-sm group h-full">
+                <img src="img/about_sourcing_1.png" alt="Farmer" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+                <div class="absolute inset-0 bg-brand-dark/20 group-hover:bg-transparent transition-colors"></div>
+              </div>
+              <div class="relative overflow-hidden rounded-sm group h-full">
+                <img src="img/about_sourcing_2.png" alt="Wood texture" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+                <div class="absolute inset-0 bg-brand-dark/20 group-hover:bg-transparent transition-colors"></div>
+              </div>
+            </div>
+            <div class="col-span-1 relative overflow-hidden rounded-sm group h-full">
+              <img src="img/about_sourcing_3.png" alt="Close up of pipe grain" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-transparent"></div>
+              <div class="absolute bottom-6 left-6 right-6">
+                <p class="text-accent text-xs font-bold uppercase tracking-widest mb-1">The Flame Grain</p>
+                <p class="text-white text-sm">A highly sought-after natural pattern in premium briar.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Anatomy of a Pipe Section (70+ lines) -->
+    <section class="py-24 bg-[#1E293B] relative overflow-hidden text-brand-light">
+      <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-accent uppercase tracking-[0.2em] text-xs font-bold mb-4 block">Craftsmanship Education</span>
+          <h2 class="text-4xl md:text-5xl font-serif font-bold mb-6">The Anatomy of Perfection</h2>
+          <p class="text-gray-400 text-lg">A truly great pipe is an exercise in engineering. Every curve, angle, and drill hole must be precisely executed to ensure a flawless smoke.</p>
+        </div>
+
+        <div class="flex flex-col lg:flex-row items-center gap-16">
+          <div class="w-full lg:w-1/2 relative">
+            <div class="relative p-8 bg-brand-dark/50 border border-white/10 rounded-full aspect-square flex items-center justify-center">
+              <div class="absolute inset-0 border-2 border-accent/20 rounded-full animate-pulse-slow"></div>
+              <img src="img/about_anatomy.png" alt="Pipe Diagram" class="w-full max-w-md mix-blend-screen opacity-80 filter contrast-125 sepia">
+              
+              <!-- Hotspots -->
+              <div class="absolute top-1/4 left-1/4 group cursor-pointer">
+                <div class="w-4 h-4 bg-accent rounded-full animate-ping absolute"></div>
+                <div class="w-4 h-4 bg-accent rounded-full relative z-10"></div>
+                <div class="absolute w-48 bg-brand-dark p-4 border border-accent/50 -top-24 left-8 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-20">
+                  <h4 class="font-bold text-accent text-sm mb-1">The Bowl</h4>
+                  <p class="text-xs text-gray-300">Thick walls to absorb heat and prevent burnout, ensuring a cool hold.</p>
+                </div>
+              </div>
+
+              <div class="absolute top-1/2 right-1/4 group cursor-pointer">
+                <div class="w-4 h-4 bg-accent rounded-full animate-ping absolute"></div>
+                <div class="w-4 h-4 bg-accent rounded-full relative z-10"></div>
+                <div class="absolute w-48 bg-brand-dark p-4 border border-accent/50 -top-24 right-8 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-20">
+                  <h4 class="font-bold text-accent text-sm mb-1">The Draft Hole</h4>
+                  <p class="text-xs text-gray-300">Drilled precisely at the bottom center of the chamber for a complete, even burn.</p>
+                </div>
+              </div>
+
+              <div class="absolute bottom-1/3 right-1/8 group cursor-pointer" style="right: 15%;">
+                <div class="w-4 h-4 bg-accent rounded-full animate-ping absolute"></div>
+                <div class="w-4 h-4 bg-accent rounded-full relative z-10"></div>
+                <div class="absolute w-48 bg-brand-dark p-4 border border-accent/50 -bottom-24 right-8 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-20">
+                  <h4 class="font-bold text-accent text-sm mb-1">The Tenon & Mortise</h4>
+                  <p class="text-xs text-gray-300">A flush, airtight fit prevents moisture buildup and whistling.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full lg:w-1/2">
+            <div class="grid gap-8">
+              <div class="flex gap-4">
+                <div class="flex-shrink-0 w-12 h-12 bg-accent/10 border border-accent/30 rounded-full flex items-center justify-center text-accent text-xl">1</div>
+                <div>
+                  <h3 class="text-xl font-bold mb-2">Sourcing the Block</h3>
+                  <p class="text-sm text-gray-400 leading-relaxed">We select plateau briar burls that are over 50 years old. They are boiled, aged, and rested for years before cutting.</p>
+                </div>
+              </div>
+              
+              <div class="flex gap-4">
+                <div class="flex-shrink-0 w-12 h-12 bg-accent/10 border border-accent/30 rounded-full flex items-center justify-center text-accent text-xl">2</div>
+                <div>
+                  <h3 class="text-xl font-bold mb-2">Turning & Drilling</h3>
+                  <p class="text-sm text-gray-400 leading-relaxed">The internal engineering is established first. Airflow is paramount. If the draft hole is off by a millimeter, the block is discarded.</p>
+                </div>
+              </div>
+
+              <div class="flex gap-4">
+                <div class="flex-shrink-0 w-12 h-12 bg-accent/10 border border-accent/30 rounded-full flex items-center justify-center text-accent text-xl">3</div>
+                <div>
+                  <h3 class="text-xl font-bold mb-2">Shaping & Finishing</h3>
+                  <p class="text-sm text-gray-400 leading-relaxed">The exterior is hand-sanded down to 2000 grit, stained to enhance the natural grain, and buffed with pure carnauba wax for a deep luster.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tobacco Blending Philosophy Section (50+ lines) -->
+    <section class="py-20 bg-gray-50 dark:bg-[#151f32]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white dark:bg-[#1E293B] shadow-2xl overflow-hidden border border-gray-100 dark:border-white/5">
+          <div class="grid md:grid-cols-5 h-full">
+            <div class="md:col-span-2 relative h-64 md:h-auto">
+              <img src="img/house_blends.png" alt="Tobacco Blending" class="w-full h-full object-cover filter sepia-[.3]">
+              <div class="absolute inset-0 bg-accent/20 mix-blend-multiply"></div>
+            </div>
+            <div class="md:col-span-3 p-10 md:p-16 flex flex-col justify-center">
+              <i class="fas fa-leaf text-4xl text-accent mb-6 opacity-50"></i>
+              <h2 class="text-3xl md:text-4xl font-serif font-bold text-brand-dark dark:text-brand-light mb-4">The Alchemy of Blending</h2>
+              <p class="text-brand-muted dark:text-gray-400 mb-6 leading-relaxed">
+                We approach tobacco blending the way a perfumer approaches scent. It is not about simply mixing leaves; it is about creating harmony. We do not use chemical humectants or artificial flavorings.
+              </p>
+              <div class="grid sm:grid-cols-2 gap-6 mb-8">
+                <div>
+                  <h4 class="font-bold text-brand-dark dark:text-brand-light mb-1 border-b border-accent w-max pb-1">Casing vs. Top Note</h4>
+                  <p class="text-xs text-brand-muted mt-2">We utilize natural casings—rum, honey, licorice—applied delicately to enhance, not mask, the natural tobacco flavor.</p>
+                </div>
+                <div>
+                  <h4 class="font-bold text-brand-dark dark:text-brand-light mb-1 border-b border-accent w-max pb-1">Pressing & Aging</h4>
+                  <p class="text-xs text-brand-muted mt-2">Our flakes and cakes are pressed under immense pressure and aged for a minimum of 90 days to marry the flavors.</p>
+                </div>
+              </div>
+              <div>
+                <a href="tobacco-accessories.html" class="text-sm font-bold uppercase tracking-widest text-accent hover:text-brand-dark dark:hover:text-brand-light transition-colors group flex items-center">
+                  View Our Master Blends <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Heritage Section (70+ lines) -->
+    <section class="py-24 bg-brand-light dark:bg-brand-dark overflow-hidden relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center max-w-3xl mx-auto mb-20">
+          <span class="text-accent uppercase tracking-[0.2em] text-xs font-bold mb-4 block">Our Story</span>
+          <h1 class="text-4xl md:text-6xl font-serif font-bold text-brand-dark dark:text-brand-light mb-6">A Legacy of Smoke & Wood</h1>
+          <p class="text-brand-muted text-lg leading-relaxed">Since 1985, our atelier has stood as a bastion of traditional craftsmanship in an increasingly automated world. We believe in the slow, deliberate art of pipemaking.</p>
+        </div>
+
+        <div class="relative">
+          <!-- Timeline Line -->
+          <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-px h-full bg-accent/20"></div>
+
+          <!-- Timeline Item 3 (Now Top) -->
+          <div class="relative flex flex-col md:flex-row justify-between items-center mb-16 md:mb-24 group">
+            <div class="w-full md:w-5/12 mb-8 md:mb-0 md:text-right pr-0 md:pr-12 animate-fade-in">
+              <h3 class="text-2xl font-serif font-bold text-brand-dark dark:text-brand-light mb-2">Modern Legacy</h3>
+              <span class="text-accent font-bold mb-4 block">Today</span>
+              <p class="text-brand-muted leading-relaxed text-sm">Today, we ship our handcrafted pipes and signature blends worldwide. While our reach has expanded, our commitment to doing things the hard, slow, right way remains unchanged.</p>
+            </div>
+            <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-accent border-2 border-brand-dark hidden md:block z-10 group-hover:scale-150 shadow-[0_0_15px_rgba(212,175,55,0.6)] transition-transform duration-300"></div>
+            <div class="w-full md:w-5/12 pl-0 md:pl-12">
+              <div class="relative h-64 overflow-hidden rounded-sm group-hover:shadow-2xl transition-all duration-500">
+                <img src="img/featured_pipes.png" alt="Modern Pipes" class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110">
+              </div>
+            </div>
+          </div><!-- Timeline Item 2 -->
+          <div class="relative flex flex-col md:flex-row-reverse justify-between items-center mb-16 md:mb-24 group">
+            <div class="w-full md:w-5/12 mb-8 md:mb-0 md:text-left pl-0 md:pl-12 animate-fade-in">
+              <h3 class="text-2xl font-serif font-bold text-brand-dark dark:text-brand-light mb-2">The Blending Room</h3>
+              <span class="text-accent font-bold mb-4 block">1998</span>
+              <p class="text-brand-muted leading-relaxed text-sm">Recognizing that a fine pipe deserves exceptional tobacco, we expanded our operations to include a dedicated blending room, importing the finest Virginia and Latakia leaves directly from growers.</p>
+            </div>
+            <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-brand-dark border-2 border-accent hidden md:block z-10 group-hover:scale-150 transition-transform duration-300"></div>
+            <div class="w-full md:w-5/12 pr-0 md:pr-12">
+              <div class="relative h-64 overflow-hidden rounded-sm group-hover:shadow-2xl transition-all duration-500">
+                <img src="img/house_blends.png" alt="Tobacco leaves" class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110">
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 1 (Now Bottom) -->
+          <div class="relative flex flex-col md:flex-row justify-between items-center group">
+            <div class="w-full md:w-5/12 mb-8 md:mb-0 md:text-right pr-0 md:pr-12 animate-fade-in">
+              <h3 class="text-2xl font-serif font-bold text-brand-dark dark:text-brand-light mb-2">The First Lathe</h3>
+              <span class="text-accent font-bold mb-4 block">1985</span>
+              <p class="text-brand-muted leading-relaxed text-sm">Founded by Master Carver Elias Thorne in a small garage with a single, second-hand lathe. His focus was entirely on sourcing flawless Corsican briar and creating perfectly drilled billiards.</p>
+            </div>
+            <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-brand-dark border-2 border-accent hidden md:block z-10 group-hover:scale-150 transition-transform duration-300"></div>
+            <div class="w-full md:w-5/12 pl-0 md:pl-12">
+              <div class="relative h-64 overflow-hidden rounded-sm group-hover:shadow-2xl transition-all duration-500">
+                <img src="img/home2_workshop.png" alt="Old workshop" class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110">
+              </div>
+            </div>
+          </div>
+
+          
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Visit Workshop CTA Section (50+ lines) -->
+    <section class="py-24 relative bg-brand-dark flex flex-col items-center justify-center text-center overflow-hidden">
+      <!-- Background pattern -->
+      <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#D4AF37 1px, transparent 1px); background-size: 30px 30px;"></div>
+      
+      <div class="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="w-16 h-16 mx-auto border-2 border-accent rounded-full flex items-center justify-center mb-6">
+          <i class="fas fa-door-open text-2xl text-accent"></i>
+        </div>
+        
+        <h2 class="text-4xl md:text-5xl font-serif font-bold text-white mb-6">Experience the Craft in Person</h2>
+        <p class="text-gray-300 text-lg mb-10 leading-relaxed">
+          Smell the sawdust, feel the raw briar, and chat with the artisans who create your favorite pipes. Our workshop and attached tasting lounge are open to the public.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+          <a href="contact.html" class="w-full sm:w-auto px-8 py-4 bg-accent hover:bg-white text-white hover:text-brand-dark font-bold uppercase tracking-widest text-xs transition-colors duration-300">
+            Book a Workshop Tour
+          </a>
+          <a href="contact.html" class="w-full sm:w-auto px-8 py-4 bg-transparent border border-white/30 text-white hover:border-accent hover:text-accent font-bold uppercase tracking-widest text-xs transition-colors duration-300">
+            Get Directions
+          </a>
+        </div>
+        
+        <div class="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-center gap-8 text-sm text-gray-400 uppercase tracking-widest font-medium">
+          <span><i class="fas fa-map-marker-alt text-accent mr-2"></i> 102 Artisan Alley, Craft District</span>
+          <span class="hidden md:inline text-white/20">|</span>
+          <span><i class="fas fa-clock text-accent mr-2"></i> Mon-Sat: 10AM - 6PM</span>
+        </div>
+      </div>
+    </section>
+
+</main>
+
+  <footer class="bg-brand-dark text-brand-light pt-24 pb-12 mt-auto border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+        
+        <div>
+          <h3 class="text-3xl font-semibold tracking-tight uppercase mb-6 text-brand-light">Pipe<span class="text-accent">Craft</span></h3>
+          <p class="text-brand-muted mb-8 font-medium leading-relaxed text-base">
+            Providing top-tier mobile auto detailing and ceramic coating services to keep your vehicle looking showroom new. We come to you.
+          </p>
+          <div class="flex gap-4">
+            <a href="#" class="w-12 h-12 border border-white/20 text-brand-light hover:border-accent hover:text-accent flex items-center justify-center transition-all duration-300 rounded-sm">
+              <i class="fab fa-facebook-f text-base"></i>
+            </a>
+            <a href="#" class="w-12 h-12 border border-white/20 text-brand-light hover:border-accent hover:text-accent flex items-center justify-center transition-all duration-300 rounded-sm">
+              <i class="fab fa-instagram text-base"></i>
+            </a>
+            <a href="#" class="w-12 h-12 border border-white/20 text-brand-light hover:border-accent hover:text-accent flex items-center justify-center transition-all duration-300 rounded-sm">
+              <i class="fab fa-twitter text-base"></i>
+            </a>
+            <a href="#" class="w-12 h-12 border border-white/20 text-brand-light hover:border-accent hover:text-accent flex items-center justify-center transition-all duration-300 rounded-sm">
+              <i class="fab fa-youtube text-base"></i>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-sm uppercase tracking-[0.2em] font-medium mb-8 text-brand-light">Quick Links</h4>
+          <ul class="flex flex-col gap-5">
+            <li><a href="index.html" class="text-base text-brand-muted hover:text-accent transition-colors duration-300 font-medium">Home</a></li>
+            <li><a href="about.html" class="text-base text-brand-muted hover:text-accent transition-colors duration-300 font-medium">About Us</a></li>
+            <li><a href="tobacco-accessories.html" class="text-base text-brand-muted hover:text-accent transition-colors duration-300 font-medium">Our Work</a></li>
+            <li><a href="pricing.html" class="text-base text-brand-muted hover:text-accent transition-colors duration-300 font-medium">Detailing Packages</a></li>
+            <li><a href="blog.html" class="text-base text-brand-muted hover:text-accent transition-colors duration-300 font-medium">Auto Care Blog</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-sm uppercase tracking-[0.2em] font-medium mb-8 text-brand-light">Our Services</h4>
+          <ul class="flex flex-col gap-5">
+            <li><a href="services.html" class="text-base text-brand-muted hover:text-accent transition-colors duration-300 font-medium">Exterior Detailing</a></li>
+            <li><a href="services.html" class="text-base text-brand-muted hover:text-accent transition-colors duration-300 font-medium">Interior Deep Clean</a></li>
+            <li><a href="services.html" class="text-base text-brand-muted hover:text-accent transition-colors duration-300 font-medium">Ceramic Coating</a></li>
+            <li><a href="services.html" class="text-base text-brand-muted hover:text-accent transition-colors duration-300 font-medium">Paint Correction</a></li>
+            <li><a href="services.html" class="text-base text-brand-muted hover:text-accent transition-colors duration-300 font-medium">Headlight Restoration</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-sm uppercase tracking-[0.2em] font-medium mb-8 text-brand-light">Contact Us</h4>
+          <ul class="flex flex-col gap-6">
+            <li class="flex items-start">
+              <i class="fas fa-map-marker-alt text-accent mt-1 me-4 text-base"></i>
+              <span class="text-base text-brand-muted font-medium">Serving Salem, Tamil Nadu, India & Surrounding Areas</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-phone text-accent me-4 text-base"></i>
+              <a href="tel:+919876543210" class="text-base text-brand-muted hover:text-accent transition-colors font-medium">+91 98765 43210</a>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-envelope text-accent me-4 text-base"></i>
+              <a href="mailto:contact@eliasthornepipes.com" class="text-base text-brand-muted hover:text-accent transition-colors font-medium">contact@eliasthornepipes.com</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <p class="text-brand-muted text-sm tracking-wider uppercase mb-4 md:mb-0 font-medium">
+          © 2026 Handcrafted Pipe & Tobacco Shop. All rights reserved.
+        </p>
+        <div class="flex gap-6">
+          <a href="login.html" class="text-brand-muted hover:text-accent text-sm tracking-wider uppercase font-medium transition-colors duration-300">Client Login</a>
+          <a href="#" class="text-brand-muted hover:text-accent text-sm tracking-wider uppercase font-medium transition-colors duration-300">Privacy</a>
+          <a href="#" class="text-brand-muted hover:text-accent text-sm tracking-wider uppercase font-medium transition-colors duration-300">Terms</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    // Theme Toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    const mobileThemeToggle = document.getElementById('mobile-theme-toggle');
+    const html = document.documentElement;
+
+    function toggleTheme() {
+      if (html.classList.contains('dark')) {
+        html.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+      } else {
+        html.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+      }
+    }
+
+    if (themeToggle) themeToggle.addEventListener('click', toggleTheme);
+    if (mobileThemeToggle) mobileThemeToggle.addEventListener('click', toggleTheme);
+    if (localStorage.getItem('theme') === 'dark') html.classList.add('dark');
+
+    // RTL Toggle
+    const rtlToggle = document.getElementById('rtl-toggle');
+    const mobileRtlToggle = document.getElementById('mobile-rtl-toggle');
+
+    function toggleRTL() {
+      if (html.getAttribute('dir') === 'rtl') {
+        html.removeAttribute('dir');
+        localStorage.setItem('direction', 'ltr');
+      } else {
+        html.setAttribute('dir', 'rtl');
+        localStorage.setItem('direction', 'rtl');
+      }
+    }
+
+    if (rtlToggle) rtlToggle.addEventListener('click', toggleRTL);
+    if (mobileRtlToggle) mobileRtlToggle.addEventListener('click', toggleRTL);
+    if (localStorage.getItem('direction') === 'rtl') html.setAttribute('dir', 'rtl');
+
+    // Mobile Menu Toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+    const closeIcon = document.getElementById('close-icon');
+
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      menuIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+      
+      // Fix for Flexbox fallback on mobile menu open
+      if (!mobileMenu.classList.contains('hidden')) {
+          mobileMenu.classList.add('flex');
+      } else {
+          mobileMenu.classList.remove('flex');
+      }
+    });
+
+    // Mobile Dropdowns Toggle Function
+    function setupMobileDropdown(dropdownId, menuId, iconId) {
+      const dropdown = document.getElementById(dropdownId);   
+      const menu = document.getElementById(menuId);
+      const icon = document.getElementById(iconId);
+      
+      if(dropdown && menu && icon) {
+        dropdown.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+          if(menu.classList.contains('hidden')) {
+            icon.classList.remove('fa-minus');
+            icon.classList.add('fa-plus');
+            menu.classList.remove('flex'); // Keep flex compatibility
+          } else {
+            icon.classList.remove('fa-plus');
+            icon.classList.add('fa-minus');
+            menu.classList.add('flex'); // Keep flex compatibility
+          }
+        });
+      }
+    }
+
+    // Initialize dropdowns
+    setupMobileDropdown('mobile-home-dropdown', 'mobile-home-menu', 'mobile-home-icon');
+    setupMobileDropdown('mobile-dashboard-dropdown', 'mobile-dashboard-menu', 'mobile-dashboard-icon');
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - Handcrafted Pipe & Tobacco Accessory Shop</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Crect%20width%3D%22100%22%20height%3D%22100%22%20rx%3D%2220%22%20fill%3D%22%23111827%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2265%22%20fill%3D%22%23D4AF37%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22central%22%3EE%3C%2Ftext%3E%3C%2Fsvg%3E">
+  <meta name="description" content="Explore our premium mobile auto detailing, paint correction, and ceramic coating services.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <script>
+    tailwind.config = { 
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            'accent': '#D4AF37', /* Beautiful Emerald Green */
+            'brand-dark': '#111827', /* Deep Midnight Blue/Black */
+            'brand-light': '#FFFFFF', /* Clean Slate White */
+            'brand-muted': '#6B7280' /* Cool Gray */
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    [dir="rtl"] { direction: rtl; }
+    
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in { animation: fadeInUp 0.8s ease-out; }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+    .animate-float { animation: float 3s ease-in-out infinite; }
+  </style>
+</head>
+<body class="font-sans antialiased transition-colors duration-300 bg-brand-light dark:bg-brand-dark flex flex-col min-h-screen">
+
+  <nav class="bg-brand-light dark:bg-brand-dark fixed w-full top-0 z-50 border-b border-gray-200 dark:border-white/10 transition-colors duration-300">
+    <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-[90px]">
+
+        <div class="flex-shrink-0">
+          <a href="index.html" class="flex items-center gap-3">
+            <div class="flex flex-col">
+              <span class="text-2xl font-semibold tracking-tight text-brand-dark dark:text-brand-light uppercase">Pipe<span class="text-accent">Craft</span></span>
+            </div>
+          </a>
+        </div>
+
+        <div class="hidden xl:flex items-center justify-center flex-1 mx-8">
+          <div class="flex items-center gap-8">
+
+            <div class="relative group h-[90px] flex items-center">
+              <button class="text-xs uppercase tracking-[0.15em] font-medium text-gray-900 dark:text-gray-100 hover:text-accent transition-colors flex items-center relative py-2">
+                <span>Home</span>
+                <i class="fas fa-chevron-down text-[10px] ms-2 transition-transform duration-300 group-hover:rotate-180"></i>
+                <span class="absolute bottom-0 start-0 w-0 h-[2px] bg-accent transition-all duration-300 group-hover:w-full"></span>
+              </button>
+              
+              <div class="absolute top-[90px] start-0 w-56 bg-brand-light dark:bg-[#1E293B] border border-t-0 border-gray-200 dark:border-white/10 shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform -translate-y-2 group-hover:translate-y-0 z-50">
+                <div class="py-4 px-6 flex flex-col gap-4">
+                  <a href="index.html" class="text-sm font-medium text-gray-500 hover:text-accent dark:text-gray-400 dark:hover:text-accent transition-colors">HOME PAGE 01</a>
+                  <a href="home-2.html" class="text-sm font-medium text-gray-500 hover:text-accent dark:text-gray-400 dark:hover:text-accent transition-colors">HOME PAGE 02</a>
+                </div>
+              </div>
+            </div>
+
+            <a href="about.html" class="relative group text-xs uppercase tracking-[0.15em] font-medium text-gray-900 dark:text-gray-100 hover:text-accent transition-colors py-2">
+              About
+              <span class="absolute bottom-0 start-0 w-0 h-[2px] bg-accent transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            
+            <a href="services.html" class="relative group text-xs uppercase tracking-[0.15em] font-medium text-accent transition-colors py-2">
+              Services
+              <span class="absolute bottom-0 start-0 w-full h-[2px] bg-accent transition-all duration-300"></span>
+            </a>
+            
+            <a href="tobacco-accessories.html" class="relative group text-xs uppercase tracking-[0.15em] font-medium text-gray-900 dark:text-gray-100 hover:text-accent transition-colors py-2">Tobacco Accessories<span class="absolute bottom-0 start-0 w-0 h-[2px] bg-accent transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            
+            <a href="pricing.html" class="relative group text-xs uppercase tracking-[0.15em] font-medium text-gray-900 dark:text-gray-100 hover:text-accent transition-colors py-2">
+              Pricing
+              <span class="absolute bottom-0 start-0 w-0 h-[2px] bg-accent transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            
+            <a href="blog.html" class="relative group text-xs uppercase tracking-[0.15em] font-medium text-gray-900 dark:text-gray-100 hover:text-accent transition-colors py-2">
+              Blog
+              <span class="absolute bottom-0 start-0 w-0 h-[2px] bg-accent transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            
+            <a href="contact.html" class="relative group text-xs uppercase tracking-[0.15em] font-medium text-gray-900 dark:text-gray-100 hover:text-accent transition-colors py-2">
+              Contact
+              <span class="absolute bottom-0 start-0 w-0 h-[2px] bg-accent transition-all duration-300 group-hover:w-full"></span>
+            </a>
+
+            
+
+          </div>
+        </div>
+
+        <div class="hidden xl:flex items-center gap-4">
+          
+          <button type="button" onclick="window.location.href='login.html'" class="bg-accent border-2 border-accent text-white hover:bg-transparent hover:text-accent px-6 py-2.5 text-xs uppercase tracking-wider font-semibold transition-all duration-300 flex items-center gap-2">
+            <span>Login</span>
+            <i class="fas fa-arrow-right text-[10px] rtl:rotate-180"></i>
+          </button>
+          
+          <a href="register.html" class="bg-transparent border-2 border-gray-300 dark:border-gray-700 text-brand-dark dark:text-brand-light hover:border-accent dark:hover:border-accent hover:text-accent dark:hover:text-accent px-6 py-2.5 text-xs uppercase tracking-wider font-medium transition-all duration-300 flex items-center gap-2">
+            <span>Register</span>
+            <i class="fas fa-arrow-right text-[10px] rtl:rotate-180"></i>
+          </a>
+
+          <div class="h-8 w-px bg-gray-200 dark:bg-gray-800 mx-2"></div>
+
+          <button id="theme-toggle" class="relative w-[72px] h-[34px] flex items-center bg-gray-200 dark:bg-[#1E293B] rounded-full p-1 transition-colors duration-300 focus:outline-none border border-gray-300 dark:border-gray-700 overflow-hidden" title="Toggle Theme">
+            <span class="text-[9px] font-medium text-gray-500 absolute end-2.5 dark:opacity-0 transition-opacity duration-300 tracking-wider">LIGHT</span>
+            <span class="text-[9px] font-medium text-accent absolute start-2.5 opacity-0 dark:opacity-100 transition-opacity duration-300 tracking-wider">DARK</span>
+            
+            <div class="w-[24px] h-[24px] bg-white dark:bg-brand-dark border border-gray-200 dark:border-gray-600 rounded-full shadow-sm transform transition-transform duration-300 flex items-center justify-center rtl:dark:-translate-x-[38px] ltr:dark:translate-x-[38px] dark:translate-x-[38px] z-10">
+              <i class="fas fa-sun text-[11px] text-accent dark:hidden block"></i>
+              <i class="fas fa-moon text-[11px] text-accent hidden dark:block"></i>
+            </div>
+          </button>
+          
+          <button id="rtl-toggle" class="text-xs font-medium text-gray-400 hover:text-accent transition-colors duration-300 ms-2" title="Toggle RTL">
+            RTL
+          </button>
+        </div>
+
+        <div class="xl:hidden flex items-center">
+          <button id="mobile-menu-button" class="text-gray-900 dark:text-brand-light hover:text-accent focus:outline-none transition duration-300">
+            <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path id="menu-icon" stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              <path id="close-icon" class="hidden" stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden xl:hidden bg-brand-light dark:bg-[#1E293B] border-b border-gray-200 dark:border-gray-800 shadow-2xl">
+      <div class="px-6 pt-4 pb-8 flex flex-col gap-0 max-h-[calc(100vh-90px)] overflow-y-auto">
+
+        <div class="border-b border-gray-100 dark:border-white/5">
+          <button id="mobile-home-dropdown" class="w-full flex items-center justify-between py-4 text-gray-900 dark:text-brand-light hover:text-accent transition duration-300">
+            <span class="text-xs uppercase tracking-widest font-medium">Home</span>
+            <i class="fas fa-plus text-xs transition-transform duration-300" id="mobile-home-icon"></i>
+          </button>
+          <div id="mobile-home-menu" class="hidden pb-4 flex flex-col gap-3 ps-4 border-s-2 border-accent/20 ms-2">
+            <a href="index.html" class="block text-sm font-medium text-gray-500 hover:text-accent dark:text-gray-400 transition duration-300 uppercase tracking-wider">01. Home Page</a>
+            <a href="home-2.html" class="block text-sm font-medium text-gray-500 hover:text-accent dark:text-gray-400 transition duration-300 uppercase tracking-wider">02. Home Page</a>
+          </div>
+        </div>
+
+        <a href="about.html" class="block py-4 border-b border-gray-100 dark:border-white/5 text-gray-900 dark:text-brand-light hover:text-accent transition duration-300 text-xs uppercase tracking-widest font-medium">About</a>
+        <a href="services.html" class="block py-4 border-b border-gray-100 dark:border-white/5 text-accent transition duration-300 text-xs uppercase tracking-widest font-medium">Services</a>
+        <a href="tobacco-accessories.html" class="block py-4 border-b border-gray-100 dark:border-white/5 text-gray-900 dark:text-brand-light hover:text-accent transition duration-300 text-xs uppercase tracking-widest font-medium">Tobacco Accessories</a>
+        <a href="pricing.html" class="block py-4 border-b border-gray-100 dark:border-white/5 text-gray-900 dark:text-brand-light hover:text-accent transition duration-300 text-xs uppercase tracking-widest font-medium">Pricing</a>
+        <a href="blog.html" class="block py-4 border-b border-gray-100 dark:border-white/5 text-gray-900 dark:text-brand-light hover:text-accent transition duration-300 text-xs uppercase tracking-widest font-medium">Blog</a>
+        <a href="contact.html" class="block py-4 border-b border-gray-100 dark:border-white/5 text-gray-900 dark:text-brand-light hover:text-accent transition duration-300 text-xs uppercase tracking-widest font-medium">Contact</a>
+
+        <div class="border-b border-gray-100 dark:border-white/5">
+          
+          
+        </div>
+
+        <div class="pt-8 flex flex-col gap-4">
+          <button type="button" onclick="window.location.href='login.html'" class="flex items-center justify-center w-full bg-accent border-2 border-accent text-white hover:bg-transparent hover:text-accent px-4 py-3.5 font-semibold uppercase tracking-widest text-center transition duration-300 text-xs gap-2">
+            <span>Login</span>
+            <i class="fas fa-arrow-right text-[10px] rtl:rotate-180"></i>
+          </button>
+          
+          <a href="register.html" class="flex items-center justify-center w-full bg-transparent border-2 border-gray-300 dark:border-gray-700 text-brand-dark dark:text-brand-light hover:border-accent dark:hover:border-accent hover:text-accent dark:hover:text-accent px-4 py-3.5 font-medium uppercase tracking-widest text-center transition duration-300 text-xs gap-2">
+            <span>Register</span>
+            <i class="fas fa-arrow-right text-[10px] rtl:rotate-180"></i>
+          </a>
+          
+          <div class="flex justify-between items-center pt-6 pb-2 border-t border-gray-100 dark:border-white/5 mt-4">
+            <button id="mobile-theme-toggle" class="bg-gray-100 dark:bg-[#1a1a1a] border border-gray-200 dark:border-gray-700 rounded-full px-4 py-2 transition-colors flex items-center text-xs font-medium uppercase tracking-widest">
+              <span class="dark:hidden flex items-center text-accent"><i class="fas fa-sun me-2"></i> Light Active</span>
+              <span class="hidden dark:flex items-center text-accent"><i class="fas fa-moon me-2"></i> Dark Active</span>
+            </button>
+            <button id="mobile-rtl-toggle" class="text-gray-400 hover:text-accent transition-colors flex items-center text-xs font-medium uppercase tracking-widest">
+              <i class="fas fa-language me-2 text-lg"></i> RTL
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="flex-grow flex flex-col pt-[90px]">
+
+    <!-- Services Hero Section (50+ lines) -->
+    <section class="relative min-h-[50vh] flex flex-col items-center justify-center overflow-hidden bg-[#111827]">
+      <div class="absolute inset-0 z-0">
+        <img src="img/accessories.png" alt="Pipe Tools" class="w-full h-full object-cover opacity-30 grayscale blur-[2px]">
+        <div class="absolute inset-0 bg-gradient-to-t from-brand-dark to-brand-dark/40"></div>
+      </div>
+      
+      <div class="relative z-10 w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-fade-in pt-16">
+        <div class="inline-flex items-center gap-2 px-4 py-1 border border-accent/30 bg-black/40 backdrop-blur-md rounded-sm mb-6">
+          <i class="fas fa-concierge-bell text-accent text-xs"></i>
+          <span class="text-[10px] uppercase tracking-[0.2em] font-medium text-brand-light">Artisanal Services</span>
+        </div>
+        
+        <h1 class="text-4xl md:text-6xl font-serif font-bold text-white mb-6 leading-tight">
+          Bespoke <span class="text-accent italic">Craftsmanship</span> & Care.
+        </h1>
+        
+        <p class="text-lg text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed font-light">
+          From commissioning a one-of-a-kind freehand pipe to restoring your grandfather's heirloom briar. Discover our range of specialized services dedicated to the aficionado.
+        </p>
+        
+        <div class="flex justify-center space-x-4">
+          <div class="w-16 h-px bg-gradient-to-r from-transparent to-accent mt-3"></div>
+          <i class="fas fa-leaf text-accent"></i>
+          <div class="w-16 h-px bg-gradient-to-l from-transparent to-accent mt-3"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Custom Pipe Carving Section (70+ lines) -->
+    <section class="py-24 bg-brand-light dark:bg-brand-dark border-b border-gray-200 dark:border-white/5 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          
+          <div class="order-2 lg:order-1 relative group">
+            <div class="absolute -inset-4 bg-accent/10 rounded-full blur-3xl z-0 transform group-hover:scale-110 transition-transform duration-1000"></div>
+            <div class="relative z-10 grid grid-cols-2 gap-4">
+              <img src="img/about_anatomy.png" alt="Drafting a pipe" class="rounded-sm shadow-xl w-full h-64 object-cover transform translate-y-8 group-hover:translate-y-6 transition-transform duration-700">
+              <img src="img/home2_woods.png" alt="Raw briar block" class="rounded-sm shadow-xl w-full h-64 object-cover transform -translate-y-8 group-hover:-translate-y-6 transition-transform duration-700">
+            </div>
+            <!-- Decorative badge -->
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-24 h-24 bg-brand-dark dark:bg-[#111827] rounded-full border-4 border-brand-light dark:border-brand-dark flex items-center justify-center z-20 shadow-2xl">
+              <i class="fas fa-pencil-ruler text-accent text-3xl animate-pulse-slow"></i>
+            </div>
+          </div>
+          
+          <div class="order-1 lg:order-2 flex flex-col items-start">
+            <span class="text-accent uppercase tracking-[0.2em] text-xs font-bold mb-4 block">Commission Work</span>
+            <h2 class="text-3xl md:text-5xl font-serif font-bold text-brand-dark dark:text-brand-light mb-6 leading-tight">Custom Bespoke Pipes</h2>
+            <p class="text-brand-muted dark:text-gray-400 mb-8 leading-relaxed">
+              Work directly with Master Carver Elias Thorne to bring your dream pipe to life. Whether you desire a classic Billiard perfectly proportioned to your grip, or a wild Danish Freehand that follows the natural plateau grain, we will craft a piece entirely unique to you.
+            </p>
+            
+            <div class="space-y-6 w-full">
+              <div class="flex">
+                <div class="flex-shrink-0 mt-1">
+                  <div class="w-8 h-8 rounded-full border border-accent flex items-center justify-center text-accent text-xs font-bold">1</div>
+                </div>
+                <div class="ml-4">
+                  <h4 class="text-lg font-bold text-brand-dark dark:text-brand-light">The Consultation</h4>
+                  <p class="text-sm text-brand-muted dark:text-gray-400 mt-1">Discuss shapes, dimensions, draft hole engineering, and finishes via video call or in our lounge.</p>
+                </div>
+              </div>
+              <div class="flex">
+                <div class="flex-shrink-0 mt-1">
+                  <div class="w-8 h-8 rounded-full border border-accent flex items-center justify-center text-accent text-xs font-bold">2</div>
+                </div>
+                <div class="ml-4">
+                  <h4 class="text-lg font-bold text-brand-dark dark:text-brand-light">Block Selection</h4>
+                  <p class="text-sm text-brand-muted dark:text-gray-400 mt-1">We present a selection of premium Corsican briar, Morta, or Olive wood blocks for your approval.</p>
+                </div>
+              </div>
+              <div class="flex">
+                <div class="flex-shrink-0 mt-1">
+                  <div class="w-8 h-8 rounded-full border border-accent flex items-center justify-center text-accent text-xs font-bold">3</div>
+                </div>
+                <div class="ml-4">
+                  <h4 class="text-lg font-bold text-brand-dark dark:text-brand-light">Crafting & Updates</h4>
+                  <p class="text-sm text-brand-muted dark:text-gray-400 mt-1">Receive photo updates at every major milestone: drilling, rough shaping, sanding, and final stain.</p>
+                </div>
+              </div>
+            </div>
+            
+            <a href="contact.html" class="mt-10 inline-flex items-center gap-3 px-8 py-4 bg-brand-dark dark:bg-white text-white dark:text-brand-dark hover:bg-accent dark:hover:bg-accent hover:text-white font-bold uppercase tracking-widest text-xs transition-colors duration-300">
+              Start Your Commission
+            </a>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Pipe Restoration & Repair Section (70+ lines) -->
+    <section class="py-24 bg-gray-50 dark:bg-[#182133] border-b border-gray-200 dark:border-white/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-accent uppercase tracking-[0.2em] text-xs font-bold mb-4 block">The Pipe Spa</span>
+          <h2 class="text-3xl md:text-5xl font-serif font-bold text-brand-dark dark:text-brand-light mb-6">Restoration & Repair</h2>
+          <p class="text-brand-muted dark:text-gray-400 text-lg">Breathe new life into oxidized stems, caked bowls, and dulled briar. Our comprehensive restoration services preserve the history while restoring the function.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Service Card 1 -->
+          <div class="bg-white dark:bg-[#1E293B] p-8 border border-gray-100 dark:border-white/5 hover:border-accent dark:hover:border-accent transition-colors group">
+            <div class="w-12 h-12 bg-accent/10 rounded-sm flex items-center justify-center text-accent mb-6 group-hover:scale-110 transition-transform">
+              <i class="fas fa-broom text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold font-serif text-brand-dark dark:text-brand-light mb-3">Deep Clean & Ream</h3>
+            <p class="text-sm text-brand-muted dark:text-gray-400 mb-6 leading-relaxed">
+              Complete removal of sour cake. We ream the bowl to a perfect dime's thickness, sanitize the mortise and airway with high-proof alcohol, and sweeten the bowl with a salt treatment.
+            </p>
+            <div class="flex justify-between items-center border-t border-gray-100 dark:border-white/5 pt-4">
+              <span class="text-xs font-bold uppercase tracking-widest text-brand-muted">Starting At</span>
+              <span class="text-accent font-bold">$45.00</span>
+            </div>
+          </div>
+
+          <!-- Service Card 2 -->
+          <div class="bg-white dark:bg-[#1E293B] p-8 border border-gray-100 dark:border-white/5 hover:border-accent dark:hover:border-accent transition-colors group relative overflow-hidden">
+            <div class="absolute top-0 right-0 bg-accent text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1">Most Popular</div>
+            <div class="w-12 h-12 bg-accent/10 rounded-sm flex items-center justify-center text-accent mb-6 group-hover:scale-110 transition-transform">
+              <i class="fas fa-magic text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold font-serif text-brand-dark dark:text-brand-light mb-3">Stem De-oxidation</h3>
+            <p class="text-sm text-brand-muted dark:text-gray-400 mb-6 leading-relaxed">
+              Vulcanite and ebonite stems turn green and bitter over time. We use proprietary micro-mesh sanding and compounds to restore that mirror-black shine without altering the button.
+            </p>
+            <div class="flex justify-between items-center border-t border-gray-100 dark:border-white/5 pt-4">
+              <span class="text-xs font-bold uppercase tracking-widest text-brand-muted">Starting At</span>
+              <span class="text-accent font-bold">$35.00</span>
+            </div>
+          </div>
+
+          <!-- Service Card 3 -->
+          <div class="bg-white dark:bg-[#1E293B] p-8 border border-gray-100 dark:border-white/5 hover:border-accent dark:hover:border-accent transition-colors group">
+            <div class="w-12 h-12 bg-accent/10 rounded-sm flex items-center justify-center text-accent mb-6 group-hover:scale-110 transition-transform">
+              <i class="fas fa-hammer text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold font-serif text-brand-dark dark:text-brand-light mb-3">Replacement Stems</h3>
+            <p class="text-sm text-brand-muted dark:text-gray-400 mb-6 leading-relaxed">
+              Bitten through your favorite stem? We cut, turn, and bend custom replacement stems from premium German ebonite, Cumberland, or lucite to perfectly fit your existing shank.
+            </p>
+            <div class="flex justify-between items-center border-t border-gray-100 dark:border-white/5 pt-4">
+              <span class="text-xs font-bold uppercase tracking-widest text-brand-muted">Starting At</span>
+              <span class="text-accent font-bold">$85.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Personalized Tobacco Blending Section (70+ lines) -->
+    <section class="py-24 bg-brand-light dark:bg-brand-dark border-b border-gray-200 dark:border-white/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-[#111827] rounded-lg overflow-hidden shadow-2xl flex flex-col lg:flex-row">
+          
+          <div class="w-full lg:w-1/2 p-10 lg:p-16 flex flex-col justify-center relative z-10">
+            <div class="inline-flex items-center gap-2 text-accent mb-6">
+              <i class="fas fa-mortar-pestle"></i>
+              <span class="text-xs uppercase tracking-[0.2em] font-bold">The Blending Bar</span>
+            </div>
+            
+            <h2 class="text-3xl lg:text-4xl font-serif font-bold text-white mb-6 leading-tight">Create Your Signature House Blend</h2>
+            <p class="text-gray-400 mb-8 leading-relaxed text-sm">
+              Sit down with our Master Blender and embark on a sensory journey. We will guide you through our library of base Virginias, spicy Periques, smoky Cyprian Latakias, and nutty Burleys to construct a blend perfectly tuned to your palate.
+            </p>
+            
+            <div class="space-y-4 mb-10">
+              <div class="flex items-start">
+                <i class="fas fa-book text-accent mt-1 mr-4"></i>
+                <div>
+                  <h5 class="text-white font-bold text-sm">Kept in the Ledger</h5>
+                  <p class="text-gray-500 text-xs mt-1">Once perfected, your exact recipe is recorded in our Master Ledger under a name of your choosing.</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <i class="fas fa-box text-accent mt-1 mr-4"></i>
+                <div>
+                  <h5 class="text-white font-bold text-sm">On-Demand Reorders</h5>
+                  <p class="text-gray-500 text-xs mt-1">Order your custom blend by the ounce or by the pound anytime, online or in-store.</p>
+                </div>
+              </div>
+            </div>
+            
+            <a href="contact.html" class="inline-block bg-transparent border border-accent text-accent hover:bg-accent hover:text-brand-dark px-8 py-4 font-bold uppercase tracking-widest text-xs transition-colors duration-300 w-max">
+              Book a Tasting Session
+            </a>
+          </div>
+          
+          <div class="w-full lg:w-1/2 min-h-[400px] relative">
+            <img src="img/house_blends.png" alt="Tobacco Jars" class="absolute inset-0 w-full h-full object-cover grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-700">
+            <div class="absolute inset-0 bg-gradient-to-r from-[#111827] via-transparent to-transparent"></div>
+            <!-- Interactive element -->
+            <div class="absolute bottom-8 right-8 bg-brand-dark/90 backdrop-blur-md p-6 border border-white/10 max-w-xs shadow-2xl">
+              <p class="text-accent text-[10px] font-bold uppercase tracking-widest mb-2 border-b border-white/10 pb-2">Sample Recipe #402</p>
+              <ul class="text-xs text-gray-300 space-y-1 font-mono">
+                <li>40% Red Virginia</li>
+                <li>30% Bright Virginia</li>
+                <li>20% Cyprian Latakia</li>
+                <li>10% Acadian Perique</li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Appraisal & Estate Consignment Section (50+ lines) -->
+    <section class="py-20 bg-white dark:bg-[#111827] relative">
+      <!-- Decor -->
+      <div class="absolute top-0 right-0 w-1/3 h-full bg-gray-50 dark:bg-brand-dark z-0 border-l border-gray-100 dark:border-white/5 hidden lg:block"></div>
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="flex flex-col md:flex-row justify-between items-center md:items-start gap-12">
+          
+          <div class="w-full md:w-1/2 pt-8">
+            <span class="text-accent uppercase tracking-[0.2em] text-xs font-bold mb-4 block">Valuation Services</span>
+            <h2 class="text-3xl md:text-5xl font-serif font-bold text-brand-dark dark:text-brand-light mb-6">Appraisal & Consignment</h2>
+            <p class="text-brand-muted dark:text-gray-400 mb-8 leading-relaxed">
+              Inherited a collection? Looking to downsize your rotation? Our experts provide accurate historical identification, grading, and market valuation for vintage Dunhill, Charatan, Castello, and artisan pieces.
+            </p>
+            <ul class="space-y-4 mb-10 text-sm text-brand-dark dark:text-gray-300 font-medium">
+              <li class="flex items-center"><i class="fas fa-chevron-right text-accent mr-3"></i> Formal Written Appraisals</li>
+              <li class="flex items-center"><i class="fas fa-chevron-right text-accent mr-3"></i> Estate Purchasing Offers</li>
+              <li class="flex items-center"><i class="fas fa-chevron-right text-accent mr-3"></i> Premium Consignment (Low 15% Fee)</li>
+            </ul>
+            <a href="contact.html" class="text-xs font-bold uppercase tracking-widest text-accent hover:text-brand-dark dark:hover:text-brand-light transition-colors border-b-2 border-accent pb-1">
+              Contact our Estate Buyer
+            </a>
+          </div>
+          
+          <div class="w-full md:w-5/12 bg-gray-100 dark:bg-[#1E293B] p-10 shadow-xl border-t-4 border-accent">
+            <i class="fas fa-file-invoice-dollar text-4xl text-brand-dark dark:text-brand-light opacity-20 mb-6"></i>
+            <h3 class="text-xl font-bold font-serif text-brand-dark dark:text-brand-light mb-4">Request a Valuation</h3>
+            <p class="text-sm text-brand-muted dark:text-gray-400 mb-6">Send us high-resolution photos of the pipe (showing nomenclature/stamping clearly) for a preliminary estimate.</p>
+            <form class="space-y-4">
+              <input type="email" placeholder="Your Email Address" class="w-full bg-white dark:bg-[#111827] border border-gray-200 dark:border-white/10 px-4 py-3 text-sm text-brand-dark dark:text-white focus:outline-none focus:border-accent">
+              <button type="button" class="w-full bg-brand-dark dark:bg-brand-light text-brand-light dark:text-brand-dark font-bold uppercase tracking-widest text-xs py-4 hover:bg-accent dark:hover:bg-accent transition-colors">
+                Start Valuation
+              </button>
+            </form>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+</main>
+
+  <footer class="bg-brand-dark text-brand-light pt-24 pb-12 mt-auto border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+        
+        <div>
+          <h3 class="text-3xl font-semibold tracking-tight uppercase mb-6 text-brand-light">Pipe<span class="text-accent">Craft</span></h3>
+          <p class="text-brand-muted mb-8 font-medium leading-relaxed text-base">
+            Providing top-tier mobile auto detailing and ceramic coating services to keep your vehicle looking showroom new. We come to you.
+          </p>
+          <div class="flex gap-4">
+            <a href="#" class="w-12 h-12 border border-white/20 text-brand-light hover:border-accent hover:text-accent flex items-center justify-center transition-all duration-300 rounded-sm">
+              <i class="fab fa-facebook-f text-base"></i>
+            </a>
+            <a href="#" class="w-12 h-12 border border-white/20 text-brand-light hover:border-accent hover:text-accent flex items-center justify-center transition-all duration-300 rounded-sm">
+              <i class="fab fa-instagram text-base"></i>
+            </a>
+            <a href="#" class="w-12 h-12 border border-white/20 text-brand-light hover:border-accent hover:text-accent flex items-center justify-center transition-all duration-300 rounded-sm">
+              <i class="fab fa-twitter text-base"></i>
+            </a>
+            <a href="#" class="w-12 h-12 border border-white/20 text-brand-light hover:border-accent hover:text-accent flex items-center justify-center transition-all duration-300 rounded-sm">
+              <i class="fab fa-youtube text-base"></i>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-sm uppercase tracking-[0.2em] font-medium mb-8 text-brand-light">Quick Links</h4>
+          <ul class="flex flex-col gap-5">
+            <li><a href="index.html" class="text-base text-brand-muted hover:text-accent transition-colors duration-300 font-medium">Home</a></li>
+            <li><a href="about.html" class="text-base text-brand-muted hover:text-accent transition-colors duration-300 font-medium">About Us</a></li>
+            <li><a href="tobacco-accessories.html" class="text-base text-brand-muted hover:text-accent transition-colors duration-300 font-medium">Our Work</a></li>
+            <li><a href="pricing.html" class="text-base text-brand-muted hover:text-accent transition-colors duration-300 font-medium">Detailing Packages</a></li>
+            <li><a href="blog.html" class="text-base text-brand-muted hover:text-accent transition-colors duration-300 font-medium">Auto Care Blog</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-sm uppercase tracking-[0.2em] font-medium mb-8 text-brand-light">Our Services</h4>
+          <ul class="flex flex-col gap-5">
+            <li><a href="services.html" class="text-base text-brand-muted hover:text-accent transition-colors duration-300 font-medium">Exterior Detailing</a></li>
+            <li><a href="services.html" class="text-base text-brand-muted hover:text-accent transition-colors duration-300 font-medium">Interior Deep Clean</a></li>
+            <li><a href="services.html" class="text-base text-brand-muted hover:text-accent transition-colors duration-300 font-medium">Ceramic Coating</a></li>
+            <li><a href="services.html" class="text-base text-brand-muted hover:text-accent transition-colors duration-300 font-medium">Paint Correction</a></li>
+            <li><a href="services.html" class="text-base text-brand-muted hover:text-accent transition-colors duration-300 font-medium">Headlight Restoration</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-sm uppercase tracking-[0.2em] font-medium mb-8 text-brand-light">Contact Us</h4>
+          <ul class="flex flex-col gap-6">
+            <li class="flex items-start">
+              <i class="fas fa-map-marker-alt text-accent mt-1 me-4 text-base"></i>
+              <span class="text-base text-brand-muted font-medium">Serving Salem, Tamil Nadu, India & Surrounding Areas</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-phone text-accent me-4 text-base"></i>
+              <a href="tel:+919876543210" class="text-base text-brand-muted hover:text-accent transition-colors font-medium">+91 98765 43210</a>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-envelope text-accent me-4 text-base"></i>
+              <a href="mailto:contact@eliasthornepipes.com" class="text-base text-brand-muted hover:text-accent transition-colors font-medium">contact@eliasthornepipes.com</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <p class="text-brand-muted text-sm tracking-wider uppercase mb-4 md:mb-0 font-medium">
+          © 2026 Handcrafted Pipe & Tobacco Shop. All rights reserved.
+        </p>
+        <div class="flex gap-6">
+          <a href="login.html" class="text-brand-muted hover:text-accent text-sm tracking-wider uppercase font-medium transition-colors duration-300">Client Login</a>
+          <a href="#" class="text-brand-muted hover:text-accent text-sm tracking-wider uppercase font-medium transition-colors duration-300">Privacy</a>
+          <a href="#" class="text-brand-muted hover:text-accent text-sm tracking-wider uppercase font-medium transition-colors duration-300">Terms</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    // Theme Toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    const mobileThemeToggle = document.getElementById('mobile-theme-toggle');
+    const html = document.documentElement;
+
+    function toggleTheme() {
+      if (html.classList.contains('dark')) {
+        html.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+      } else {
+        html.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+      }
+    }
+
+    if (themeToggle) themeToggle.addEventListener('click', toggleTheme);
+    if (mobileThemeToggle) mobileThemeToggle.addEventListener('click', toggleTheme);
+    if (localStorage.getItem('theme') === 'dark') html.classList.add('dark');
+
+    // RTL Toggle
+    const rtlToggle = document.getElementById('rtl-toggle');
+    const mobileRtlToggle = document.getElementById('mobile-rtl-toggle');
+
+    function toggleRTL() {
+      if (html.getAttribute('dir') === 'rtl') {
+        html.removeAttribute('dir');
+        localStorage.setItem('direction', 'ltr');
+      } else {
+        html.setAttribute('dir', 'rtl');
+        localStorage.setItem('direction', 'rtl');
+      }
+    }
+
+    if (rtlToggle) rtlToggle.addEventListener('click', toggleRTL);
+    if (mobileRtlToggle) mobileRtlToggle.addEventListener('click', toggleRTL);
+    if (localStorage.getItem('direction') === 'rtl') html.setAttribute('dir', 'rtl');
+
+    // Mobile Menu Toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+    const closeIcon = document.getElementById('close-icon');
+
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      menuIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+      
+      // Fix for Flexbox fallback on mobile menu open
+      if (!mobileMenu.classList.contains('hidden')) {
+          mobileMenu.classList.add('flex');
+      } else {
+          mobileMenu.classList.remove('flex');
+      }
+    });
+
+    // Mobile Dropdowns Toggle Function
+    function setupMobileDropdown(dropdownId, menuId, iconId) {
+      const dropdown = document.getElementById(dropdownId);   
+      const menu = document.getElementById(menuId);
+      const icon = document.getElementById(iconId);
+      
+      if(dropdown && menu && icon) {
+        dropdown.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+          if(menu.classList.contains('hidden')) {
+            icon.classList.remove('fa-minus');
+            icon.classList.add('fa-plus');
+            menu.classList.remove('flex'); // Keep flex compatibility
+          } else {
+            icon.classList.remove('fa-plus');
+            icon.classList.add('fa-minus');
+            menu.classList.add('flex'); // Keep flex compatibility
+          }
+        });
+      }
+    }
+
+    // Initialize dropdowns
+    setupMobileDropdown('mobile-home-dropdown', 'mobile-home-menu', 'mobile-home-icon');
+    setupMobileDropdown('mobile-dashboard-dropdown', 'mobile-dashboard-menu', 'mobile-dashboard-icon');
+
+  </script>
+</body>
+</html>
