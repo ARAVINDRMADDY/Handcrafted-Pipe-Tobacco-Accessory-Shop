@@ -40,7 +40,11 @@
         <div class="flex-shrink-0">
           <a href="index.html" class="flex items-center gap-3">
             <div class="flex flex-col">
-              <span class="text-2xl font-semibold tracking-tight text-brand-dark dark:text-brand-light uppercase">Pipe<span class="text-accent">Craft</span></span>
+              <div class="flex items-center gap-2"><svg class="w-8 h-8 text-accent drop-shadow-sm" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path d="M17.5,7C15.91,7 14.54,8.04 14.12,9.5H7.5C5.57,9.5 4,11.07 4,13C4,14.93 5.57,16.5 7.5,16.5H13V15.5H7.5C6.12,15.5 5,14.38 5,13C5,11.62 6.12,10.5 7.5,10.5H14.12C14.54,11.96 15.91,13 17.5,13C19.43,13 21,11.43 21,9.5C21,7.57 19.43,7 17.5,7ZM17.5,12C16.12,12 15,10.88 15,9.5C15,8.12 16.12,7 17.5,7C18.88,7 20,8.12 20,9.5C20,10.88 18.88,12 17.5,12Z"/>
+  <path d="M19,3.5C18.7,3.5 18.5,3.7 18.5,4C18.5,4.7 18.2,5.2 17.7,5.5C17.3,5.8 16.7,6 16,6C15.7,6 15.5,6.2 15.5,6.5C15.5,6.8 15.7,7 16,7C17,7 17.8,6.7 18.4,6.2C19.1,5.7 19.5,4.9 19.5,4C19.5,3.7 19.3,3.5 19,3.5Z"/>
+  <path d="M16,2.5C15.7,2.5 15.5,2.7 15.5,3C15.5,3.7 15.2,4.2 14.7,4.5C14.3,4.8 13.7,5 13,5C12.7,5 12.5,5.2 12.5,5.5C12.5,5.8 12.7,6 13,6C14,6 14.8,5.7 15.4,5.2C16.1,4.7 16.5,3.9 16.5,3C16.5,2.7 16.3,2.5 16,2.5Z"/>
+</svg><span class="text-2xl font-semibold tracking-tight text-brand-dark dark:text-brand-light uppercase">Pipe<span class="text-accent">Craft</span></span></div>
             </div>
           </a>
         </div>
@@ -98,18 +102,6 @@
 
         <div class="hidden xl:flex items-center gap-4">
           
-          <button type="button" onclick="window.location.href='login.html'" class="bg-accent border-2 border-accent text-white hover:bg-transparent hover:text-accent px-6 py-2.5 text-xs uppercase tracking-wider font-semibold transition-all duration-300 flex items-center gap-2">
-            <span>Login</span>
-            <i class="fas fa-arrow-right text-[10px] rtl:rotate-180"></i>
-          </button>
-          
-          <a href="register.html" class="bg-transparent border-2 border-gray-300 dark:border-gray-700 text-brand-dark dark:text-brand-light hover:border-accent dark:hover:border-accent hover:text-accent dark:hover:text-accent px-6 py-2.5 text-xs uppercase tracking-wider font-medium transition-all duration-300 flex items-center gap-2">
-            <span>Register</span>
-            <i class="fas fa-arrow-right text-[10px] rtl:rotate-180"></i>
-          </a>
-
-          <div class="h-8 w-px bg-gray-200 dark:bg-gray-800 mx-2"></div>
-
           <button id="theme-toggle" class="relative w-[72px] h-[34px] flex items-center bg-gray-200 dark:bg-[#1E293B] rounded-full p-1 transition-colors duration-300 focus:outline-none border border-gray-300 dark:border-gray-700 overflow-hidden" title="Toggle Theme">
             <span class="text-[9px] font-medium text-gray-500 absolute end-2.5 dark:opacity-0 transition-opacity duration-300 tracking-wider">LIGHT</span>
             <span class="text-[9px] font-medium text-accent absolute start-2.5 opacity-0 dark:opacity-100 transition-opacity duration-300 tracking-wider">DARK</span>
@@ -123,7 +115,18 @@
           <button id="rtl-toggle" class="text-xs font-medium text-gray-400 hover:text-accent transition-colors duration-300 ms-2" title="Toggle RTL">
             RTL
           </button>
-        </div>
+          <div class="h-8 w-px bg-gray-200 dark:bg-gray-800 mx-2"></div>
+          <button type="button" onclick="window.location.href='login.html'" class="bg-accent border-2 border-accent text-white hover:bg-transparent hover:text-accent px-6 py-2.5 text-xs uppercase tracking-wider font-semibold transition-all duration-300 flex items-center gap-2">
+            <span>Login</span>
+            <i class="fas fa-arrow-right text-[10px] rtl:rotate-180"></i>
+          </button>
+          
+          <a href="register.html" class="bg-transparent border-2 border-gray-300 dark:border-gray-700 text-brand-dark dark:text-brand-light hover:border-accent dark:hover:border-accent hover:text-accent dark:hover:text-accent px-6 py-2.5 text-xs uppercase tracking-wider font-medium transition-all duration-300 flex items-center gap-2">
+            <span>Register</span>
+            <i class="fas fa-arrow-right text-[10px] rtl:rotate-180"></i>
+          </a>
+
+          </div>
 
         <div class="xl:hidden flex items-center">
           <button id="mobile-menu-button" class="text-gray-900 dark:text-brand-light hover:text-accent focus:outline-none transition duration-300">
@@ -146,8 +149,8 @@
             <i class="fas fa-plus text-xs transition-transform duration-300" id="mobile-home-icon"></i>
           </button>
           <div id="mobile-home-menu" class="hidden pb-4 flex flex-col gap-3 ps-4 border-s-2 border-accent/20 ms-2">
-            <a href="index.html" class="block text-sm font-medium text-gray-500 hover:text-accent dark:text-gray-400 transition duration-300 uppercase tracking-wider">01. Home Page</a>
-            <a href="home-2.html" class="block text-sm font-medium text-gray-500 hover:text-accent dark:text-gray-400 transition duration-300 uppercase tracking-wider">02. Home Page</a>
+            <a href="index.html" class="block text-sm font-medium text-gray-500 hover:text-accent dark:text-gray-500 dark:text-gray-400 transition duration-300 uppercase tracking-wider">01. Home Page</a>
+            <a href="home-2.html" class="block text-sm font-medium text-gray-500 hover:text-accent dark:text-gray-500 dark:text-gray-400 transition duration-300 uppercase tracking-wider">02. Home Page</a>
           </div>
         </div>
 
@@ -179,7 +182,7 @@
               <span class="dark:hidden flex items-center text-accent"><i class="fas fa-sun me-2"></i> Light Active</span>
               <span class="hidden dark:flex items-center text-accent"><i class="fas fa-moon me-2"></i> Dark Active</span>
             </button>
-            <button id="mobile-rtl-toggle" class="text-gray-400 hover:text-accent transition-colors flex items-center text-xs font-medium uppercase tracking-widest">
+            <button id="mobile-rtl-toggle" class="text-gray-500 dark:text-gray-400 hover:text-accent transition-colors flex items-center text-xs font-medium uppercase tracking-widest">
               <i class="fas fa-language me-2 text-lg"></i> RTL
             </button>
           </div>
@@ -195,7 +198,7 @@
       <div class="absolute bottom-0 start-0 w-80 h-80 bg-brand-muted/10 rounded-full blur-3xl"></div>
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center animate-fade-in">
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight mb-6 uppercase">Get in <span class="text-accent">Touch.</span></h1>
-        <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto font-medium leading-relaxed">
+        <p class="text-lg md:text-xl text-gray-500 dark:text-gray-400 max-w-2xl mx-auto font-medium leading-relaxed">
           Ready to book your premium detailing service or have questions about our packages? Our team is here to assist you.
         </p>
       </div>
@@ -252,7 +255,7 @@
             
             <div class="mb-12">
               <h3 class="text-3xl font-semibold text-brand-dark dark:text-brand-light mb-6">Mobile Service Headquarters</h3>
-              <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-8 font-medium">
+              <p class="text-gray-600 dark:text-gray-500 dark:text-gray-400 leading-relaxed mb-8 font-medium">
                 Our master craftsmen operate from our dedicated atelier. While our primary focus is handcrafting bespoke pipes, our workshop is open by appointment for custom consultations. However, our main dispatch and support office can be reached using the information below.
               </p>
 
@@ -263,7 +266,7 @@
                   </div>
                   <div class="pt-1">
                     <h4 class="text-sm font-semibold text-brand-dark dark:text-brand-light uppercase tracking-widest mb-1">Service Area</h4>
-                    <p class="text-gray-600 dark:text-gray-400 text-sm font-medium">Serving Salem, Tamil Nadu, India<br>and Surrounding Regions</p>
+                    <p class="text-gray-600 dark:text-gray-500 dark:text-gray-400 text-sm font-medium">Serving Salem, Tamil Nadu, India<br>and Surrounding Regions</p>
                   </div>
                 </div>
 
@@ -362,7 +365,7 @@
             </li>
             <li class="flex items-center gap-4">
               <i class="fas fa-envelope text-accent text-base shrink-0"></i>
-              <a href="mailto:contact@eliasthornepipes.com" class="text-base text-brand-muted hover:text-accent transition-colors font-medium">contact@eliasthornepipes.com</a>
+              <a href="mailto:contact@eliasthornepipes.com" class="text-base text-brand-muted hover:text-accent transition-colors font-medium break-all">contact@eliasthornepipes.com</a>
             </li>
           </ul>
         </div>

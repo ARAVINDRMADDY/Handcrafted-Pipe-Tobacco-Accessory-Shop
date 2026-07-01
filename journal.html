@@ -104,18 +104,6 @@
 
         <div class="hidden xl:flex items-center space-x-4">
           
-          <button type="button" onclick="window.location.href='login.html'" class="bg-soft-gold border-2 border-soft-gold text-charcoal hover:bg-transparent hover:text-soft-gold px-6 py-2.5 text-xs uppercase tracking-wider font-black transition-all duration-300 flex items-center space-x-2">
-            <span>Login</span>
-            <i class="fas fa-arrow-right text-[10px]"></i>
-          </button>
-          
-          <a href="register.html" class="bg-transparent border-2 border-gray-300 dark:border-gray-700 text-charcoal dark:text-off-white hover:border-soft-gold dark:hover:border-soft-gold hover:text-soft-gold dark:hover:text-soft-gold px-6 py-2.5 text-xs uppercase tracking-wider font-bold transition-all duration-300 flex items-center space-x-2">
-            <span>Register</span>
-            <i class="fas fa-arrow-right text-[10px]"></i>
-          </a>
-
-          <div class="h-8 w-px bg-gray-200 dark:bg-gray-800 mx-2"></div>
-
           <button id="theme-toggle" class="relative w-[72px] h-[34px] flex items-center bg-gray-200 dark:bg-[#1a1a1a] rounded-full p-1 transition-colors duration-300 focus:outline-none border border-gray-300 dark:border-gray-700 overflow-hidden" title="Toggle Theme">
             <span class="text-[9px] font-black text-gray-500 absolute right-2.5 dark:opacity-0 transition-opacity duration-300 tracking-wider">LIGHT</span>
             <span class="text-[9px] font-black text-soft-gold absolute left-2.5 opacity-0 dark:opacity-100 transition-opacity duration-300 tracking-wider">DARK</span>
@@ -129,7 +117,18 @@
           <button id="rtl-toggle" class="text-xs font-bold text-gray-400 hover:text-soft-gold transition-colors duration-300 ml-2" title="Toggle RTL">
             RTL
           </button>
-        </div>
+          <div class="h-8 w-px bg-gray-200 dark:bg-gray-800 mx-2"></div>
+          <button type="button" onclick="window.location.href='login.html'" class="bg-soft-gold border-2 border-soft-gold text-charcoal hover:bg-transparent hover:text-soft-gold px-6 py-2.5 text-xs uppercase tracking-wider font-black transition-all duration-300 flex items-center space-x-2">
+            <span>Login</span>
+            <i class="fas fa-arrow-right text-[10px]"></i>
+          </button>
+          
+          <a href="register.html" class="bg-transparent border-2 border-gray-300 dark:border-gray-700 text-charcoal dark:text-off-white hover:border-soft-gold dark:hover:border-soft-gold hover:text-soft-gold dark:hover:text-soft-gold px-6 py-2.5 text-xs uppercase tracking-wider font-bold transition-all duration-300 flex items-center space-x-2">
+            <span>Register</span>
+            <i class="fas fa-arrow-right text-[10px]"></i>
+          </a>
+
+          </div>
 
         <div class="xl:hidden flex items-center">
           <button id="mobile-menu-button" class="text-gray-900 dark:text-off-white hover:text-soft-gold focus:outline-none transition duration-300">
@@ -152,8 +151,8 @@
             <i class="fas fa-plus text-xs transition-transform duration-300" id="mobile-home-icon"></i>
           </button>
           <div id="mobile-home-menu" class="hidden pb-4 space-y-3 pl-4 border-l-2 border-soft-gold/20 ml-2">
-            <a href="index.html" class="block text-sm font-medium text-gray-500 hover:text-soft-gold dark:text-gray-400 transition duration-300 uppercase tracking-wider">01. Home Page</a>
-            <a href="home-2.html" class="block text-sm font-medium text-gray-500 hover:text-soft-gold dark:text-gray-400 transition duration-300 uppercase tracking-wider">02. Home Page</a>
+            <a href="index.html" class="block text-sm font-medium text-gray-500 hover:text-soft-gold dark:text-gray-500 dark:text-gray-400 transition duration-300 uppercase tracking-wider">01. Home Page</a>
+            <a href="home-2.html" class="block text-sm font-medium text-gray-500 hover:text-soft-gold dark:text-gray-500 dark:text-gray-400 transition duration-300 uppercase tracking-wider">02. Home Page</a>
           </div>
         </div>
 
@@ -187,7 +186,7 @@
               <span class="dark:hidden flex items-center text-soft-gold"><i class="fas fa-sun mr-2"></i> Light Active</span>
               <span class="hidden dark:flex items-center text-soft-gold"><i class="fas fa-moon mr-2"></i> Dark Active</span>
             </button>
-            <button id="mobile-rtl-toggle" class="text-gray-400 hover:text-soft-gold transition-colors flex items-center text-xs font-bold uppercase tracking-widest">
+            <button id="mobile-rtl-toggle" class="text-gray-500 dark:text-gray-400 hover:text-soft-gold transition-colors flex items-center text-xs font-bold uppercase tracking-widest">
               <i class="fas fa-language mr-2 text-lg"></i> RTL
             </button>
           </div>
@@ -206,7 +205,7 @@
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight mb-6 uppercase">
           The <span class="text-soft-gold">Journal.</span>
         </h1>
-        <p class="text-lg md:text-xl text-muted-grey max-w-2xl mx-auto font-light leading-relaxed">
+        <p class="text-lg md:text-xl text-muted-grey max-w-2xl mx-auto font-medium leading-relaxed">
           News, stories, and insights from the loom. Discover guides on interior design, the heritage of weaving, and caring for your custom floor art.
         </p>
       </div>
@@ -238,7 +237,7 @@
               <span class="text-gray-500 text-xs font-medium"><i class="far fa-calendar-alt mr-2"></i> Oct 12, 2026</span>
             </div>
             <h2 class="text-3xl lg:text-4xl font-extrabold text-charcoal dark:text-off-white mb-4 group-hover:text-soft-gold transition-colors duration-300">The Revival of Botanical Dyes in Modern Weaving</h2>
-            <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-8">
+            <p class="text-gray-600 dark:text-gray-500 dark:text-gray-400 leading-relaxed mb-8">
               Explore how WeaveNest is moving away from synthetic chemicals and embracing ancient vat dyeing techniques using madder root, indigo, and pomegranate to create vibrant, fade-resistant heirloom pieces.
             </p>
             <div class="flex items-center gap-4">
@@ -267,8 +266,8 @@
                 <span class="text-soft-gold text-[10px] font-bold uppercase tracking-widest">Heritage</span>
                 <span class="text-gray-500 text-xs">Sep 28, 2026</span>
               </div>
-              <h3 class="text-xl font-bold text-charcoal dark:text-off-white mb-3 group-hover:text-soft-gold transition-colors duration-300">Understanding Persian vs. Tibetan Knots</h3>
-              <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4 line-clamp-3">
+              <h3 class="text-xl font-semibold text-charcoal dark:text-off-white mb-3 group-hover:text-soft-gold transition-colors duration-300">Understanding Persian vs. Tibetan Knots</h3>
+              <p class="text-gray-600 dark:text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-4 line-clamp-3">
                 Not all handmade rugs are created equal. Dive deep into the structural differences between these two historic knotting techniques and learn how they affect the texture and durability of your rug.
               </p>
               <span class="text-xs font-bold text-charcoal dark:text-off-white uppercase tracking-widest group-hover:text-soft-gold transition-colors flex items-center">Read Article <i class="fas fa-arrow-right ml-2 text-[10px]"></i></span>
@@ -284,8 +283,8 @@
                 <span class="text-soft-gold text-[10px] font-bold uppercase tracking-widest">Interior Design</span>
                 <span class="text-gray-500 text-xs">Sep 15, 2026</span>
               </div>
-              <h3 class="text-xl font-bold text-charcoal dark:text-off-white mb-3 group-hover:text-soft-gold transition-colors duration-300">How to Choose the Perfect Rug Size</h3>
-              <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4 line-clamp-3">
+              <h3 class="text-xl font-semibold text-charcoal dark:text-off-white mb-3 group-hover:text-soft-gold transition-colors duration-300">How to Choose the Perfect Rug Size</h3>
+              <p class="text-gray-600 dark:text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-4 line-clamp-3">
                 A rug that is too small can make a room feel disjointed. Read our comprehensive design guide on how to measure your space, arrange furniture, and select the ideal custom dimensions.
               </p>
               <span class="text-xs font-bold text-charcoal dark:text-off-white uppercase tracking-widest group-hover:text-soft-gold transition-colors flex items-center">Read Article <i class="fas fa-arrow-right ml-2 text-[10px]"></i></span>
@@ -301,8 +300,8 @@
                 <span class="text-soft-gold text-[10px] font-bold uppercase tracking-widest">Rug Care</span>
                 <span class="text-gray-500 text-xs">Aug 30, 2026</span>
               </div>
-              <h3 class="text-xl font-bold text-charcoal dark:text-off-white mb-3 group-hover:text-soft-gold transition-colors duration-300">Caring for Your Hand-Knotted Silk Rug</h3>
-              <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4 line-clamp-3">
+              <h3 class="text-xl font-semibold text-charcoal dark:text-off-white mb-3 group-hover:text-soft-gold transition-colors duration-300">Caring for Your Hand-Knotted Silk Rug</h3>
+              <p class="text-gray-600 dark:text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-4 line-clamp-3">
                 Silk rugs are luxurious but require specialized maintenance. Learn the dos and don'ts of spot cleaning, vacuuming, and preserving the luminous sheen of your botanical silk investment.
               </p>
               <span class="text-xs font-bold text-charcoal dark:text-off-white uppercase tracking-widest group-hover:text-soft-gold transition-colors flex items-center">Read Article <i class="fas fa-arrow-right ml-2 text-[10px]"></i></span>
@@ -318,8 +317,8 @@
                 <span class="text-soft-gold text-[10px] font-bold uppercase tracking-widest">Atelier News</span>
                 <span class="text-gray-500 text-xs">Aug 12, 2026</span>
               </div>
-              <h3 class="text-xl font-bold text-charcoal dark:text-off-white mb-3 group-hover:text-soft-gold transition-colors duration-300">A Day in the Life of a Loom Technician</h3>
-              <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4 line-clamp-3">
+              <h3 class="text-xl font-semibold text-charcoal dark:text-off-white mb-3 group-hover:text-soft-gold transition-colors duration-300">A Day in the Life of a Loom Technician</h3>
+              <p class="text-gray-600 dark:text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-4 line-clamp-3">
                 Step inside the WeaveNest studio. We sit down with Nadia, our head finishing expert, to discuss the antique washing process and the final steps of bringing a rug to life.
               </p>
               <span class="text-xs font-bold text-charcoal dark:text-off-white uppercase tracking-widest group-hover:text-soft-gold transition-colors flex items-center">Read Article <i class="fas fa-arrow-right ml-2 text-[10px]"></i></span>
@@ -335,8 +334,8 @@
                 <span class="text-soft-gold text-[10px] font-bold uppercase tracking-widest">Heritage</span>
                 <span class="text-gray-500 text-xs">Jul 22, 2026</span>
               </div>
-              <h3 class="text-xl font-bold text-charcoal dark:text-off-white mb-3 group-hover:text-soft-gold transition-colors duration-300">Our Sourcing Journey to New Zealand</h3>
-              <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4 line-clamp-3">
+              <h3 class="text-xl font-semibold text-charcoal dark:text-off-white mb-3 group-hover:text-soft-gold transition-colors duration-300">Our Sourcing Journey to New Zealand</h3>
+              <p class="text-gray-600 dark:text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-4 line-clamp-3">
                 Why do we insist on high-altitude, long-staple wool? Follow our sourcing team as they travel to ethical farms to secure the foundational fibers that make our rugs incredibly durable.
               </p>
               <span class="text-xs font-bold text-charcoal dark:text-off-white uppercase tracking-widest group-hover:text-soft-gold transition-colors flex items-center">Read Article <i class="fas fa-arrow-right ml-2 text-[10px]"></i></span>
@@ -352,8 +351,8 @@
                 <span class="text-soft-gold text-[10px] font-bold uppercase tracking-widest">Interior Design</span>
                 <span class="text-gray-500 text-xs">Jul 05, 2026</span>
               </div>
-              <h3 class="text-xl font-bold text-charcoal dark:text-off-white mb-3 group-hover:text-soft-gold transition-colors duration-300">Color Theory: Anchoring a Room</h3>
-              <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4 line-clamp-3">
+              <h3 class="text-xl font-semibold text-charcoal dark:text-off-white mb-3 group-hover:text-soft-gold transition-colors duration-300">Color Theory: Anchoring a Room</h3>
+              <p class="text-gray-600 dark:text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-4 line-clamp-3">
                 A rug sets the foundational palette for your entire space. Discover how to use muted golds, rich charcoals, and vibrant indigos to tie your disparate furniture pieces together cohesively.
               </p>
               <span class="text-xs font-bold text-charcoal dark:text-off-white uppercase tracking-widest group-hover:text-soft-gold transition-colors flex items-center">Read Article <i class="fas fa-arrow-right ml-2 text-[10px]"></i></span>
@@ -374,7 +373,7 @@
       <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-fade-in">
         <i class="fas fa-envelope-open-text text-4xl text-soft-gold mb-6"></i>
         <h2 class="text-3xl md:text-4xl font-extrabold text-off-white mb-4">Subscribe to the Journal</h2>
-        <p class="text-muted-grey text-lg mb-8 leading-relaxed font-light">
+        <p class="text-muted-grey text-lg mb-8 leading-relaxed font-medium">
           Get the latest design insights, exclusive looks at new collections, and behind-the-scenes stories from the atelier delivered straight to your inbox.
         </p>
         <form class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -415,7 +414,7 @@
         </div>
 
         <div>
-          <h4 class="text-sm uppercase tracking-[0.2em] font-bold mb-8 text-off-white">Quick Links</h4>
+          <h4 class="text-sm uppercase tracking-[0.2em] font-semibold mb-8 text-off-white">Quick Links</h4>
           <ul class="space-y-5">
             <li><a href="index.html" class="text-base text-muted-grey hover:text-soft-gold transition-colors duration-300">Home</a></li>
             <li><a href="about.html" class="text-base text-muted-grey hover:text-soft-gold transition-colors duration-300">Our Heritage</a></li>
@@ -426,7 +425,7 @@
         </div>
 
         <div>
-          <h4 class="text-sm uppercase tracking-[0.2em] font-bold mb-8 text-off-white">Our Services</h4>
+          <h4 class="text-sm uppercase tracking-[0.2em] font-semibold mb-8 text-off-white">Our Services</h4>
           <ul class="space-y-5">
             <li><a href="services.html" class="text-base text-muted-grey hover:text-soft-gold transition-colors duration-300">Custom Rug Weaving</a></li>
             <li><a href="services.html" class="text-base text-muted-grey hover:text-soft-gold transition-colors duration-300">Material Sourcing</a></li>
@@ -437,7 +436,7 @@
         </div>
 
         <div>
-          <h4 class="text-sm uppercase tracking-[0.2em] font-bold mb-8 text-off-white">Visit The Studio</h4>
+          <h4 class="text-sm uppercase tracking-[0.2em] font-semibold mb-8 text-off-white">Visit The Studio</h4>
           <ul class="space-y-6">
             <li class="flex items-start">
               <i class="fas fa-map-marker-alt text-soft-gold mt-1 mr-4 text-base"></i>

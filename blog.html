@@ -50,7 +50,11 @@
         <div class="flex-shrink-0">
           <a href="index.html" class="flex items-center gap-3">
             <div class="flex flex-col">
-              <span class="text-2xl font-semibold tracking-tight text-brand-dark dark:text-brand-light uppercase">Pipe<span class="text-accent">Craft</span></span>
+              <div class="flex items-center gap-2"><svg class="w-8 h-8 text-accent drop-shadow-sm" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path d="M17.5,7C15.91,7 14.54,8.04 14.12,9.5H7.5C5.57,9.5 4,11.07 4,13C4,14.93 5.57,16.5 7.5,16.5H13V15.5H7.5C6.12,15.5 5,14.38 5,13C5,11.62 6.12,10.5 7.5,10.5H14.12C14.54,11.96 15.91,13 17.5,13C19.43,13 21,11.43 21,9.5C21,7.57 19.43,7 17.5,7ZM17.5,12C16.12,12 15,10.88 15,9.5C15,8.12 16.12,7 17.5,7C18.88,7 20,8.12 20,9.5C20,10.88 18.88,12 17.5,12Z"/>
+  <path d="M19,3.5C18.7,3.5 18.5,3.7 18.5,4C18.5,4.7 18.2,5.2 17.7,5.5C17.3,5.8 16.7,6 16,6C15.7,6 15.5,6.2 15.5,6.5C15.5,6.8 15.7,7 16,7C17,7 17.8,6.7 18.4,6.2C19.1,5.7 19.5,4.9 19.5,4C19.5,3.7 19.3,3.5 19,3.5Z"/>
+  <path d="M16,2.5C15.7,2.5 15.5,2.7 15.5,3C15.5,3.7 15.2,4.2 14.7,4.5C14.3,4.8 13.7,5 13,5C12.7,5 12.5,5.2 12.5,5.5C12.5,5.8 12.7,6 13,6C14,6 14.8,5.7 15.4,5.2C16.1,4.7 16.5,3.9 16.5,3C16.5,2.7 16.3,2.5 16,2.5Z"/>
+</svg><span class="text-2xl font-semibold tracking-tight text-brand-dark dark:text-brand-light uppercase">Pipe<span class="text-accent">Craft</span></span></div>
             </div>
           </a>
         </div>
@@ -108,18 +112,6 @@
 
         <div class="hidden xl:flex items-center gap-4">
           
-          <button type="button" onclick="window.location.href='login.html'" class="bg-accent border-2 border-accent text-white hover:bg-transparent hover:text-accent px-6 py-2.5 text-xs uppercase tracking-wider font-semibold transition-all duration-300 flex items-center gap-2">
-            <span>Login</span>
-            <i class="fas fa-arrow-right text-[10px] rtl:rotate-180"></i>
-          </button>
-          
-          <a href="register.html" class="bg-transparent border-2 border-gray-300 dark:border-gray-700 text-brand-dark dark:text-brand-light hover:border-accent dark:hover:border-accent hover:text-accent dark:hover:text-accent px-6 py-2.5 text-xs uppercase tracking-wider font-medium transition-all duration-300 flex items-center gap-2">
-            <span>Register</span>
-            <i class="fas fa-arrow-right text-[10px] rtl:rotate-180"></i>
-          </a>
-
-          <div class="h-8 w-px bg-gray-200 dark:bg-gray-800 mx-2"></div>
-
           <button id="theme-toggle" class="relative w-[72px] h-[34px] flex items-center bg-gray-200 dark:bg-[#1E293B] rounded-full p-1 transition-colors duration-300 focus:outline-none border border-gray-300 dark:border-gray-700 overflow-hidden" title="Toggle Theme">
             <span class="text-[9px] font-medium text-gray-500 absolute end-2.5 dark:opacity-0 transition-opacity duration-300 tracking-wider">LIGHT</span>
             <span class="text-[9px] font-medium text-accent absolute start-2.5 opacity-0 dark:opacity-100 transition-opacity duration-300 tracking-wider">DARK</span>
@@ -133,7 +125,18 @@
           <button id="rtl-toggle" class="text-xs font-medium text-gray-400 hover:text-accent transition-colors duration-300 ms-2" title="Toggle RTL">
             RTL
           </button>
-        </div>
+          <div class="h-8 w-px bg-gray-200 dark:bg-gray-800 mx-2"></div>
+          <button type="button" onclick="window.location.href='login.html'" class="bg-accent border-2 border-accent text-white hover:bg-transparent hover:text-accent px-6 py-2.5 text-xs uppercase tracking-wider font-semibold transition-all duration-300 flex items-center gap-2">
+            <span>Login</span>
+            <i class="fas fa-arrow-right text-[10px] rtl:rotate-180"></i>
+          </button>
+          
+          <a href="register.html" class="bg-transparent border-2 border-gray-300 dark:border-gray-700 text-brand-dark dark:text-brand-light hover:border-accent dark:hover:border-accent hover:text-accent dark:hover:text-accent px-6 py-2.5 text-xs uppercase tracking-wider font-medium transition-all duration-300 flex items-center gap-2">
+            <span>Register</span>
+            <i class="fas fa-arrow-right text-[10px] rtl:rotate-180"></i>
+          </a>
+
+          </div>
 
         <div class="xl:hidden flex items-center">
           <button id="mobile-menu-button" class="text-gray-900 dark:text-brand-light hover:text-accent focus:outline-none transition duration-300">
@@ -156,8 +159,8 @@
             <i class="fas fa-plus text-xs transition-transform duration-300" id="mobile-home-icon"></i>
           </button>
           <div id="mobile-home-menu" class="hidden pb-4 flex flex-col gap-3 ps-4 border-s-2 border-accent/20 ms-2">
-            <a href="index.html" class="block text-sm font-medium text-gray-500 hover:text-accent dark:text-gray-400 transition duration-300 uppercase tracking-wider">01. Home Page</a>
-            <a href="home-2.html" class="block text-sm font-medium text-gray-500 hover:text-accent dark:text-gray-400 transition duration-300 uppercase tracking-wider">02. Home Page</a>
+            <a href="index.html" class="block text-sm font-medium text-gray-500 hover:text-accent dark:text-gray-500 dark:text-gray-400 transition duration-300 uppercase tracking-wider">01. Home Page</a>
+            <a href="home-2.html" class="block text-sm font-medium text-gray-500 hover:text-accent dark:text-gray-500 dark:text-gray-400 transition duration-300 uppercase tracking-wider">02. Home Page</a>
           </div>
         </div>
 
@@ -189,7 +192,7 @@
               <span class="dark:hidden flex items-center text-accent"><i class="fas fa-sun me-2"></i> Light Active</span>
               <span class="hidden dark:flex items-center text-accent"><i class="fas fa-moon me-2"></i> Dark Active</span>
             </button>
-            <button id="mobile-rtl-toggle" class="text-gray-400 hover:text-accent transition-colors flex items-center text-xs font-medium uppercase tracking-widest">
+            <button id="mobile-rtl-toggle" class="text-gray-500 dark:text-gray-400 hover:text-accent transition-colors flex items-center text-xs font-medium uppercase tracking-widest">
               <i class="fas fa-language me-2 text-lg"></i> RTL
             </button>
           </div>
@@ -208,7 +211,7 @@
       
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-10">
         <div class="text-center mb-12 animate-fade-in">
-          <h1 class="text-4xl md:text-6xl font-serif font-bold text-white mb-4 tracking-wide">The Aficionado's <span class="text-accent italic">Journal</span></h1>
+          <h1 class="text-4xl md:text-6xl font-serif font-semibold text-white mb-4 tracking-wide">The Aficionado's <span class="text-accent italic">Journal</span></h1>
           <p class="text-brand-muted text-lg">Musings on briar, leaf, and the slow life.</p>
         </div>
         
@@ -224,8 +227,8 @@
               <span class="w-1 h-1 bg-accent rounded-full"></span>
               <span>By Elias Thorne</span>
             </div>
-            <h2 class="text-3xl font-serif font-bold text-white mb-4 group-hover:text-accent transition-colors">The Ghost in the Briar: Decoding Latakia Crossover</h2>
-            <p class="text-gray-400 mb-8 leading-relaxed text-sm">
+            <h2 class="text-3xl font-serif font-semibold text-white mb-4 group-hover:text-accent transition-colors">The Ghost in the Briar: Decoding Latakia Crossover</h2>
+            <p class="text-gray-500 dark:text-gray-400 mb-8 leading-relaxed text-sm">
               We explore the phenomenon of "ghosting"—why your delicate Virginia flakes suddenly taste like a campfire after smoking a heavy English blend in the same pipe, and the science behind the briar's memory.
             </p>
             <span class="text-accent text-xs font-bold uppercase tracking-widest flex items-center gap-2 group-hover:gap-4 transition-all">
@@ -240,7 +243,7 @@
     <section class="py-24 bg-brand-light dark:bg-[#111827] border-b border-gray-200 dark:border-white/5">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col items-center text-center mb-12">
-          <h2 class="text-3xl md:text-5xl font-serif font-bold text-brand-dark dark:text-white relative inline-block">
+          <h2 class="text-3xl md:text-5xl font-serif font-semibold text-brand-dark dark:text-white relative inline-block">
             Recent Dispatches
             <div class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-accent"></div>
           </h2>
@@ -250,13 +253,13 @@
           <!-- Post 1 -->
           <article class="bg-white dark:bg-[#1E293B] shadow-lg border border-gray-100 dark:border-white/5 group cursor-pointer overflow-hidden flex flex-col">
             <div class="relative h-56 overflow-hidden">
-              <img src="img/home2_woods.png" alt="Post" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+              <img src="img/blog_sandblast.png" alt="Post" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
               <div class="absolute inset-0 bg-brand-dark/20 group-hover:bg-transparent transition-colors"></div>
             </div>
             <div class="p-6 flex-grow flex flex-col">
               <span class="text-[10px] text-accent uppercase tracking-widest font-bold mb-2">Craftsmanship</span>
-              <h3 class="text-xl font-serif font-bold text-brand-dark dark:text-white mb-3 group-hover:text-accent transition-colors">Why Sandblasting Isn't Just for Blemished Briar</h3>
-              <p class="text-sm text-gray-500 dark:text-gray-400 mb-6 flex-grow line-clamp-3">
+              <h3 class="text-xl font-serif font-semibold text-brand-dark dark:text-white mb-3 group-hover:text-accent transition-colors">Why Sandblasting Isn't Just for Blemished Briar</h3>
+              <p class="text-sm text-gray-500 dark:text-gray-500 dark:text-gray-400 mb-6 flex-grow line-clamp-3">
                 A common myth dictates that sandblasting is only used to hide pits. We delve into the true artistry of revealing the ring grain through careful blasting.
               </p>
               <div class="flex items-center justify-between text-xs text-gray-400 font-mono mt-auto pt-4 border-t border-gray-100 dark:border-white/10">
@@ -269,13 +272,13 @@
           <!-- Post 2 -->
           <article class="bg-white dark:bg-[#1E293B] shadow-lg border border-gray-100 dark:border-white/5 group cursor-pointer overflow-hidden flex flex-col">
             <div class="relative h-56 overflow-hidden">
-              <img src="img/house_blends.png" alt="Post" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+              <img src="img/blog_cellar.png" alt="Post" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
               <div class="absolute inset-0 bg-brand-dark/20 group-hover:bg-transparent transition-colors"></div>
             </div>
             <div class="p-6 flex-grow flex flex-col">
               <span class="text-[10px] text-accent uppercase tracking-widest font-bold mb-2">Tobacco Logs</span>
-              <h3 class="text-xl font-serif font-bold text-brand-dark dark:text-white mb-3 group-hover:text-accent transition-colors">The Cellar Project: Aging VaPers</h3>
-              <p class="text-sm text-gray-500 dark:text-gray-400 mb-6 flex-grow line-clamp-3">
+              <h3 class="text-xl font-serif font-semibold text-brand-dark dark:text-white mb-3 group-hover:text-accent transition-colors">The Cellar Project: Aging VaPers</h3>
+              <p class="text-sm text-gray-500 dark:text-gray-500 dark:text-gray-400 mb-6 flex-grow line-clamp-3">
                 What really happens when you lock away a tin of Virginia/Perique blend for five years? The sugar crystals tell a story of transformation.
               </p>
               <div class="flex items-center justify-between text-xs text-gray-400 font-mono mt-auto pt-4 border-t border-gray-100 dark:border-white/10">
@@ -288,13 +291,13 @@
           <!-- Post 3 -->
           <article class="bg-white dark:bg-[#1E293B] shadow-lg border border-gray-100 dark:border-white/5 group cursor-pointer overflow-hidden flex flex-col">
             <div class="relative h-56 overflow-hidden">
-              <img src="img/about_anatomy.png" alt="Post" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+              <img src="img/blog_slowsmoke.png" alt="Post" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
               <div class="absolute inset-0 bg-brand-dark/20 group-hover:bg-transparent transition-colors"></div>
             </div>
             <div class="p-6 flex-grow flex flex-col">
               <span class="text-[10px] text-accent uppercase tracking-widest font-bold mb-2">Culture</span>
-              <h3 class="text-xl font-serif font-bold text-brand-dark dark:text-white mb-3 group-hover:text-accent transition-colors">The Slow Smoke: A Counter-Cultural Act</h3>
-              <p class="text-sm text-gray-500 dark:text-gray-400 mb-6 flex-grow line-clamp-3">
+              <h3 class="text-xl font-serif font-semibold text-brand-dark dark:text-white mb-3 group-hover:text-accent transition-colors">The Slow Smoke: A Counter-Cultural Act</h3>
+              <p class="text-sm text-gray-500 dark:text-gray-500 dark:text-gray-400 mb-6 flex-grow line-clamp-3">
                 In a world obsessed with speed and optimization, taking 45 minutes to pack, light, and enjoy a bowl of tobacco is an act of quiet rebellion.
               </p>
               <div class="flex items-center justify-between text-xs text-gray-400 font-mono mt-auto pt-4 border-t border-gray-100 dark:border-white/10">
@@ -314,26 +317,26 @@
           
           <a href="#" class="bg-white dark:bg-[#1E293B] p-6 text-center border border-gray-100 dark:border-white/5 hover:border-accent dark:hover:border-accent transition-all group rounded-sm shadow-sm hover:shadow-lg">
             <i class="fas fa-hammer text-2xl text-accent mb-3 group-hover:-translate-y-1 transition-transform"></i>
-            <h4 class="font-bold text-brand-dark dark:text-white uppercase tracking-widest text-xs">Craftsmanship</h4>
-            <p class="text-[10px] text-gray-400 mt-2">12 Articles</p>
+            <h4 class="font-semibold text-brand-dark dark:text-white uppercase tracking-widest text-xs">Craftsmanship</h4>
+            <p class="text-[10px] text-gray-500 dark:text-gray-400 mt-2">12 Articles</p>
           </a>
           
           <a href="#" class="bg-white dark:bg-[#1E293B] p-6 text-center border border-gray-100 dark:border-white/5 hover:border-accent dark:hover:border-accent transition-all group rounded-sm shadow-sm hover:shadow-lg">
             <i class="fas fa-leaf text-2xl text-accent mb-3 group-hover:-translate-y-1 transition-transform"></i>
-            <h4 class="font-bold text-brand-dark dark:text-white uppercase tracking-widest text-xs">Tobacco Logs</h4>
-            <p class="text-[10px] text-gray-400 mt-2">24 Articles</p>
+            <h4 class="font-semibold text-brand-dark dark:text-white uppercase tracking-widest text-xs">Tobacco Logs</h4>
+            <p class="text-[10px] text-gray-500 dark:text-gray-400 mt-2">24 Articles</p>
           </a>
           
           <a href="#" class="bg-white dark:bg-[#1E293B] p-6 text-center border border-gray-100 dark:border-white/5 hover:border-accent dark:hover:border-accent transition-all group rounded-sm shadow-sm hover:shadow-lg">
             <i class="fas fa-broom text-2xl text-accent mb-3 group-hover:-translate-y-1 transition-transform"></i>
-            <h4 class="font-bold text-brand-dark dark:text-white uppercase tracking-widest text-xs">Restoration</h4>
-            <p class="text-[10px] text-gray-400 mt-2">8 Articles</p>
+            <h4 class="font-semibold text-brand-dark dark:text-white uppercase tracking-widest text-xs">Restoration</h4>
+            <p class="text-[10px] text-gray-500 dark:text-gray-400 mt-2">8 Articles</p>
           </a>
           
           <a href="#" class="bg-white dark:bg-[#1E293B] p-6 text-center border border-gray-100 dark:border-white/5 hover:border-accent dark:hover:border-accent transition-all group rounded-sm shadow-sm hover:shadow-lg">
             <i class="fas fa-history text-2xl text-accent mb-3 group-hover:-translate-y-1 transition-transform"></i>
-            <h4 class="font-bold text-brand-dark dark:text-white uppercase tracking-widest text-xs">Pipe History</h4>
-            <p class="text-[10px] text-gray-400 mt-2">15 Articles</p>
+            <h4 class="font-semibold text-brand-dark dark:text-white uppercase tracking-widest text-xs">Pipe History</h4>
+            <p class="text-[10px] text-gray-500 dark:text-gray-400 mt-2">15 Articles</p>
           </a>
           
         </div>
@@ -351,7 +354,7 @@
           <div class="grid md:grid-cols-2">
             <div class="p-12 md:p-16 flex flex-col justify-center relative z-10">
               <span class="text-accent text-[10px] font-bold uppercase tracking-widest mb-4">Columnist Focus</span>
-              <h2 class="text-3xl font-serif font-bold text-white mb-6">Notes from the Blender's Bench</h2>
+              <h2 class="text-3xl font-serif font-semibold text-white mb-6">Notes from the Blender's Bench</h2>
               <div class="mb-6 relative">
                 <i class="fas fa-quote-left text-4xl text-white/10 absolute -top-4 -left-2"></i>
                 <p class="text-gray-300 italic text-sm leading-relaxed relative z-10 pl-4 border-l border-accent/30">
@@ -361,7 +364,7 @@
               <div class="flex items-center gap-4 mt-4">
                 <img src="img/home2_artisan.png" alt="Arthur Pendelton" class="w-12 h-12 rounded-full border-2 border-accent object-cover filter grayscale">
                 <div>
-                  <h4 class="text-white font-bold text-sm">Arthur Pendelton</h4>
+                  <h4 class="text-white font-semibold text-sm">Arthur Pendelton</h4>
                   <p class="text-accent text-xs">Master Blender</p>
                 </div>
               </div>
@@ -385,8 +388,8 @@
       
       <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
         <i class="fas fa-envelope-open-text text-4xl text-accent mb-6"></i>
-        <h2 class="text-3xl font-serif font-bold text-white mb-4">Join the Inner Circle</h2>
-        <p class="text-gray-400 mb-8 text-sm">
+        <h2 class="text-3xl font-serif font-semibold text-white mb-4">Join the Inner Circle</h2>
+        <p class="text-gray-500 dark:text-gray-400 mb-8 text-sm">
           Subscribe to our weekly dispatch. You'll receive early access to rare estate drops, limited-run seasonal tobacco blends, and our latest journal entries directly to your inbox.
         </p>
         
@@ -463,7 +466,7 @@
             </li>
             <li class="flex items-center">
               <i class="fas fa-envelope text-accent me-4 text-base"></i>
-              <a href="mailto:contact@eliasthornepipes.com" class="text-base text-brand-muted hover:text-accent transition-colors font-medium">contact@eliasthornepipes.com</a>
+              <a href="mailto:contact@eliasthornepipes.com" class="text-base text-brand-muted hover:text-accent transition-colors font-medium break-all">contact@eliasthornepipes.com</a>
             </li>
           </ul>
         </div>

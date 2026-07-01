@@ -50,7 +50,11 @@
         <div class="flex-shrink-0">
           <a href="index.html" class="flex items-center gap-3">
             <div class="flex flex-col">
-              <span class="text-2xl font-semibold tracking-tight text-brand-dark dark:text-brand-light uppercase">Pipe<span class="text-accent">Craft</span></span>
+              <div class="flex items-center gap-2"><svg class="w-8 h-8 text-accent drop-shadow-sm" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path d="M17.5,7C15.91,7 14.54,8.04 14.12,9.5H7.5C5.57,9.5 4,11.07 4,13C4,14.93 5.57,16.5 7.5,16.5H13V15.5H7.5C6.12,15.5 5,14.38 5,13C5,11.62 6.12,10.5 7.5,10.5H14.12C14.54,11.96 15.91,13 17.5,13C19.43,13 21,11.43 21,9.5C21,7.57 19.43,7 17.5,7ZM17.5,12C16.12,12 15,10.88 15,9.5C15,8.12 16.12,7 17.5,7C18.88,7 20,8.12 20,9.5C20,10.88 18.88,12 17.5,12Z"/>
+  <path d="M19,3.5C18.7,3.5 18.5,3.7 18.5,4C18.5,4.7 18.2,5.2 17.7,5.5C17.3,5.8 16.7,6 16,6C15.7,6 15.5,6.2 15.5,6.5C15.5,6.8 15.7,7 16,7C17,7 17.8,6.7 18.4,6.2C19.1,5.7 19.5,4.9 19.5,4C19.5,3.7 19.3,3.5 19,3.5Z"/>
+  <path d="M16,2.5C15.7,2.5 15.5,2.7 15.5,3C15.5,3.7 15.2,4.2 14.7,4.5C14.3,4.8 13.7,5 13,5C12.7,5 12.5,5.2 12.5,5.5C12.5,5.8 12.7,6 13,6C14,6 14.8,5.7 15.4,5.2C16.1,4.7 16.5,3.9 16.5,3C16.5,2.7 16.3,2.5 16,2.5Z"/>
+</svg><span class="text-2xl font-semibold tracking-tight text-brand-dark dark:text-brand-light uppercase">Pipe<span class="text-accent">Craft</span></span></div>
             </div>
           </a>
         </div>
@@ -108,18 +112,6 @@
 
         <div class="hidden xl:flex items-center gap-4">
           
-          <button type="button" onclick="window.location.href='login.html'" class="bg-accent border-2 border-accent text-white hover:bg-transparent hover:text-accent px-6 py-2.5 text-xs uppercase tracking-wider font-semibold transition-all duration-300 flex items-center gap-2">
-            <span>Login</span>
-            <i class="fas fa-arrow-right text-[10px] rtl:rotate-180"></i>
-          </button>
-          
-          <a href="register.html" class="bg-transparent border-2 border-gray-300 dark:border-gray-700 text-brand-dark dark:text-brand-light hover:border-accent dark:hover:border-accent hover:text-accent dark:hover:text-accent px-6 py-2.5 text-xs uppercase tracking-wider font-medium transition-all duration-300 flex items-center gap-2">
-            <span>Register</span>
-            <i class="fas fa-arrow-right text-[10px] rtl:rotate-180"></i>
-          </a>
-
-          <div class="h-8 w-px bg-gray-200 dark:bg-gray-800 mx-2"></div>
-
           <button id="theme-toggle" class="relative w-[72px] h-[34px] flex items-center bg-gray-200 dark:bg-[#1E293B] rounded-full p-1 transition-colors duration-300 focus:outline-none border border-gray-300 dark:border-gray-700 overflow-hidden" title="Toggle Theme">
             <span class="text-[9px] font-medium text-gray-500 absolute end-2.5 dark:opacity-0 transition-opacity duration-300 tracking-wider">LIGHT</span>
             <span class="text-[9px] font-medium text-accent absolute start-2.5 opacity-0 dark:opacity-100 transition-opacity duration-300 tracking-wider">DARK</span>
@@ -133,7 +125,18 @@
           <button id="rtl-toggle" class="text-xs font-medium text-gray-400 hover:text-accent transition-colors duration-300 ms-2" title="Toggle RTL">
             RTL
           </button>
-        </div>
+          <div class="h-8 w-px bg-gray-200 dark:bg-gray-800 mx-2"></div>
+          <button type="button" onclick="window.location.href='login.html'" class="bg-accent border-2 border-accent text-white hover:bg-transparent hover:text-accent px-6 py-2.5 text-xs uppercase tracking-wider font-semibold transition-all duration-300 flex items-center gap-2">
+            <span>Login</span>
+            <i class="fas fa-arrow-right text-[10px] rtl:rotate-180"></i>
+          </button>
+          
+          <a href="register.html" class="bg-transparent border-2 border-gray-300 dark:border-gray-700 text-brand-dark dark:text-brand-light hover:border-accent dark:hover:border-accent hover:text-accent dark:hover:text-accent px-6 py-2.5 text-xs uppercase tracking-wider font-medium transition-all duration-300 flex items-center gap-2">
+            <span>Register</span>
+            <i class="fas fa-arrow-right text-[10px] rtl:rotate-180"></i>
+          </a>
+
+          </div>
 
         <div class="xl:hidden flex items-center">
           <button id="mobile-menu-button" class="text-gray-900 dark:text-brand-light hover:text-accent focus:outline-none transition duration-300">
@@ -156,7 +159,7 @@
             <i class="fas fa-plus text-xs transition-transform duration-300" id="mobile-home-icon"></i>
           </button>
           <div id="mobile-home-menu" class="hidden pb-4 flex flex-col gap-3 ps-4 border-s-2 border-accent/20 ms-2">
-            <a href="index.html" class="block text-sm font-medium text-gray-500 hover:text-accent dark:text-gray-400 transition duration-300 uppercase tracking-wider">01. Home Page</a>
+            <a href="index.html" class="block text-sm font-medium text-gray-500 hover:text-accent dark:text-gray-500 dark:text-gray-400 transition duration-300 uppercase tracking-wider">01. Home Page</a>
             <a href="home-2.html" class="block text-sm font-medium text-accent transition duration-300 uppercase tracking-wider">02. Home Page</a>
           </div>
         </div>
@@ -189,7 +192,7 @@
               <span class="dark:hidden flex items-center text-accent"><i class="fas fa-sun me-2"></i> Light Active</span>
               <span class="hidden dark:flex items-center text-accent"><i class="fas fa-moon me-2"></i> Dark Active</span>
             </button>
-            <button id="mobile-rtl-toggle" class="text-gray-400 hover:text-accent transition-colors flex items-center text-xs font-medium uppercase tracking-widest">
+            <button id="mobile-rtl-toggle" class="text-gray-500 dark:text-gray-400 hover:text-accent transition-colors flex items-center text-xs font-medium uppercase tracking-widest">
               <i class="fas fa-language me-2 text-lg"></i> RTL
             </button>
           </div>
@@ -236,19 +239,19 @@
         <div class="mt-20 pt-10 border-t border-white/10 grid grid-cols-2 md:grid-cols-4 gap-8">
           <div>
             <h4 class="text-4xl font-semibold text-accent mb-2">10k+</h4>
-            <p class="text-[10px] text-gray-400 font-medium uppercase tracking-widest">Pipes Carved</p>
+            <p class="text-[10px] text-gray-500 dark:text-gray-400 font-medium uppercase tracking-widest">Pipes Carved</p>
           </div>
           <div>
             <h4 class="text-4xl font-semibold text-accent mb-2">4+</h4>
-            <p class="text-[10px] text-gray-400 font-medium uppercase tracking-widest">Master Artisans</p>
+            <p class="text-[10px] text-gray-500 dark:text-gray-400 font-medium uppercase tracking-widest">Master Artisans</p>
           </div>
           <div>
             <h4 class="text-4xl font-semibold text-accent mb-2">4.9/5</h4>
-            <p class="text-[10px] text-gray-400 font-medium uppercase tracking-widest">Average Rating</p>
+            <p class="text-[10px] text-gray-500 dark:text-gray-400 font-medium uppercase tracking-widest">Average Rating</p>
           </div>
           <div>
             <h4 class="text-4xl font-semibold text-accent mb-2">100%</h4>
-            <p class="text-[10px] text-gray-400 font-medium uppercase tracking-widest">Handcrafted Quality</p>
+            <p class="text-[10px] text-gray-500 dark:text-gray-400 font-medium uppercase tracking-widest">Handcrafted Quality</p>
           </div>
         </div>
 
@@ -269,7 +272,7 @@
         <div class="grid lg:grid-cols-2 gap-12 items-center">
           <div class="order-2 lg:order-1 relative">
             <div class="relative w-full aspect-video rounded-lg overflow-hidden shadow-2xl border border-white/10 group cursor-pointer">
-              <img src="img/home2_workshop.png" alt="Carving Video Thumbnail" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 opacity-80 group-hover:opacity-100">
+              <img src="img/pipe_2_1782900357954.png" alt="Carving Video Thumbnail" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 opacity-80 group-hover:opacity-100">
               <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500"></div>
               
               <!-- Play Button -->
@@ -296,11 +299,11 @@
               <span class="text-[10px] uppercase tracking-[0.2em] font-medium text-brand-light">Inside the Workshop</span>
             </div>
             
-            <h2 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-brand-light leading-tight">
+            <h2 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-semibold text-brand-light leading-tight">
               Watch the <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-[#eab308]">Magic</span> Happen
             </h2>
             
-            <p class="text-gray-400 text-lg leading-relaxed max-w-lg">
+            <p class="text-gray-500 dark:text-gray-400 text-lg leading-relaxed max-w-lg">
               Take an exclusive look inside our atelier. Witness the careful selection of raw materials, the precision of the lathe, and the delicate hand-finishing that brings our custom pipes to life.
             </p>
             
@@ -332,8 +335,8 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-16">
           <span class="text-accent uppercase tracking-[0.2em] text-xs font-bold mb-4 block">Material Selection</span>
-          <h2 class="text-4xl md:text-5xl font-serif font-bold text-brand-dark dark:text-brand-light mb-6">Explore Our Exotic Woods</h2>
-          <p class="text-brand-muted dark:text-gray-400 text-lg">The soul of a pipe lies in its material. Discover the unique smoking characteristics and visual appeal of our finest carving blocks.</p>
+          <h2 class="text-4xl md:text-5xl font-serif font-semibold text-brand-dark dark:text-brand-light mb-6">Explore Our Exotic Woods</h2>
+          <p class="text-brand-muted dark:text-gray-500 dark:text-gray-400 text-lg">The soul of a pipe lies in its material. Discover the unique smoking characteristics and visual appeal of our finest carving blocks.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -342,14 +345,14 @@
             <div class="h-48 overflow-hidden relative">
               <img src="img/home2_woods.png" alt="Corsican Briar" class="w-full h-full object-cover filter brightness-90 group-hover:scale-110 transition-transform duration-700">
               <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
-              <h3 class="absolute bottom-4 left-6 text-2xl font-serif font-bold text-white">Corsican Briar</h3>
+              <h3 class="absolute bottom-4 left-6 text-2xl font-serif font-semibold text-white">Corsican Briar</h3>
             </div>
             <div class="p-6">
               <div class="flex items-center justify-between mb-4 border-b border-gray-100 dark:border-white/5 pb-4">
                 <span class="text-xs uppercase tracking-widest text-brand-muted">Origin: France</span>
                 <span class="text-xs uppercase tracking-widest text-accent font-bold">The Gold Standard</span>
               </div>
-              <p class="text-sm text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
+              <p class="text-sm text-gray-600 dark:text-gray-500 dark:text-gray-400 mb-6 leading-relaxed">
                 Extremely heat-resistant and highly porous. Corsican briar absorbs moisture for a dry smoke and develops a beautiful, unique patina over decades of use.
               </p>
               <ul class="space-y-2 mb-6">
@@ -363,16 +366,16 @@
           <!-- Wood 2 -->
           <div class="bg-white dark:bg-[#1E293B] border border-gray-200 dark:border-white/5 overflow-hidden group">
             <div class="h-48 overflow-hidden relative">
-              <img src="img/home2_woods.png" alt="Morton Olive Wood" class="w-full h-full object-cover filter brightness-90 group-hover:scale-110 transition-transform duration-700">
+              <img src="img/pipe_3_1782900368281.png" alt="Morton Olive Wood" class="w-full h-full object-cover filter brightness-90 group-hover:scale-110 transition-transform duration-700">
               <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
-              <h3 class="absolute bottom-4 left-6 text-2xl font-serif font-bold text-white">Olive Wood</h3>
+              <h3 class="absolute bottom-4 left-6 text-2xl font-serif font-semibold text-white">Olive Wood</h3>
             </div>
             <div class="p-6">
               <div class="flex items-center justify-between mb-4 border-b border-gray-100 dark:border-white/5 pb-4">
                 <span class="text-xs uppercase tracking-widest text-brand-muted">Origin: Italy</span>
                 <span class="text-xs uppercase tracking-widest text-accent font-bold">Sweet & Striking</span>
               </div>
-              <p class="text-sm text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
+              <p class="text-sm text-gray-600 dark:text-gray-500 dark:text-gray-400 mb-6 leading-relaxed">
                 Known for its spectacular, contrasting grain patterns. Olive wood imparts a subtle, natural sweetness to Virginia blends during the first dozen smokes.
               </p>
               <ul class="space-y-2 mb-6">
@@ -386,16 +389,16 @@
           <!-- Wood 3 -->
           <div class="bg-white dark:bg-[#1E293B] border border-gray-200 dark:border-white/5 overflow-hidden group">
             <div class="h-48 overflow-hidden relative">
-              <img src="img/home2_woods.png" alt="Turkish Meerschaum" class="w-full h-full object-cover filter brightness-90 group-hover:scale-110 transition-transform duration-700 grayscale">
+              <img src="img/craft_1_1782900381474.png" alt="Turkish Meerschaum" class="w-full h-full object-cover filter brightness-90 group-hover:scale-110 transition-transform duration-700 grayscale">
               <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
-              <h3 class="absolute bottom-4 left-6 text-2xl font-serif font-bold text-white">Block Meerschaum</h3>
+              <h3 class="absolute bottom-4 left-6 text-2xl font-serif font-semibold text-white">Block Meerschaum</h3>
             </div>
             <div class="p-6">
               <div class="flex items-center justify-between mb-4 border-b border-gray-100 dark:border-white/5 pb-4">
                 <span class="text-xs uppercase tracking-widest text-brand-muted">Origin: Turkey</span>
                 <span class="text-xs uppercase tracking-widest text-accent font-bold">Pure & Neutral</span>
               </div>
-              <p class="text-sm text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
+              <p class="text-sm text-gray-600 dark:text-gray-500 dark:text-gray-400 mb-6 leading-relaxed">
                 Not a wood, but a mineral. Meerschaum offers the truest taste of your tobacco, ghost-free, and slowly colors from stark white to a rich, warm amber.
               </p>
               <ul class="space-y-2 mb-6">
@@ -414,8 +417,8 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-16 animate-fade-in">
           <span class="text-accent uppercase tracking-[0.2em] text-xs font-bold mb-4 block">Meet The Makers</span>
-          <h2 class="text-4xl md:text-5xl font-serif font-bold text-brand-dark dark:text-brand-light mb-6">Our Resident Artisans</h2>
-          <p class="text-brand-muted dark:text-gray-400 text-lg">The hands and hearts behind our most exclusive collections. Learn about the master carvers who shape our legacy.</p>
+          <h2 class="text-4xl md:text-5xl font-serif font-semibold text-brand-dark dark:text-brand-light mb-6">Our Resident Artisans</h2>
+          <p class="text-brand-muted dark:text-gray-500 dark:text-gray-400 text-lg">The hands and hearts behind our most exclusive collections. Learn about the master carvers who shape our legacy.</p>
         </div>
 
         <div class="grid lg:grid-cols-2 gap-12">
@@ -425,11 +428,11 @@
               <img src="img/home2_artisan.png" alt="Elias Thorne" class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500">
             </div>
             <div>
-              <h3 class="text-2xl font-serif font-bold text-brand-dark dark:text-brand-light mb-1">Elias Thorne</h3>
+              <h3 class="text-2xl font-serif font-semibold text-brand-dark dark:text-brand-light mb-1">Elias Thorne</h3>
               <p class="text-accent text-sm font-bold uppercase tracking-widest mb-4">Head Carver & Designer</p>
               <div class="mb-4">
                 <i class="fas fa-quote-left text-brand-muted/30 text-3xl float-left mr-2 mt-1"></i>
-                <p class="text-brand-muted dark:text-gray-400 italic leading-relaxed text-sm">
+                <p class="text-brand-muted dark:text-gray-500 dark:text-gray-400 italic leading-relaxed text-sm">
                   "I don't force a shape upon the briar; I let the grain tell me what it wants to become. A great pipe is a collaboration between nature and the artisan."
                 </p>
               </div>
@@ -450,11 +453,11 @@
               <img src="img/home2_artisan_2.png" alt="Clara Vance" class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500">
             </div>
             <div>
-              <h3 class="text-2xl font-serif font-bold text-brand-dark dark:text-brand-light mb-1">Clara Vance</h3>
+              <h3 class="text-2xl font-serif font-semibold text-brand-dark dark:text-brand-light mb-1">Clara Vance</h3>
               <p class="text-accent text-sm font-bold uppercase tracking-widest mb-4">Finishing Specialist</p>
               <div class="mb-4">
                 <i class="fas fa-quote-left text-brand-muted/30 text-3xl float-left mr-2 mt-1"></i>
-                <p class="text-brand-muted dark:text-gray-400 italic leading-relaxed text-sm">
+                <p class="text-brand-muted dark:text-gray-500 dark:text-gray-400 italic leading-relaxed text-sm">
                   "The finish is the voice of the wood. My goal is to apply just enough stain and wax to make that voice sing without drowning out its natural character."
                 </p>
               </div>
@@ -479,7 +482,7 @@
         <div class="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-dark/50 to-transparent"></div>
         <div class="relative z-10 p-12 lg:p-24 h-full flex flex-col justify-center">
           <span class="text-accent uppercase tracking-[0.2em] text-xs font-bold mb-4 block">Visit Our Store</span>
-          <h2 class="text-4xl md:text-5xl font-serif font-bold text-white mb-6">The Aficionado Lounge</h2>
+          <h2 class="text-4xl md:text-5xl font-serif font-semibold text-white mb-6">The Aficionado Lounge</h2>
           <p class="text-gray-300 text-lg leading-relaxed mb-10 max-w-md">
             Step into our climate-controlled lounge. Sink into leather armchairs, enjoy complimentary espresso, and sample our house tobaccos in a relaxed, timeless atmosphere.
           </p>
@@ -492,7 +495,7 @@
       <div class="w-full lg:w-1/2 bg-brand-light dark:bg-brand-dark border-l border-gray-200 dark:border-white/5 p-12 lg:p-24 flex flex-col justify-center">
         <div class="grid sm:grid-cols-2 gap-12">
           <div>
-            <h3 class="text-xl font-bold text-brand-dark dark:text-brand-light mb-4 font-serif">Opening Hours</h3>
+            <h3 class="text-xl font-semibold text-brand-dark dark:text-brand-light mb-4 font-serif">Opening Hours</h3>
             <ul class="space-y-4">
               <li class="flex justify-between border-b border-gray-100 dark:border-white/5 pb-2">
                 <span class="text-brand-muted">Monday - Friday</span>
@@ -510,7 +513,7 @@
           </div>
           
           <div>
-            <h3 class="text-xl font-bold text-brand-dark dark:text-brand-light mb-4 font-serif">Lounge Amenities</h3>
+            <h3 class="text-xl font-semibold text-brand-dark dark:text-brand-light mb-4 font-serif">Lounge Amenities</h3>
             <ul class="space-y-3">
               <li class="flex items-center text-brand-muted">
                 <i class="fas fa-wifi text-accent mr-3 w-5 text-center"></i> High-Speed Wi-Fi
@@ -541,7 +544,7 @@
             <div class="inline-block bg-accent/20 text-accent font-bold px-3 py-1 text-[10px] uppercase tracking-widest rounded-sm mb-6 w-max border border-accent/30">
               Collector's Corner
             </div>
-            <h2 class="text-3xl lg:text-5xl font-serif font-bold text-white mb-6 leading-tight">
+            <h2 class="text-3xl lg:text-5xl font-serif font-semibold text-white mb-6 leading-tight">
               Fully Restored <br/>Vintage Estate Pipes
             </h2>
             <p class="text-gray-300 mb-8 max-w-lg leading-relaxed">
@@ -632,7 +635,7 @@
             </li>
             <li class="flex items-center">
               <i class="fas fa-envelope text-accent me-4 text-base"></i>
-              <a href="mailto:contact@eliasthornepipes.com" class="text-base text-brand-muted hover:text-accent transition-colors font-medium">contact@eliasthornepipes.com</a>
+              <a href="mailto:contact@eliasthornepipes.com" class="text-base text-brand-muted hover:text-accent transition-colors font-medium break-all">contact@eliasthornepipes.com</a>
             </li>
           </ul>
         </div>

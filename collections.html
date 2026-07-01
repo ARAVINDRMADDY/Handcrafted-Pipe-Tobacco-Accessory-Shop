@@ -110,18 +110,6 @@
 
         <div class="hidden xl:flex items-center space-x-4">
           
-          <button type="button" onclick="window.location.href='login.html'" class="bg-soft-gold border-2 border-soft-gold text-charcoal hover:bg-transparent hover:text-soft-gold px-6 py-2.5 text-xs uppercase tracking-wider font-black transition-all duration-300 flex items-center space-x-2">
-            <span>Login</span>
-            <i class="fas fa-arrow-right text-[10px]"></i>
-          </button>
-          
-          <a href="register.html" class="bg-transparent border-2 border-gray-300 dark:border-gray-700 text-charcoal dark:text-off-white hover:border-soft-gold dark:hover:border-soft-gold hover:text-soft-gold dark:hover:text-soft-gold px-6 py-2.5 text-xs uppercase tracking-wider font-bold transition-all duration-300 flex items-center space-x-2">
-            <span>Register</span>
-            <i class="fas fa-arrow-right text-[10px]"></i>
-          </a>
-
-          <div class="h-8 w-px bg-gray-200 dark:bg-gray-800 mx-2"></div>
-
           <button id="theme-toggle" class="relative w-[72px] h-[34px] flex items-center bg-gray-200 dark:bg-[#1a1a1a] rounded-full p-1 transition-colors duration-300 focus:outline-none border border-gray-300 dark:border-gray-700 overflow-hidden" title="Toggle Theme">
             <span class="text-[9px] font-black text-gray-500 absolute right-2.5 dark:opacity-0 transition-opacity duration-300 tracking-wider">LIGHT</span>
             <span class="text-[9px] font-black text-soft-gold absolute left-2.5 opacity-0 dark:opacity-100 transition-opacity duration-300 tracking-wider">DARK</span>
@@ -135,7 +123,18 @@
           <button id="rtl-toggle" class="text-xs font-bold text-gray-400 hover:text-soft-gold transition-colors duration-300 ml-2" title="Toggle RTL">
             RTL
           </button>
-        </div>
+          <div class="h-8 w-px bg-gray-200 dark:bg-gray-800 mx-2"></div>
+          <button type="button" onclick="window.location.href='login.html'" class="bg-soft-gold border-2 border-soft-gold text-charcoal hover:bg-transparent hover:text-soft-gold px-6 py-2.5 text-xs uppercase tracking-wider font-black transition-all duration-300 flex items-center space-x-2">
+            <span>Login</span>
+            <i class="fas fa-arrow-right text-[10px]"></i>
+          </button>
+          
+          <a href="register.html" class="bg-transparent border-2 border-gray-300 dark:border-gray-700 text-charcoal dark:text-off-white hover:border-soft-gold dark:hover:border-soft-gold hover:text-soft-gold dark:hover:text-soft-gold px-6 py-2.5 text-xs uppercase tracking-wider font-bold transition-all duration-300 flex items-center space-x-2">
+            <span>Register</span>
+            <i class="fas fa-arrow-right text-[10px]"></i>
+          </a>
+
+          </div>
 
         <div class="xl:hidden flex items-center">
           <button id="mobile-menu-button" class="text-gray-900 dark:text-off-white hover:text-soft-gold focus:outline-none transition duration-300">
@@ -158,8 +157,8 @@
             <i class="fas fa-plus text-xs transition-transform duration-300" id="mobile-home-icon"></i>
           </button>
           <div id="mobile-home-menu" class="hidden pb-4 space-y-3 pl-4 border-l-2 border-soft-gold/20 ml-2">
-            <a href="index.html" class="block text-sm font-medium text-gray-500 hover:text-soft-gold dark:text-gray-400 transition duration-300 uppercase tracking-wider">01. Home Page</a>
-            <a href="home-2.html" class="block text-sm font-medium text-gray-500 hover:text-soft-gold dark:text-gray-400 transition duration-300 uppercase tracking-wider">02. Home Page</a>
+            <a href="index.html" class="block text-sm font-medium text-gray-500 hover:text-soft-gold dark:text-gray-500 dark:text-gray-400 transition duration-300 uppercase tracking-wider">01. Home Page</a>
+            <a href="home-2.html" class="block text-sm font-medium text-gray-500 hover:text-soft-gold dark:text-gray-500 dark:text-gray-400 transition duration-300 uppercase tracking-wider">02. Home Page</a>
           </div>
         </div>
 
@@ -191,7 +190,7 @@
               <span class="dark:hidden flex items-center text-soft-gold"><i class="fas fa-sun mr-2"></i> Light Active</span>
               <span class="hidden dark:flex items-center text-soft-gold"><i class="fas fa-moon mr-2"></i> Dark Active</span>
             </button>
-            <button id="mobile-rtl-toggle" class="text-gray-400 hover:text-soft-gold transition-colors flex items-center text-xs font-bold uppercase tracking-widest">
+            <button id="mobile-rtl-toggle" class="text-gray-500 dark:text-gray-400 hover:text-soft-gold transition-colors flex items-center text-xs font-bold uppercase tracking-widest">
               <i class="fas fa-language mr-2 text-lg"></i> RTL
             </button>
           </div>
@@ -207,10 +206,10 @@
       <div class="absolute bottom-0 left-0 w-80 h-80 bg-muted-grey/10 rounded-full blur-3xl"></div>
       
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center animate-fade-in">
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 uppercase tracking-tight">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 uppercase tracking-tight">
           Our <span class="text-soft-gold">Collections</span>
         </h1>
-        <p class="text-lg md:text-xl text-muted-grey max-w-2xl mx-auto font-light leading-relaxed">
+        <p class="text-lg md:text-xl text-muted-grey max-w-2xl mx-auto font-medium leading-relaxed">
           Explore our curated portfolios of bespoke rugs. Each collection highlights a different weaving technique, motif origin, and material palette. 
         </p>
       </div>
@@ -241,8 +240,8 @@
             </div>
             <div>
               <span class="text-soft-gold font-bold tracking-wider uppercase text-xs">Persian Knotted</span>
-              <h3 class="text-2xl font-bold text-charcoal dark:text-off-white mt-2 mb-2 group-hover:text-soft-gold transition-colors">The Heritage Collection</h3>
-              <p class="text-gray-600 dark:text-gray-400 font-light">Inspired by classical antiquities, featuring intricate medallion designs and deep, vegetable-dyed wools that age beautifully over decades.</p>
+              <h3 class="text-2xl font-semibold text-charcoal dark:text-off-white mt-2 mb-2 group-hover:text-soft-gold transition-colors">The Heritage Collection</h3>
+              <p class="text-gray-600 dark:text-gray-500 dark:text-gray-400 font-medium">Inspired by classical antiquities, featuring intricate medallion designs and deep, vegetable-dyed wools that age beautifully over decades.</p>
             </div>
           </div>
 
@@ -256,8 +255,8 @@
             </div>
             <div>
               <span class="text-soft-gold font-bold tracking-wider uppercase text-xs">Tibetan Weave</span>
-              <h3 class="text-2xl font-bold text-charcoal dark:text-off-white mt-2 mb-2 group-hover:text-soft-gold transition-colors">Modern Minimalism</h3>
-              <p class="text-gray-600 dark:text-gray-400 font-light">Clean lines, abstract textures, and monochromatic palettes designed to anchor contemporary living spaces and sleek architectural layouts.</p>
+              <h3 class="text-2xl font-semibold text-charcoal dark:text-off-white mt-2 mb-2 group-hover:text-soft-gold transition-colors">Modern Minimalism</h3>
+              <p class="text-gray-600 dark:text-gray-500 dark:text-gray-400 font-medium">Clean lines, abstract textures, and monochromatic palettes designed to anchor contemporary living spaces and sleek architectural layouts.</p>
             </div>
           </div>
 
@@ -271,8 +270,8 @@
             </div>
             <div>
               <span class="text-soft-gold font-bold tracking-wider uppercase text-xs">Pure Silk Blend</span>
-              <h3 class="text-2xl font-bold text-charcoal dark:text-off-white mt-2 mb-2 group-hover:text-soft-gold transition-colors">Botanical Expressions</h3>
-              <p class="text-gray-600 dark:text-gray-400 font-light">Luminous and soft underfoot, this collection highlights floral motifs and organic shapes woven primarily from ethically sourced pure silk.</p>
+              <h3 class="text-2xl font-semibold text-charcoal dark:text-off-white mt-2 mb-2 group-hover:text-soft-gold transition-colors">Botanical Expressions</h3>
+              <p class="text-gray-600 dark:text-gray-500 dark:text-gray-400 font-medium">Luminous and soft underfoot, this collection highlights floral motifs and organic shapes woven primarily from ethically sourced pure silk.</p>
             </div>
           </div>
 
@@ -286,8 +285,8 @@
             </div>
             <div>
               <span class="text-soft-gold font-bold tracking-wider uppercase text-xs">Flatweave Kilim</span>
-              <h3 class="text-2xl font-bold text-charcoal dark:text-off-white mt-2 mb-2 group-hover:text-soft-gold transition-colors">Nomadic Tribal</h3>
-              <p class="text-gray-600 dark:text-gray-400 font-light">Bold geometric patterns and durable flatweaves that honor the historic, storytelling traditions of nomadic artisan weavers.</p>
+              <h3 class="text-2xl font-semibold text-charcoal dark:text-off-white mt-2 mb-2 group-hover:text-soft-gold transition-colors">Nomadic Tribal</h3>
+              <p class="text-gray-600 dark:text-gray-500 dark:text-gray-400 font-medium">Bold geometric patterns and durable flatweaves that honor the historic, storytelling traditions of nomadic artisan weavers.</p>
             </div>
           </div>
 
@@ -299,7 +298,7 @@
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-fade-in">
         <i class="fas fa-drafting-compass text-4xl text-soft-gold mb-6"></i>
         <h2 class="text-3xl md:text-4xl font-extrabold text-charcoal dark:text-off-white mb-6">Can't Find The Perfect Piece?</h2>
-        <p class="text-gray-600 dark:text-gray-300 text-lg mb-8 leading-relaxed font-light">
+        <p class="text-gray-600 dark:text-gray-300 text-lg mb-8 leading-relaxed font-medium">
           At WeaveNest, 80% of our work is entirely bespoke. Collaborate directly with our master artisans to design a custom rug tailored specifically to your home's dimensions and color palette.
         </p>
         <a href="contact.html" class="inline-flex items-center justify-center px-8 py-4 bg-soft-gold hover:bg-[#b88d2b] text-charcoal rounded-none font-black uppercase tracking-widest text-xs transition-all duration-300 shadow-lg hover:shadow-soft-gold/50">
@@ -337,7 +336,7 @@
         </div>
 
         <div>
-          <h4 class="text-sm uppercase tracking-[0.2em] font-bold mb-8 text-off-white">Quick Links</h4>
+          <h4 class="text-sm uppercase tracking-[0.2em] font-semibold mb-8 text-off-white">Quick Links</h4>
           <ul class="space-y-5">
             <li><a href="index.html" class="text-base text-muted-grey hover:text-soft-gold transition-colors duration-300">Home</a></li>
             <li><a href="about.html" class="text-base text-muted-grey hover:text-soft-gold transition-colors duration-300">Our Heritage</a></li>
@@ -348,7 +347,7 @@
         </div>
 
         <div>
-          <h4 class="text-sm uppercase tracking-[0.2em] font-bold mb-8 text-off-white">Our Services</h4>
+          <h4 class="text-sm uppercase tracking-[0.2em] font-semibold mb-8 text-off-white">Our Services</h4>
           <ul class="space-y-5">
             <li><a href="services.html" class="text-base text-muted-grey hover:text-soft-gold transition-colors duration-300">Custom Rug Weaving</a></li>
             <li><a href="services.html" class="text-base text-muted-grey hover:text-soft-gold transition-colors duration-300">Material Sourcing</a></li>
@@ -359,7 +358,7 @@
         </div>
 
         <div>
-          <h4 class="text-sm uppercase tracking-[0.2em] font-bold mb-8 text-off-white">Visit The Studio</h4>
+          <h4 class="text-sm uppercase tracking-[0.2em] font-semibold mb-8 text-off-white">Visit The Studio</h4>
           <ul class="space-y-6">
             <li class="flex items-start">
               <i class="fas fa-map-marker-alt text-soft-gold mt-1 mr-4 text-base"></i>

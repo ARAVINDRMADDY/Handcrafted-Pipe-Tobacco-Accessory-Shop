@@ -44,7 +44,11 @@
         <div class="flex-shrink-0">
           <a href="index.html" class="flex items-center gap-3">
             <div class="flex flex-col">
-              <span class="text-2xl font-semibold tracking-tight text-brand-dark dark:text-brand-light uppercase">Pipe<span class="text-accent">Craft</span></span>
+              <div class="flex items-center gap-2"><svg class="w-8 h-8 text-accent drop-shadow-sm" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path d="M17.5,7C15.91,7 14.54,8.04 14.12,9.5H7.5C5.57,9.5 4,11.07 4,13C4,14.93 5.57,16.5 7.5,16.5H13V15.5H7.5C6.12,15.5 5,14.38 5,13C5,11.62 6.12,10.5 7.5,10.5H14.12C14.54,11.96 15.91,13 17.5,13C19.43,13 21,11.43 21,9.5C21,7.57 19.43,7 17.5,7ZM17.5,12C16.12,12 15,10.88 15,9.5C15,8.12 16.12,7 17.5,7C18.88,7 20,8.12 20,9.5C20,10.88 18.88,12 17.5,12Z"/>
+  <path d="M19,3.5C18.7,3.5 18.5,3.7 18.5,4C18.5,4.7 18.2,5.2 17.7,5.5C17.3,5.8 16.7,6 16,6C15.7,6 15.5,6.2 15.5,6.5C15.5,6.8 15.7,7 16,7C17,7 17.8,6.7 18.4,6.2C19.1,5.7 19.5,4.9 19.5,4C19.5,3.7 19.3,3.5 19,3.5Z"/>
+  <path d="M16,2.5C15.7,2.5 15.5,2.7 15.5,3C15.5,3.7 15.2,4.2 14.7,4.5C14.3,4.8 13.7,5 13,5C12.7,5 12.5,5.2 12.5,5.5C12.5,5.8 12.7,6 13,6C14,6 14.8,5.7 15.4,5.2C16.1,4.7 16.5,3.9 16.5,3C16.5,2.7 16.3,2.5 16,2.5Z"/>
+</svg><span class="text-2xl font-semibold tracking-tight text-brand-dark dark:text-brand-light uppercase">Pipe<span class="text-accent">Craft</span></span></div>
             </div>
           </a>
         </div>
@@ -102,18 +106,6 @@
 
         <div class="hidden xl:flex items-center gap-4">
           
-          <button type="button" onclick="window.location.href='login.html'" class="bg-accent border-2 border-accent text-white hover:bg-transparent hover:text-accent px-6 py-2.5 text-xs uppercase tracking-wider font-semibold transition-all duration-300 flex items-center gap-2">
-            <span>Login</span>
-            <i class="fas fa-arrow-right text-[10px] rtl:rotate-180"></i>
-          </button>
-          
-          <a href="register.html" class="bg-transparent border-2 border-gray-300 dark:border-gray-700 text-brand-dark dark:text-brand-light hover:border-accent dark:hover:border-accent hover:text-accent dark:hover:text-accent px-6 py-2.5 text-xs uppercase tracking-wider font-medium transition-all duration-300 flex items-center gap-2">
-            <span>Register</span>
-            <i class="fas fa-arrow-right text-[10px] rtl:rotate-180"></i>
-          </a>
-
-          <div class="h-8 w-px bg-gray-200 dark:bg-gray-800 mx-2"></div>
-
           <button id="theme-toggle" class="relative w-[72px] h-[34px] flex items-center bg-gray-200 dark:bg-[#1E293B] rounded-full p-1 transition-colors duration-300 focus:outline-none border border-gray-300 dark:border-gray-700 overflow-hidden" title="Toggle Theme">
             <span class="text-[9px] font-medium text-gray-500 absolute end-2.5 dark:opacity-0 transition-opacity duration-300 tracking-wider">LIGHT</span>
             <span class="text-[9px] font-medium text-accent absolute start-2.5 opacity-0 dark:opacity-100 transition-opacity duration-300 tracking-wider">DARK</span>
@@ -127,7 +119,18 @@
           <button id="rtl-toggle" class="text-xs font-medium text-gray-400 hover:text-accent transition-colors duration-300 ms-2" title="Toggle RTL">
             RTL
           </button>
-        </div>
+          <div class="h-8 w-px bg-gray-200 dark:bg-gray-800 mx-2"></div>
+          <button type="button" onclick="window.location.href='login.html'" class="bg-accent border-2 border-accent text-white hover:bg-transparent hover:text-accent px-6 py-2.5 text-xs uppercase tracking-wider font-semibold transition-all duration-300 flex items-center gap-2">
+            <span>Login</span>
+            <i class="fas fa-arrow-right text-[10px] rtl:rotate-180"></i>
+          </button>
+          
+          <a href="register.html" class="bg-transparent border-2 border-gray-300 dark:border-gray-700 text-brand-dark dark:text-brand-light hover:border-accent dark:hover:border-accent hover:text-accent dark:hover:text-accent px-6 py-2.5 text-xs uppercase tracking-wider font-medium transition-all duration-300 flex items-center gap-2">
+            <span>Register</span>
+            <i class="fas fa-arrow-right text-[10px] rtl:rotate-180"></i>
+          </a>
+
+          </div>
 
         <div class="xl:hidden flex items-center">
           <button id="mobile-menu-button" class="text-gray-900 dark:text-brand-light hover:text-accent focus:outline-none transition duration-300">
@@ -150,8 +153,8 @@
             <i class="fas fa-plus text-xs transition-transform duration-300" id="mobile-home-icon"></i>
           </button>
           <div id="mobile-home-menu" class="hidden pb-4 flex flex-col gap-3 ps-4 border-s-2 border-accent/20 ms-2">
-            <a href="index.html" class="block text-sm font-medium text-gray-500 hover:text-accent dark:text-gray-400 transition duration-300 uppercase tracking-wider">01. Home Page</a>
-            <a href="home-2.html" class="block text-sm font-medium text-gray-500 hover:text-accent dark:text-gray-400 transition duration-300 uppercase tracking-wider">02. Home Page</a>
+            <a href="index.html" class="block text-sm font-medium text-gray-500 hover:text-accent dark:text-gray-500 dark:text-gray-400 transition duration-300 uppercase tracking-wider">01. Home Page</a>
+            <a href="home-2.html" class="block text-sm font-medium text-gray-500 hover:text-accent dark:text-gray-500 dark:text-gray-400 transition duration-300 uppercase tracking-wider">02. Home Page</a>
           </div>
         </div>
 
@@ -185,7 +188,7 @@
               <span class="dark:hidden flex items-center text-accent"><i class="fas fa-sun me-2"></i> Light Active</span>
               <span class="hidden dark:flex items-center text-accent"><i class="fas fa-moon me-2"></i> Dark Active</span>
             </button>
-            <button id="mobile-rtl-toggle" class="text-gray-400 hover:text-accent transition-colors flex items-center text-xs font-medium uppercase tracking-widest">
+            <button id="mobile-rtl-toggle" class="text-gray-500 dark:text-gray-400 hover:text-accent transition-colors flex items-center text-xs font-medium uppercase tracking-widest">
               <i class="fas fa-language me-2 text-lg"></i> RTL
             </button>
           </div>
@@ -204,10 +207,10 @@
       </div>
       
       <div class="relative z-10 w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-fade-in pt-12">
-        <h1 class="text-4xl md:text-6xl font-serif font-bold text-white mb-6">
+        <h1 class="text-4xl md:text-6xl font-serif font-semibold text-white mb-6">
           Invest in <span class="text-accent italic">Quality</span>.
         </h1>
-        <p class="text-lg text-gray-400 max-w-2xl mx-auto mb-8 font-light">
+        <p class="text-lg text-gray-500 dark:text-gray-400 max-w-2xl mx-auto mb-8 font-medium">
           Transparent pricing for our master-crafted pipes, professional restoration services, and premium small-batch tobacco subscriptions.
         </p>
         <div class="w-24 h-px bg-accent mx-auto"></div>
@@ -219,19 +222,19 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-16">
           <span class="text-accent uppercase tracking-[0.2em] text-xs font-bold mb-4 block">Custom Work</span>
-          <h2 class="text-3xl md:text-5xl font-serif font-bold text-brand-dark dark:text-brand-light mb-6">Bespoke Commissions</h2>
-          <p class="text-brand-muted dark:text-gray-400">All custom pipes require a 50% non-refundable deposit to secure the block and begin drafting. Wait times currently average 12-16 weeks.</p>
+          <h2 class="text-3xl md:text-5xl font-serif font-semibold text-brand-dark dark:text-brand-light mb-6">Bespoke Commissions</h2>
+          <p class="text-brand-muted dark:text-gray-500 dark:text-gray-400">All custom pipes require a 50% non-refundable deposit to secure the block and begin drafting. Wait times currently average 12-16 weeks.</p>
         </div>
 
         <div class="grid md:grid-cols-3 gap-8">
           <!-- Tier 1 -->
           <div class="bg-white dark:bg-[#1E293B] border border-gray-100 dark:border-white/5 p-8 hover:border-accent dark:hover:border-accent transition-colors shadow-xl flex flex-col h-full">
-            <h3 class="font-serif font-bold text-2xl text-brand-dark dark:text-brand-light mb-2">Classic Shapes</h3>
+            <h3 class="font-serif font-semibold text-2xl text-brand-dark dark:text-brand-light mb-2">Classic Shapes</h3>
             <div class="flex items-end gap-1 mb-6">
               <span class="text-sm text-gray-400">Starts at</span>
               <span class="text-4xl font-bold text-accent">$350</span>
             </div>
-            <p class="text-sm text-brand-muted dark:text-gray-400 mb-6 border-b border-gray-100 dark:border-white/5 pb-6">Traditional shapes (Billiard, Apple, Bulldog) turned from standard Corsican plateaux briar.</p>
+            <p class="text-sm text-brand-muted dark:text-gray-500 dark:text-gray-400 mb-6 border-b border-gray-100 dark:border-white/5 pb-6">Traditional shapes (Billiard, Apple, Bulldog) turned from standard Corsican plateaux briar.</p>
             <ul class="space-y-4 text-sm text-brand-dark dark:text-gray-300 mb-8">
               <li class="flex items-center"><i class="fas fa-check text-accent mr-3"></i> Smooth or Sandblast Finish</li>
               <li class="flex items-center"><i class="fas fa-check text-accent mr-3"></i> Standard German Ebonite Stem</li>
@@ -244,7 +247,7 @@
           <!-- Tier 2 -->
           <div class="bg-brand-dark text-white p-8 border-t-4 border-accent shadow-2xl transform md:-translate-y-4 flex flex-col h-full">
             <div class="flex justify-between items-center mb-2">
-              <h3 class="font-serif font-bold text-2xl">Danish Freehand</h3>
+              <h3 class="font-serif font-semibold text-2xl">Danish Freehand</h3>
               <span class="bg-accent text-brand-dark text-[10px] font-bold uppercase tracking-widest px-2 py-1">Popular</span>
             </div>
             <div class="flex items-end gap-1 mb-6">
@@ -263,12 +266,12 @@
 
           <!-- Tier 3 -->
           <div class="bg-white dark:bg-[#1E293B] border border-gray-100 dark:border-white/5 p-8 hover:border-accent dark:hover:border-accent transition-colors shadow-xl flex flex-col h-full">
-            <h3 class="font-serif font-bold text-2xl text-brand-dark dark:text-brand-light mb-2">Master Grade</h3>
+            <h3 class="font-serif font-semibold text-2xl text-brand-dark dark:text-brand-light mb-2">Master Grade</h3>
             <div class="flex items-end gap-1 mb-6">
               <span class="text-sm text-gray-400">Starts at</span>
               <span class="text-4xl font-bold text-accent">$1,200</span>
             </div>
-            <p class="text-sm text-brand-muted dark:text-gray-400 mb-6 border-b border-gray-100 dark:border-white/5 pb-6">Flawless 360-degree straight grain blocks or rare museum-quality block Meerschaum.</p>
+            <p class="text-sm text-brand-muted dark:text-gray-500 dark:text-gray-400 mb-6 border-b border-gray-100 dark:border-white/5 pb-6">Flawless 360-degree straight grain blocks or rare museum-quality block Meerschaum.</p>
             <ul class="space-y-4 text-sm text-brand-dark dark:text-gray-300 mb-8">
               <li class="flex items-center"><i class="fas fa-check text-accent mr-3"></i> 50+ Year Old Aged Briar</li>
               <li class="flex items-center"><i class="fas fa-check text-accent mr-3"></i> Hand-Cut Sterling Silver Band</li>
@@ -287,40 +290,40 @@
         <div class="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <span class="text-accent uppercase tracking-[0.2em] text-xs font-bold mb-4 block">The Pipe Spa</span>
-            <h2 class="text-3xl md:text-5xl font-serif font-bold text-brand-dark dark:text-brand-light mb-6">Restoration Services</h2>
-            <p class="text-brand-muted dark:text-gray-400 mb-8 leading-relaxed">
+            <h2 class="text-3xl md:text-5xl font-serif font-semibold text-brand-dark dark:text-brand-light mb-6">Restoration Services</h2>
+            <p class="text-brand-muted dark:text-gray-500 dark:text-gray-400 mb-8 leading-relaxed">
               We charge flat rates for standard restorations to ensure your estate pipe is returned to you in pristine, smokable condition without any hidden fees.
             </p>
             
             <div class="space-y-4">
               <div class="flex justify-between items-center p-4 bg-white dark:bg-[#1E293B] border-l-2 border-accent">
                 <div>
-                  <h4 class="font-bold text-brand-dark dark:text-brand-light">Standard Clean & Sweeten</h4>
-                  <p class="text-xs text-brand-muted dark:text-gray-400 mt-1">Ream, alcohol retort, salt treatment, buff.</p>
+                  <h4 class="font-semibold text-brand-dark dark:text-brand-light">Standard Clean & Sweeten</h4>
+                  <p class="text-xs text-brand-muted dark:text-gray-500 dark:text-gray-400 mt-1">Ream, alcohol retort, salt treatment, buff.</p>
                 </div>
                 <span class="font-bold text-accent">$45</span>
               </div>
               
               <div class="flex justify-between items-center p-4 bg-white dark:bg-[#1E293B] border-l-2 border-gray-300 dark:border-gray-600">
                 <div>
-                  <h4 class="font-bold text-brand-dark dark:text-brand-light">Full Stem De-Oxidation</h4>
-                  <p class="text-xs text-brand-muted dark:text-gray-400 mt-1">Removal of green/brown sulfur oxidation on vulcanite.</p>
+                  <h4 class="font-semibold text-brand-dark dark:text-brand-light">Full Stem De-Oxidation</h4>
+                  <p class="text-xs text-brand-muted dark:text-gray-500 dark:text-gray-400 mt-1">Removal of green/brown sulfur oxidation on vulcanite.</p>
                 </div>
                 <span class="font-bold text-accent">$35</span>
               </div>
               
               <div class="flex justify-between items-center p-4 bg-white dark:bg-[#1E293B] border-l-2 border-gray-300 dark:border-gray-600">
                 <div>
-                  <h4 class="font-bold text-brand-dark dark:text-brand-light">Rim Char Repair</h4>
-                  <p class="text-xs text-brand-muted dark:text-gray-400 mt-1">Topping the bowl and restaining to match.</p>
+                  <h4 class="font-semibold text-brand-dark dark:text-brand-light">Rim Char Repair</h4>
+                  <p class="text-xs text-brand-muted dark:text-gray-500 dark:text-gray-400 mt-1">Topping the bowl and restaining to match.</p>
                 </div>
                 <span class="font-bold text-accent">$55</span>
               </div>
               
               <div class="flex justify-between items-center p-4 bg-white dark:bg-[#1E293B] border-l-2 border-gray-300 dark:border-gray-600">
                 <div>
-                  <h4 class="font-bold text-brand-dark dark:text-brand-light">New Custom Stem</h4>
-                  <p class="text-xs text-brand-muted dark:text-gray-400 mt-1">Hand-cut from rod stock to fit your pipe perfectly.</p>
+                  <h4 class="font-semibold text-brand-dark dark:text-brand-light">New Custom Stem</h4>
+                  <p class="text-xs text-brand-muted dark:text-gray-500 dark:text-gray-400 mt-1">Hand-cut from rod stock to fit your pipe perfectly.</p>
                 </div>
                 <span class="font-bold text-accent">$85+</span>
               </div>
@@ -330,8 +333,8 @@
           <div class="relative mt-12 lg:mt-0">
             <img src="img/craftsmanship.png" alt="Restoration" class="rounded-sm shadow-2xl grayscale w-full h-[400px] object-cover">
             <div class="absolute -bottom-6 -left-6 bg-brand-dark text-white p-6 shadow-xl border border-white/10 max-w-xs z-10">
-              <h4 class="font-serif font-bold mb-2">Mail-In Service</h4>
-              <p class="text-xs text-gray-400 mb-4">Print a label, pack your pipe securely, and mail it to our workshop. Turnaround is typically 2 weeks.</p>
+              <h4 class="font-serif font-semibold mb-2">Mail-In Service</h4>
+              <p class="text-xs text-gray-500 dark:text-gray-400 mb-4">Print a label, pack your pipe securely, and mail it to our workshop. Turnaround is typically 2 weeks.</p>
               <a href="contact.html" class="text-accent text-[10px] font-bold uppercase tracking-widest hover:text-white transition-colors">Generate Label &rarr;</a>
             </div>
           </div>
@@ -344,41 +347,41 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="text-center max-w-3xl mx-auto mb-16">
           <i class="fas fa-box-open text-3xl text-accent mb-6"></i>
-          <h2 class="text-3xl md:text-5xl font-serif font-bold mb-6">The Aficionado's Club</h2>
-          <p class="text-gray-400 text-lg">Never run out of your favorite smoke. Subscribe to our monthly delivery service and receive freshly blended, properly aged tobacco right to your door.</p>
+          <h2 class="text-3xl md:text-5xl font-serif font-semibold mb-6">The Aficionado's Club</h2>
+          <p class="text-gray-500 dark:text-gray-400 text-lg">Never run out of your favorite smoke. Subscribe to our monthly delivery service and receive freshly blended, properly aged tobacco right to your door.</p>
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
           <!-- Sub 1 -->
           <div class="bg-[#1E293B] border border-white/10 p-8 text-center hover:border-accent transition-all group">
-            <h4 class="text-sm font-bold uppercase tracking-widest text-accent mb-2">The Virginia Flyer</h4>
+            <h4 class="text-sm font-semibold uppercase tracking-widest text-accent mb-2">The Virginia Flyer</h4>
             <p class="text-3xl font-serif font-bold mb-4">$25<span class="text-sm text-gray-500 font-sans font-normal">/mo</span></p>
-            <p class="text-xs text-gray-400 mb-6 h-12">2oz of a rotating sweet, grassy Virginia flake or coin.</p>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mb-6 h-12">2oz of a rotating sweet, grassy Virginia flake or coin.</p>
             <button class="w-full py-3 border border-white/20 text-xs font-bold uppercase tracking-widest group-hover:bg-accent group-hover:border-accent group-hover:text-brand-dark transition-colors">Subscribe</button>
           </div>
           
           <!-- Sub 2 -->
           <div class="bg-[#1E293B] border border-white/10 p-8 text-center hover:border-accent transition-all group relative">
             <div class="absolute top-0 inset-x-0 h-1 bg-accent"></div>
-            <h4 class="text-sm font-bold uppercase tracking-widest text-accent mb-2">The English Lord</h4>
+            <h4 class="text-sm font-semibold uppercase tracking-widest text-accent mb-2">The English Lord</h4>
             <p class="text-3xl font-serif font-bold mb-4">$28<span class="text-sm text-gray-500 font-sans font-normal">/mo</span></p>
-            <p class="text-xs text-gray-400 mb-6 h-12">2oz of a rich, smoky Latakia mixture perfect for evening smokes.</p>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mb-6 h-12">2oz of a rich, smoky Latakia mixture perfect for evening smokes.</p>
             <button class="w-full py-3 border border-white/20 text-xs font-bold uppercase tracking-widest group-hover:bg-accent group-hover:border-accent group-hover:text-brand-dark transition-colors">Subscribe</button>
           </div>
 
           <!-- Sub 3 -->
           <div class="bg-[#1E293B] border border-white/10 p-8 text-center hover:border-accent transition-all group">
-            <h4 class="text-sm font-bold uppercase tracking-widest text-accent mb-2">The Aromatic</h4>
+            <h4 class="text-sm font-semibold uppercase tracking-widest text-accent mb-2">The Aromatic</h4>
             <p class="text-3xl font-serif font-bold mb-4">$22<span class="text-sm text-gray-500 font-sans font-normal">/mo</span></p>
-            <p class="text-xs text-gray-400 mb-6 h-12">2oz of a room-pleasing, naturally cased Cavendish blend.</p>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mb-6 h-12">2oz of a room-pleasing, naturally cased Cavendish blend.</p>
             <button class="w-full py-3 border border-white/20 text-xs font-bold uppercase tracking-widest group-hover:bg-accent group-hover:border-accent group-hover:text-brand-dark transition-colors">Subscribe</button>
           </div>
 
           <!-- Sub 4 -->
           <div class="bg-[#1E293B] border border-white/10 p-8 text-center hover:border-accent transition-all group">
-            <h4 class="text-sm font-bold uppercase tracking-widest text-accent mb-2">The Connoisseur</h4>
+            <h4 class="text-sm font-semibold uppercase tracking-widest text-accent mb-2">The Connoisseur</h4>
             <p class="text-3xl font-serif font-bold mb-4">$60<span class="text-sm text-gray-500 font-sans font-normal">/mo</span></p>
-            <p class="text-xs text-gray-400 mb-6 h-12">Three 2oz tins of our choosing + a box of balsa filters and pipe cleaners.</p>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mb-6 h-12">Three 2oz tins of our choosing + a box of balsa filters and pipe cleaners.</p>
             <button class="w-full py-3 border border-white/20 text-xs font-bold uppercase tracking-widest group-hover:bg-accent group-hover:border-accent group-hover:text-brand-dark transition-colors">Subscribe</button>
           </div>
         </div>
@@ -389,7 +392,7 @@
     <section class="py-20 bg-white dark:bg-[#111827] relative">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
-          <h2 class="text-3xl font-serif font-bold text-brand-dark dark:text-brand-light mb-4">Frequently Asked Questions</h2>
+          <h2 class="text-3xl font-serif font-semibold text-brand-dark dark:text-brand-light mb-4">Frequently Asked Questions</h2>
           <div class="w-16 h-px bg-accent mx-auto"></div>
         </div>
         
@@ -402,7 +405,7 @@
               </span>
             </summary>
             <div class="mt-4 pt-4 border-t border-gray-100 dark:border-white/10">
-              <p class="text-sm text-brand-muted dark:text-gray-400">Yes, we ship pipes internationally via DHL. However, due to customs regulations, we cannot ship tobacco products outside of the continental United States.</p>
+              <p class="text-sm text-brand-muted dark:text-gray-500 dark:text-gray-400">Yes, we ship pipes internationally via DHL. However, due to customs regulations, we cannot ship tobacco products outside of the continental United States.</p>
             </div>
           </details>
           
@@ -414,7 +417,7 @@
               </span>
             </summary>
             <div class="mt-4 pt-4 border-t border-gray-100 dark:border-white/10">
-              <p class="text-sm text-brand-muted dark:text-gray-400">Our current waitlist is approximately 12 to 16 weeks from the time the deposit is paid and the block is selected. Quality cannot be rushed.</p>
+              <p class="text-sm text-brand-muted dark:text-gray-500 dark:text-gray-400">Our current waitlist is approximately 12 to 16 weeks from the time the deposit is paid and the block is selected. Quality cannot be rushed.</p>
             </div>
           </details>
           
@@ -426,13 +429,13 @@
               </span>
             </summary>
             <div class="mt-4 pt-4 border-t border-gray-100 dark:border-white/10">
-              <p class="text-sm text-brand-muted dark:text-gray-400">All estate pipes have a 7-day inspection period. If you are not satisfied, return it unsmoked for a full refund minus shipping costs.</p>
+              <p class="text-sm text-brand-muted dark:text-gray-500 dark:text-gray-400">All estate pipes have a 7-day inspection period. If you are not satisfied, return it unsmoked for a full refund minus shipping costs.</p>
             </div>
           </details>
         </div>
         
         <div class="mt-12 text-center">
-          <p class="text-sm text-brand-muted dark:text-gray-400 mb-4">Still have questions about our pricing?</p>
+          <p class="text-sm text-brand-muted dark:text-gray-500 dark:text-gray-400 mb-4">Still have questions about our pricing?</p>
           <a href="contact.html" class="inline-flex items-center gap-2 text-accent font-bold uppercase tracking-widest text-xs hover:text-brand-dark dark:hover:text-white transition-colors">
             Contact Us Directly <i class="fas fa-envelope"></i>
           </a>
@@ -503,7 +506,7 @@
             </li>
             <li class="flex items-center">
               <i class="fas fa-envelope text-accent me-4 text-base"></i>
-              <a href="mailto:contact@eliasthornepipes.com" class="text-base text-brand-muted hover:text-accent transition-colors font-medium">contact@eliasthornepipes.com</a>
+              <a href="mailto:contact@eliasthornepipes.com" class="text-base text-brand-muted hover:text-accent transition-colors font-medium break-all">contact@eliasthornepipes.com</a>
             </li>
           </ul>
         </div>

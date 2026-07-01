@@ -50,7 +50,11 @@
         <div class="flex-shrink-0">
           <a href="index.html" class="flex items-center gap-3">
             <div class="flex flex-col">
-              <span class="text-2xl font-semibold tracking-tight text-brand-dark dark:text-brand-light uppercase">Pipe<span class="text-accent">Craft</span></span>
+              <div class="flex items-center gap-2"><svg class="w-8 h-8 text-accent drop-shadow-sm" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path d="M17.5,7C15.91,7 14.54,8.04 14.12,9.5H7.5C5.57,9.5 4,11.07 4,13C4,14.93 5.57,16.5 7.5,16.5H13V15.5H7.5C6.12,15.5 5,14.38 5,13C5,11.62 6.12,10.5 7.5,10.5H14.12C14.54,11.96 15.91,13 17.5,13C19.43,13 21,11.43 21,9.5C21,7.57 19.43,7 17.5,7ZM17.5,12C16.12,12 15,10.88 15,9.5C15,8.12 16.12,7 17.5,7C18.88,7 20,8.12 20,9.5C20,10.88 18.88,12 17.5,12Z"/>
+  <path d="M19,3.5C18.7,3.5 18.5,3.7 18.5,4C18.5,4.7 18.2,5.2 17.7,5.5C17.3,5.8 16.7,6 16,6C15.7,6 15.5,6.2 15.5,6.5C15.5,6.8 15.7,7 16,7C17,7 17.8,6.7 18.4,6.2C19.1,5.7 19.5,4.9 19.5,4C19.5,3.7 19.3,3.5 19,3.5Z"/>
+  <path d="M16,2.5C15.7,2.5 15.5,2.7 15.5,3C15.5,3.7 15.2,4.2 14.7,4.5C14.3,4.8 13.7,5 13,5C12.7,5 12.5,5.2 12.5,5.5C12.5,5.8 12.7,6 13,6C14,6 14.8,5.7 15.4,5.2C16.1,4.7 16.5,3.9 16.5,3C16.5,2.7 16.3,2.5 16,2.5Z"/>
+</svg><span class="text-2xl font-semibold tracking-tight text-brand-dark dark:text-brand-light uppercase">Pipe<span class="text-accent">Craft</span></span></div>
             </div>
           </a>
         </div>
@@ -108,18 +112,6 @@
 
         <div class="hidden xl:flex items-center gap-4">
           
-          <button type="button" onclick="window.location.href='login.html'" class="bg-accent border-2 border-accent text-white hover:bg-transparent hover:text-accent px-6 py-2.5 text-xs uppercase tracking-wider font-semibold transition-all duration-300 flex items-center gap-2">
-            <span>Login</span>
-            <i class="fas fa-arrow-right text-[10px] rtl:rotate-180"></i>
-          </button>
-          
-          <a href="register.html" class="bg-transparent border-2 border-gray-300 dark:border-gray-700 text-brand-dark dark:text-brand-light hover:border-accent dark:hover:border-accent hover:text-accent dark:hover:text-accent px-6 py-2.5 text-xs uppercase tracking-wider font-medium transition-all duration-300 flex items-center gap-2">
-            <span>Register</span>
-            <i class="fas fa-arrow-right text-[10px] rtl:rotate-180"></i>
-          </a>
-
-          <div class="h-8 w-px bg-gray-200 dark:bg-gray-800 mx-2"></div>
-
           <button id="theme-toggle" class="relative w-[72px] h-[34px] flex items-center bg-gray-200 dark:bg-[#1E293B] rounded-full p-1 transition-colors duration-300 focus:outline-none border border-gray-300 dark:border-gray-700 overflow-hidden" title="Toggle Theme">
             <span class="text-[9px] font-medium text-gray-500 absolute end-2.5 dark:opacity-0 transition-opacity duration-300 tracking-wider">LIGHT</span>
             <span class="text-[9px] font-medium text-accent absolute start-2.5 opacity-0 dark:opacity-100 transition-opacity duration-300 tracking-wider">DARK</span>
@@ -133,7 +125,18 @@
           <button id="rtl-toggle" class="text-xs font-medium text-gray-400 hover:text-accent transition-colors duration-300 ms-2" title="Toggle RTL">
             RTL
           </button>
-        </div>
+          <div class="h-8 w-px bg-gray-200 dark:bg-gray-800 mx-2"></div>
+          <button type="button" onclick="window.location.href='login.html'" class="bg-accent border-2 border-accent text-white hover:bg-transparent hover:text-accent px-6 py-2.5 text-xs uppercase tracking-wider font-semibold transition-all duration-300 flex items-center gap-2">
+            <span>Login</span>
+            <i class="fas fa-arrow-right text-[10px] rtl:rotate-180"></i>
+          </button>
+          
+          <a href="register.html" class="bg-transparent border-2 border-gray-300 dark:border-gray-700 text-brand-dark dark:text-brand-light hover:border-accent dark:hover:border-accent hover:text-accent dark:hover:text-accent px-6 py-2.5 text-xs uppercase tracking-wider font-medium transition-all duration-300 flex items-center gap-2">
+            <span>Register</span>
+            <i class="fas fa-arrow-right text-[10px] rtl:rotate-180"></i>
+          </a>
+
+          </div>
 
         <div class="xl:hidden flex items-center">
           <button id="mobile-menu-button" class="text-gray-900 dark:text-brand-light hover:text-accent focus:outline-none transition duration-300">
@@ -156,8 +159,8 @@
             <i class="fas fa-plus text-xs transition-transform duration-300" id="mobile-home-icon"></i>
           </button>
           <div id="mobile-home-menu" class="hidden pb-4 flex flex-col gap-3 ps-4 border-s-2 border-accent/20 ms-2">
-            <a href="index.html" class="block text-sm font-medium text-gray-500 hover:text-accent dark:text-gray-400 transition duration-300 uppercase tracking-wider">01. Home Page</a>
-            <a href="home-2.html" class="block text-sm font-medium text-gray-500 hover:text-accent dark:text-gray-400 transition duration-300 uppercase tracking-wider">02. Home Page</a>
+            <a href="index.html" class="block text-sm font-medium text-gray-500 hover:text-accent dark:text-gray-500 dark:text-gray-400 transition duration-300 uppercase tracking-wider">01. Home Page</a>
+            <a href="home-2.html" class="block text-sm font-medium text-gray-500 hover:text-accent dark:text-gray-500 dark:text-gray-400 transition duration-300 uppercase tracking-wider">02. Home Page</a>
           </div>
         </div>
 
@@ -189,7 +192,7 @@
               <span class="dark:hidden flex items-center text-accent"><i class="fas fa-sun me-2"></i> Light Active</span>
               <span class="hidden dark:flex items-center text-accent"><i class="fas fa-moon me-2"></i> Dark Active</span>
             </button>
-            <button id="mobile-rtl-toggle" class="text-gray-400 hover:text-accent transition-colors flex items-center text-xs font-medium uppercase tracking-widest">
+            <button id="mobile-rtl-toggle" class="text-gray-500 dark:text-gray-400 hover:text-accent transition-colors flex items-center text-xs font-medium uppercase tracking-widest">
               <i class="fas fa-language me-2 text-lg"></i> RTL
             </button>
           </div>
@@ -209,14 +212,14 @@
           <div class="text-brand-dark dark:text-brand-light flex flex-col gap-5 animate-fade-in">
             <div class="inline-flex items-center px-4 py-2 border border-gray-200 dark:border-white/10 rounded-none bg-white/50 dark:bg-black/30 backdrop-blur-sm self-start">
               <span class="w-1.5 h-1.5 bg-accent me-3"></span>
-              <span class="text-[10px] uppercase tracking-[0.2em] font-medium text-gray-500 dark:text-gray-400">Premium Smoke Shop</span>
+              <span class="text-[10px] uppercase tracking-[0.2em] font-medium text-gray-500 dark:text-gray-500 dark:text-gray-400">Premium Smoke Shop</span>
             </div>
 
             <h1 class="text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight tracking-tight">
               HANDCRAFTED PIPES <br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-[#eab308]">& TOBACCO.</span>
             </h1>
 
-            <p class="text-lg text-brand-muted dark:text-gray-400 leading-relaxed font-medium max-w-lg">
+            <p class="text-lg text-brand-muted dark:text-gray-500 dark:text-gray-400 leading-relaxed font-medium max-w-lg">
               Discover our curated selection of artisanal briar pipes, premium house-blended tobaccos, and elegant smoking accessories for the discerning aficionado.
             </p>
 
@@ -263,8 +266,8 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-16 animate-fade-in">
           <span class="text-accent uppercase tracking-[0.2em] text-xs font-bold mb-4 block">Our Masterpieces</span>
-          <h2 class="text-4xl md:text-5xl font-serif font-bold text-brand-dark dark:text-brand-light mb-6">Featured Artisanal Pipes</h2>
-          <p class="text-brand-muted dark:text-gray-400 text-lg">Discover our exclusive collection of hand-carved briar and meerschaum pipes, crafted for the true aficionado.</p>
+          <h2 class="text-4xl md:text-5xl font-serif font-semibold text-brand-dark dark:text-brand-light mb-6">Featured Artisanal Pipes</h2>
+          <p class="text-brand-muted dark:text-gray-500 dark:text-gray-400 text-lg">Discover our exclusive collection of hand-carved briar and meerschaum pipes, crafted for the true aficionado.</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           <!-- Item 1 -->
@@ -274,7 +277,7 @@
               <div class="absolute top-4 right-4 bg-brand-dark text-accent text-xs font-bold px-3 py-1 uppercase tracking-widest">New</div>
             </div>
             <div class="p-8">
-              <h3 class="text-xl font-bold text-brand-dark dark:text-brand-light mb-2 font-serif">Classic Briar Billiard</h3>
+              <h3 class="text-xl font-semibold text-brand-dark dark:text-brand-light mb-2 font-serif">Classic Briar Billiard</h3>
               <p class="text-accent font-semibold mb-4">$145.00</p>
               <p class="text-brand-muted text-sm mb-6 line-clamp-2">A timeless shape with a smooth, polished finish, highlighting the beautiful grain of Mediterranean briar wood.</p>
               <a href="#" class="inline-flex items-center text-xs uppercase tracking-widest font-bold text-brand-dark dark:text-brand-light group-hover:text-accent transition-colors">
@@ -285,10 +288,10 @@
           <!-- Item 2 -->
           <div class="group bg-white dark:bg-[#1E293B] border border-gray-200 dark:border-white/10 overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
             <div class="relative h-72 overflow-hidden bg-gray-100 dark:bg-gray-800">
-              <img src="img/featured_pipes.png" alt="Churchwarden Pipe" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100">
+              <img src="img/craft_2_1782900391780.png" alt="Churchwarden Pipe" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100">
             </div>
             <div class="p-8">
-              <h3 class="text-xl font-bold text-brand-dark dark:text-brand-light mb-2 font-serif">Rustic Churchwarden</h3>
+              <h3 class="text-xl font-semibold text-brand-dark dark:text-brand-light mb-2 font-serif">Rustic Churchwarden</h3>
               <p class="text-accent font-semibold mb-4">$185.00</p>
               <p class="text-brand-muted text-sm mb-6 line-clamp-2">Enjoy a cooler smoke with this long-stemmed beauty, featuring a deep rusticated bowl and vulcanite stem.</p>
               <a href="#" class="inline-flex items-center text-xs uppercase tracking-widest font-bold text-brand-dark dark:text-brand-light group-hover:text-accent transition-colors">
@@ -299,11 +302,11 @@
           <!-- Item 3 -->
           <div class="group bg-white dark:bg-[#1E293B] border border-gray-200 dark:border-white/10 overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
             <div class="relative h-72 overflow-hidden bg-gray-100 dark:bg-gray-800">
-              <img src="img/featured_pipes.png" alt="Meerschaum Pipe" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100">
+              <img src="img/meerschaum_pipe.png" alt="Meerschaum Pipe" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100">
               <div class="absolute top-4 right-4 bg-accent text-white text-xs font-bold px-3 py-1 uppercase tracking-widest">Rare</div>
             </div>
             <div class="p-8">
-              <h3 class="text-xl font-bold text-brand-dark dark:text-brand-light mb-2 font-serif">Carved Meerschaum</h3>
+              <h3 class="text-xl font-semibold text-brand-dark dark:text-brand-light mb-2 font-serif">Carved Meerschaum</h3>
               <p class="text-accent font-semibold mb-4">$250.00</p>
               <p class="text-brand-muted text-sm mb-6 line-clamp-2">Intricately carved from premium Turkish block meerschaum, promising a pure tasting and cool smoke.</p>
               <a href="#" class="inline-flex items-center text-xs uppercase tracking-widest font-bold text-brand-dark dark:text-brand-light group-hover:text-accent transition-colors">
@@ -335,24 +338,24 @@
               <span class="text-[10px] uppercase tracking-[0.2em] font-medium text-brand-light">Heritage & Skill</span>
             </div>
             
-            <h2 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold leading-tight">
+            <h2 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-semibold leading-tight">
               The Art of <br/><span class="text-accent italic">Craftsmanship</span>
             </h2>
             
-            <p class="text-gray-400 text-lg leading-relaxed border-l-2 border-accent pl-6">
+            <p class="text-gray-500 dark:text-gray-400 text-lg leading-relaxed border-l-2 border-accent pl-6">
               Every pipe we offer is more than a tool for smoking; it is a meticulously crafted work of art. Our master artisans spend hours selecting the finest briar blocks, shaping them to perfection, and finishing them to highlight their natural beauty.
             </p>
             
             <div class="grid grid-cols-2 gap-8 pt-6">
               <div class="flex flex-col">
                 <i class="fas fa-tree text-3xl text-accent mb-4"></i>
-                <h4 class="text-lg font-bold mb-2">Premium Materials</h4>
-                <p class="text-sm text-gray-400">We source only highest-grade Mediterranean briar, Turkish meerschaum, and rare exotic woods.</p>
+                <h4 class="text-lg font-semibold mb-2">Premium Materials</h4>
+                <p class="text-sm text-gray-500 dark:text-gray-400">We source only highest-grade Mediterranean briar, Turkish meerschaum, and rare exotic woods.</p>
               </div>
               <div class="flex flex-col">
                 <i class="fas fa-fire text-3xl text-accent mb-4"></i>
-                <h4 class="text-lg font-bold mb-2">Perfect Draw</h4>
-                <p class="text-sm text-gray-400">Precision drilling and engineering ensure a cool, dry, and effortless smoking experience.</p>
+                <h4 class="text-lg font-semibold mb-2">Perfect Draw</h4>
+                <p class="text-sm text-gray-500 dark:text-gray-400">Precision drilling and engineering ensure a cool, dry, and effortless smoking experience.</p>
               </div>
             </div>
             
@@ -366,7 +369,7 @@
           
           <div class="relative">
             <div class="relative z-10 border-8 border-[#1a2536] shadow-2xl overflow-hidden rounded-sm">
-              <img src="img/craftsmanship.png" alt="Artisan carving a pipe" class="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-1000">
+              <img src="img/craft_1_1782900381474.png" alt="Artisan carving a pipe" class="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-1000">
             </div>
             <div class="absolute -bottom-10 -left-10 w-48 h-48 bg-accent/20 rounded-full blur-3xl z-0"></div>
             <div class="absolute -top-10 -right-10 w-64 h-64 bg-brand-muted/20 rounded-full blur-3xl z-0"></div>
@@ -387,8 +390,8 @@
         <div class="flex flex-col items-center text-center mb-16 gap-6 relative">
           <div class="max-w-2xl mx-auto">
             <span class="text-accent uppercase tracking-[0.2em] text-xs font-bold mb-4 block">Aromatic & English</span>
-            <h2 class="text-4xl md:text-5xl font-serif font-bold text-brand-dark dark:text-brand-light mb-4">House-Blended Tobaccos</h2>
-            <p class="text-brand-muted dark:text-gray-400">Carefully curated recipes using Virginia, Burley, Cavendish, Latakia, and Perique leaves.</p>
+            <h2 class="text-4xl md:text-5xl font-serif font-semibold text-brand-dark dark:text-brand-light mb-4">House-Blended Tobaccos</h2>
+            <p class="text-brand-muted dark:text-gray-500 dark:text-gray-400">Carefully curated recipes using Virginia, Burley, Cavendish, Latakia, and Perique leaves.</p>
           </div>
           <div>
             <div class="flex gap-2 justify-center">
@@ -406,50 +409,50 @@
           <!-- Blend 1 -->
           <div class="bg-white dark:bg-brand-dark border border-gray-200 dark:border-white/5 p-6 hover:border-accent transition-colors group text-center relative overflow-hidden">
             <div class="w-24 h-24 mx-auto bg-gray-100 dark:bg-gray-800 rounded-full mb-6 flex items-center justify-center overflow-hidden border-4 border-transparent group-hover:border-accent/30 transition-all duration-300">
-              <i class="fas fa-leaf text-3xl text-brand-muted group-hover:text-accent transition-colors"></i>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-brand-muted group-hover:text-accent transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
             </div>
             <div class="absolute top-0 right-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity">
               <i class="fas fa-shopping-bag text-accent cursor-pointer hover:scale-110 transform transition-transform"></i>
             </div>
-            <h3 class="text-lg font-bold text-brand-dark dark:text-brand-light mb-1">Midnight Latakia</h3>
+            <h3 class="text-lg font-semibold text-brand-dark dark:text-brand-light mb-1">Midnight Latakia</h3>
             <span class="text-xs text-brand-muted uppercase tracking-wider block mb-3">English Blend</span>
-            <p class="text-sm text-gray-500 dark:text-gray-400 mb-4 line-clamp-3">A rich, smoky mixture with a heavy Latakia base, balanced with sweet Virginias and spicy Orientals.</p>
+            <p class="text-sm text-gray-500 dark:text-gray-500 dark:text-gray-400 mb-4 line-clamp-3">A rich, smoky mixture with a heavy Latakia base, balanced with sweet Virginias and spicy Orientals.</p>
             <div class="text-accent font-bold">$18.50 <span class="text-xs text-gray-400 font-normal">/ 2oz tin</span></div>
           </div>
           
           <!-- Blend 2 -->
           <div class="bg-white dark:bg-brand-dark border border-gray-200 dark:border-white/5 p-6 hover:border-accent transition-colors group text-center relative overflow-hidden">
             <div class="w-24 h-24 mx-auto bg-gray-100 dark:bg-gray-800 rounded-full mb-6 flex items-center justify-center overflow-hidden border-4 border-transparent group-hover:border-accent/30 transition-all duration-300">
-              <i class="fas fa-mug-hot text-3xl text-brand-muted group-hover:text-accent transition-colors"></i>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-brand-muted group-hover:text-accent transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="7.5 4.21 12 6.81 16.5 4.21"/><polyline points="7.5 19.79 7.5 14.6 3 12"/><polyline points="21 12 16.5 14.6 16.5 19.79"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
             </div>
             <div class="absolute top-0 right-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity">
               <i class="fas fa-shopping-bag text-accent cursor-pointer hover:scale-110 transform transition-transform"></i>
             </div>
-            <h3 class="text-lg font-bold text-brand-dark dark:text-brand-light mb-1">Vanilla Cavendish</h3>
+            <h3 class="text-lg font-semibold text-brand-dark dark:text-brand-light mb-1">Vanilla Cavendish</h3>
             <span class="text-xs text-brand-muted uppercase tracking-wider block mb-3">Aromatic Blend</span>
-            <p class="text-sm text-gray-500 dark:text-gray-400 mb-4 line-clamp-3">Smooth Black Cavendish treated with warm Madagascar vanilla bean extracts for a pleasant room note.</p>
+            <p class="text-sm text-gray-500 dark:text-gray-500 dark:text-gray-400 mb-4 line-clamp-3">Smooth Black Cavendish treated with warm Madagascar vanilla bean extracts for a pleasant room note.</p>
             <div class="text-accent font-bold">$16.00 <span class="text-xs text-gray-400 font-normal">/ 2oz tin</span></div>
           </div>
           
           <!-- Blend 3 -->
           <div class="bg-white dark:bg-brand-dark border border-gray-200 dark:border-white/5 p-6 hover:border-accent transition-colors group text-center relative overflow-hidden">
             <div class="w-24 h-24 mx-auto bg-gray-100 dark:bg-gray-800 rounded-full mb-6 flex items-center justify-center overflow-hidden border-4 border-transparent group-hover:border-accent/30 transition-all duration-300">
-              <i class="fas fa-pepper-hot text-3xl text-brand-muted group-hover:text-accent transition-colors"></i>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-brand-muted group-hover:text-accent transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 11v8a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-7a1 1 0 0 1 1-1h3a4 4 0 0 0 4-4V4a2 2 0 1 1 4 0v5h3a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-3l-1.5-4.5"/><path d="M12 16v5"/></svg>
             </div>
-            <h3 class="text-lg font-bold text-brand-dark dark:text-brand-light mb-1">Acadia Perique</h3>
+            <h3 class="text-lg font-semibold text-brand-dark dark:text-brand-light mb-1">Acadia Perique</h3>
             <span class="text-xs text-brand-muted uppercase tracking-wider block mb-3">VaPer Blend</span>
-            <p class="text-sm text-gray-500 dark:text-gray-400 mb-4 line-clamp-3">Bright Virginia flakes pressed with a generous portion of St. James Parish Perique for a spicy kick.</p>
+            <p class="text-sm text-gray-500 dark:text-gray-500 dark:text-gray-400 mb-4 line-clamp-3">Bright Virginia flakes pressed with a generous portion of St. James Parish Perique for a spicy kick.</p>
             <div class="text-accent font-bold">$22.00 <span class="text-xs text-gray-400 font-normal">/ 2oz tin</span></div>
           </div>
 
           <!-- Blend 4 -->
           <div class="bg-white dark:bg-brand-dark border border-gray-200 dark:border-white/5 p-6 hover:border-accent transition-colors group text-center relative overflow-hidden">
             <div class="w-24 h-24 mx-auto bg-gray-100 dark:bg-gray-800 rounded-full mb-6 flex items-center justify-center overflow-hidden border-4 border-transparent group-hover:border-accent/30 transition-all duration-300">
-              <i class="fas fa-seedling text-3xl text-brand-muted group-hover:text-accent transition-colors"></i>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-brand-muted group-hover:text-accent transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M16 8s-3-2-6 2-2 6-2 6"/></svg>
             </div>
-            <h3 class="text-lg font-bold text-brand-dark dark:text-brand-light mb-1">Golden Burley</h3>
+            <h3 class="text-lg font-semibold text-brand-dark dark:text-brand-light mb-1">Golden Burley</h3>
             <span class="text-xs text-brand-muted uppercase tracking-wider block mb-3">Burley Blend</span>
-            <p class="text-sm text-gray-500 dark:text-gray-400 mb-4 line-clamp-3">A straightforward, nutty Burley blend with notes of cocoa and molasses. An all-day smoke.</p>
+            <p class="text-sm text-gray-500 dark:text-gray-500 dark:text-gray-400 mb-4 line-clamp-3">A straightforward, nutty Burley blend with notes of cocoa and molasses. An all-day smoke.</p>
             <div class="text-accent font-bold">$15.50 <span class="text-xs text-gray-400 font-normal">/ 2oz tin</span></div>
           </div>
         </div>
@@ -461,7 +464,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid md:grid-cols-3 gap-8">
           <div class="md:col-span-1 flex flex-col justify-center">
-            <h2 class="text-3xl md:text-4xl font-serif font-bold text-brand-dark dark:text-brand-light mb-4">Essential Accoutrements</h2>
+            <h2 class="text-3xl md:text-4xl font-serif font-semibold text-brand-dark dark:text-brand-light mb-4">Essential Accoutrements</h2>
             <p class="text-brand-muted mb-8 leading-relaxed">Elevate your smoking ritual with our selection of fine accessories. From Czech tools to elegant humidors.</p>
             <a href="services.html" class="group flex items-center text-sm font-bold uppercase tracking-widest text-brand-dark dark:text-brand-light hover:text-accent transition-colors">
               Explore Accessories 
@@ -478,7 +481,7 @@
                 <i class="fas fa-fire-alt text-3xl"></i>
               </div>
               <div>
-                <h4 class="font-bold text-brand-dark dark:text-brand-light text-lg mb-1">Old Boy Lighters</h4>
+                <h4 class="font-semibold text-brand-dark dark:text-brand-light text-lg mb-1">Old Boy Lighters</h4>
                 <p class="text-xs text-brand-muted mb-2">Soft flame, perfect angle</p>
                 <span class="text-accent font-bold text-sm">From $89.00</span>
               </div>
@@ -490,7 +493,7 @@
                 <i class="fas fa-tools text-3xl"></i>
               </div>
               <div>
-                <h4 class="font-bold text-brand-dark dark:text-brand-light text-lg mb-1">Czech Tampers</h4>
+                <h4 class="font-semibold text-brand-dark dark:text-brand-light text-lg mb-1">Czech Tampers</h4>
                 <p class="text-xs text-brand-muted mb-2">Stainless steel & wood</p>
                 <span class="text-accent font-bold text-sm">From $12.50</span>
               </div>
@@ -502,7 +505,7 @@
                 <i class="fas fa-box-open text-3xl"></i>
               </div>
               <div>
-                <h4 class="font-bold text-brand-dark dark:text-brand-light text-lg mb-1">Leather Pouches</h4>
+                <h4 class="font-semibold text-brand-dark dark:text-brand-light text-lg mb-1">Leather Pouches</h4>
                 <p class="text-xs text-brand-muted mb-2">Hand-stitched protection</p>
                 <span class="text-accent font-bold text-sm">From $45.00</span>
               </div>
@@ -514,7 +517,7 @@
                 <i class="fas fa-broom text-3xl"></i>
               </div>
               <div>
-                <h4 class="font-bold text-brand-dark dark:text-brand-light text-lg mb-1">Cleaning Kits</h4>
+                <h4 class="font-semibold text-brand-dark dark:text-brand-light text-lg mb-1">Cleaning Kits</h4>
                 <p class="text-xs text-brand-muted mb-2">Bristles, sweetening fluids</p>
                 <span class="text-accent font-bold text-sm">From $18.00</span>
               </div>
@@ -531,7 +534,7 @@
           <i class="fas fa-envelope-open-text text-3xl text-accent"></i>
         </div>
         
-        <h2 class="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-brand-dark dark:text-brand-light mb-6">Join the Aficionado Club</h2>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-serif font-semibold text-brand-dark dark:text-brand-light mb-6">Join the Aficionado Club</h2>
         
         <p class="text-brand-muted text-lg mb-10 max-w-2xl mx-auto leading-relaxed">
           Subscribe to our newsletter to receive exclusive updates on rare pipe drops, new tobacco blend releases, and insightful articles on pipe smoking etiquette and maintenance.
@@ -539,23 +542,23 @@
         
         <form class="max-w-xl mx-auto relative group">
           <div class="absolute -inset-1 bg-gradient-to-r from-accent to-yellow-500 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
-          <div class="relative flex flex-col sm:flex-row bg-white dark:bg-[#1E293B] rounded-full p-2 border border-gray-200 dark:border-white/10 shadow-lg">
+          <div class="relative flex flex-col sm:flex-row bg-white dark:bg-[#1E293B] rounded-2xl sm:rounded-full p-2 border border-gray-200 dark:border-white/10 shadow-lg">
             <input 
               type="email" 
               placeholder="Enter your email address..." 
-              class="w-full bg-transparent text-brand-dark dark:text-brand-light px-6 py-4 outline-none placeholder-gray-400 dark:placeholder-gray-500 rounded-l-full"
+              class="w-full bg-transparent text-brand-dark dark:text-brand-light px-6 py-4 outline-none placeholder-gray-400 dark:placeholder-gray-500 rounded-t-xl sm:rounded-l-full sm:rounded-tr-none"
               required
             >
             <button 
               type="submit" 
-              class="mt-2 sm:mt-0 bg-brand-dark dark:bg-brand-light text-white dark:text-brand-dark hover:bg-accent hover:text-white dark:hover:bg-accent px-8 py-4 rounded-full font-bold uppercase tracking-widest text-xs transition-colors whitespace-nowrap"
+              class="mt-2 sm:mt-0 bg-brand-dark dark:bg-brand-light text-white dark:text-brand-dark hover:bg-accent hover:text-white dark:hover:bg-accent px-8 py-4 rounded-b-xl sm:rounded-r-full sm:rounded-l-none font-bold uppercase tracking-widest text-xs transition-colors whitespace-nowrap"
             >
               Subscribe
             </button>
           </div>
         </form>
         
-        <p class="text-xs text-gray-400 mt-6 uppercase tracking-widest">No spam. Unsubscribe at any time.</p>
+        <p class="text-xs text-gray-500 dark:text-gray-400 mt-6 uppercase tracking-widest">No spam. Unsubscribe at any time.</p>
       </div>
     </section>
 
@@ -622,7 +625,7 @@
             </li>
             <li class="flex items-center">
               <i class="fas fa-envelope text-accent me-4 text-base"></i>
-              <a href="mailto:contact@eliasthornepipes.com" class="text-base text-brand-muted hover:text-accent transition-colors font-medium">contact@eliasthornepipes.com</a>
+              <a href="mailto:contact@eliasthornepipes.com" class="text-base text-brand-muted hover:text-accent transition-colors font-medium break-all">contact@eliasthornepipes.com</a>
             </li>
           </ul>
         </div>
